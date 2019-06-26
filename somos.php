@@ -14,7 +14,7 @@
 <div id="contenedor">
     <div id="subContenedor">
         <div id="quienes">
-            <p class="titulo">¿Quiénes somos?</p>
+            <p class="titulo">¿Quiénes somos? = Moises</p>
             <p class="texto">Somos una empresa comercializadora, fundada en la ciudad de Barranquilla, Colombia en el año 1991. </p>
             <p class="texto">Nos hemos dedicado a la atención y servicio de clientes con necesidades en el sector de empaques en todo el país, con énfasis en la costa norte colombiana.</p>
             <p class="texto">Producimos indirectamente en la modalidad de maquila y comercializamos productos manufacturados por industrias nacionales e internacionales.</p>
