@@ -2,6 +2,4 @@
 include ('header.php');
 include ('banner.php');
 include ('footer.php');
-
-hola mundo
 ?>
