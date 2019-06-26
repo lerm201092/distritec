@@ -69,6 +69,45 @@
 						 <div class="clear"></div>
 					 </div>
 			      </article>
+				  <article style="position: absolute; width: 100%; opacity: 0;"> 
+				   	 <div class="banner-wrap">
+					   	<div class="slider-left">
+							<img src="images/banner/banner_embase_6.png" alt=""/> 
+						</div>
+						 <!-- <div class="slider-right">
+						    <h2>Más de 2000</h2>
+						    <p>referencias</p>
+						    <div class="btn"><a href="shop.html">Ver más</a></div>
+						 </div> -->
+						 <div class="clear"></div>
+					 </div>
+			      </article>
+				  <article style="position: absolute; width: 100%; opacity: 0;"> 
+				   	 <div class="banner-wrap">
+					   	<div class="slider-left">
+							<img src="images/banner/banner_embase_7.png" alt=""/> 
+						</div>
+						 <!-- <div class="slider-right">
+						    <h2>Más de 2000</h2>
+						    <p>referencias</p>
+						    <div class="btn"><a href="shop.html">Ver más</a></div>
+						 </div> -->
+						 <div class="clear"></div>
+					 </div>
+			      </article>
+				  <article style="position: absolute; width: 100%; opacity: 0;"> 
+				   	 <div class="banner-wrap">
+					   	<div class="slider-left">
+							<img src="images/banner/banner_embase_8.png" alt=""/> 
+						</div>
+						 <!-- <div class="slider-right">
+						    <h2>Más de 2000</h2>
+						    <p>referencias</p>
+						    <div class="btn"><a href="shop.html">Ver más</a></div>
+						 </div> -->
+						 <div class="clear"></div>
+					 </div>
+			      </article>
 				</div>
                 <a class="wmuSliderPrev">Previous</a><a class="wmuSliderNext">Next</a>
                 <ul class="wmuSliderPagination">
