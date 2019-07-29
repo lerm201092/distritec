@@ -1,16 +1,39 @@
 function filtro(){
     var r=0;
     $("#cajaPrincipal").html("");
-    var consulta = "Select * from productos";
+    var consulta = "SELECT * FROM PRODUCTOS ";
     $("input[name=chk_precio]:checked").each(function(){
         if(r == 0){
-            consulta += " where pro_precio_uni between "+$(this).attr("min")+" AND "+$(this).attr("max");
+            consulta += " WHERE (PRO_PRECIO_UNI BETWEEN "+$(this).attr("min")+" AND "+$(this).attr("max");
         }else{
-            consulta += " or pro_precio_uni between "+$(this).attr("min")+" AND "+$(this).attr("max");
+            consulta += " OR PRO_PRECIO_UNI BETWEEN  "+$(this).attr("min")+" AND "+$(this).attr("max");
         }
         r++;
     });
+    if(r>0){
+        consulta += ") ";
+    }
+    var s = 0;
+    $("input[name=chk_capacidad]:checked").each(function(){
+        if(r == 0){
+            consulta += " where (PRO_CAPACIDAD BETWEEN  "+$(this).attr("min")+" AND "+$(this).attr("max");
+            s++;   
+        }else{
+            if(s==0){
+                consulta += " AND ( PRO_CAPACIDAD BETWEEN "+$(this).attr("min")+" AND "+$(this).attr("max");
+            }else{
+                consulta += " OR PRO_CAPACIDAD BETWEEN "+$(this).attr("min")+" AND "+$(this).attr("max");
+            }     
+            s++;     
+        }
 
+        r++;
+    });
+    if(s>0){
+        consulta += ") ";
+    }
+
+    console.log(consulta);
     obtenerProductos2(consulta);
 }
 
@@ -23,7 +46,6 @@ function obtenerProductos2(consulta) {
         type: "POST",
         data: parametros,
         success: function(resp){
-            console.log(resp);
             var json         = eval("(" + resp + ")");       
             var x=1; z=1;
             crearCaja(z);
@@ -66,7 +88,7 @@ function objeto2(array){
 
                 <h3 class='m_1' style='font-size:12px; font-weight:bold; color: #002183'>`+array[1]+`</h3>
 
-                <p class='m_2'>`+array[11]+`</p>
+                <p class='m_2'>`+array[2]+`</p>
 
                 <div class='grid_img'>
 
@@ -80,7 +102,7 @@ function objeto2(array){
 
                 </div>
 
-                <div class='price'>$ `+array[13]+`</div>
+                <div class='price'>$ `+array[3]+`</div>
 
             </div>
 

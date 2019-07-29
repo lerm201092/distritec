@@ -2,7 +2,7 @@
 	outline:none;
 	padding: 20px;
 	overflow: auto;
-	height: 200px;
+	height: auto;
 }
 .sky-form h4{
 	color: #555;

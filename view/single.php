@@ -251,11 +251,10 @@
 					<div id="col12">
 
 						<p style="font-weight: bold; font-size: 14px; margin-top: 20px;">Especificaciones</p>
-
 						<br>
 						<table>
 							<tr>
-								<th>Peso (Kg)</th>
+								<th>Peso (gr)</th>
 								<td id="td_peso">1</td>
 							</tr>
 							<tr>

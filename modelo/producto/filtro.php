@@ -14,16 +14,16 @@
   $datos = array();
   $datos = null;
   
-  while ($resultado = mysqli_fetch_array($registros))  
+  while ($r = mysqli_fetch_array($registros))  
   {
-    $datos[] = $resultado;
+    $datos[] = array(
+      0 => $r[0],
+      1 => $r[1],
+      2 => $r[11],
+      3 => $r[13],
+    );
   }
 
-  $json = json_encode( $datos, JSON_UNESCAPED_UNICODE ); // GENERA EL JSON CON LOS DATOS OBTENIDOS
-  
-  echo ( $json ) ; 
-
-  // MUESTRA EL JSON GENERADO
-  /*   header("Content-Type: text/html; charset=UTF-8"); */
-  /*   header('Content-Type: application/json'); */
+  $json = json_encode( $datos ); // GENERA EL JSON CON LOS DATOS OBTENIDOS  
+  echo  $json; 
 ?>

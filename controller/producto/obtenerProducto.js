@@ -1,85 +1,36 @@
 obtenerProductos();
 
-
-
-
-
 function obtenerProductos() {
-
     $.ajax({
-
         url: "../modelo/producto/obtenerProductos.php",
-
         type: "POST",
-
         data: null,
-
-        success: function(resp)
-
-        {
+        success: function(resp){
             console.log(resp);
-            var json         = eval("(" + resp + ")");
-
-            
-
+            var json         = eval("(" + resp + ")");       
             var x=1; z=1;
-
             crearCaja(z);
-
             for(var i=0; i<json.length; i++){
-
-                
-
                 var obj = objeto(json[i]);
-
                 $("#caja"+z).append(obj);  
-
-                 
-
                 if(x==3){
-
                     x=0;
-
                     z=z+1;
-
                     crearCaja(z);
-
                 }   
-
-                x++;                       
-
+                x++;
             }
-
         }
-
     });
-
 }
 
-
-
 function crearCaja(x){
-
     var html = `<!-- inicio de fila  `+x+` -->
-
-    <div id='caja`+x+`' class='box1'>			
-
-        
+    <div id='caja`+x+`' class='box1'>		        
 
     </div>
-
-    <!-- fin de fila  `+x+` -->
-
-    
-
-    `;
-
-
-
+    <!-- fin de fila  `+x+` -->`;
     $("#cajaPrincipal").append(html);
-
-
-
 }
 
 
@@ -96,7 +47,7 @@ function objeto(array){
 
                 <h3 class='m_1' style='font-size:12px; font-weight:bold; color: #002183'>`+array[1]+`</h3>
 
-                <p class='m_2'>`+array[11]+`</p>
+                <p class='m_2'>`+array[2]+`</p>
 
                 <div class='grid_img'>
 
@@ -110,7 +61,7 @@ function objeto(array){
 
                 </div>
 
-                <div class='price'>$ `+array[13]+`</div>
+                <div class='price'>$ `+array[3]+`</div>
 
             </div>
 
