@@ -7,7 +7,7 @@
 					<p><a href="https://distritec.blogspot.com/" target="_blank">Blog</a></p>
 				</div>
 				<div class="col-md-3 col-sm-6">
-					<p><a href="">Politicas del sitio</a></p>
+					<p><a href="./src/pdf/politicas_distritec.pdf" target="_blank">Politicas del sitio</a></p>
 				</div>
 				<div class="col-md-3 col-sm-6">
 					<p><a href="https://www.facebook.com/Distritec-Colombia-101730204507604/?modal=admin_todo_tour" target="_blank"><img src="./src/images/social/face.png" alt="Facebook"></a></p>
