@@ -72,7 +72,7 @@
 
                             <label class="checkbox">
 
-                                <input type="checkbox" name="checkbox" checked=""><i></i>301 - Superior</label>
+                                <input type="checkbox" name="chk_precio" max="99999999" min="1001"><i></i>1001 - Superior</label>
 
                         </div>
 
@@ -80,23 +80,25 @@
 
                             <label class="checkbox">
 
-                                <input type="checkbox" name="checkbox"><i></i>201 - 300</label>
+                                <input type="checkbox" name="chk_precio" max="1000" min="901"><i></i>901 - 1000</label>
 
                             <label class="checkbox">
 
-                                <input type="checkbox" name="checkbox"><i></i>101 - 200</label>
+                                <input type="checkbox" name="chk_precio" max="900" min="701"><i></i>701 - 900</label>
 
                             <label class="checkbox">
 
-                                <input type="checkbox" name="checkbox"><i></i>51 - 100</label>
+                                <input type="checkbox" name="chk_precio" max="700" min="401"><i></i>401 - 700</label>
 
                             <label class="checkbox">
 
-                                <input type="checkbox" name="checkbox"><i></i>0 - 50</label>
+                                <input type="checkbox" name="chk_precio" max="400" min="0"><i></i>0 - 400</label>
 
                         </div>
 
                     </div>
+
+                    <button onclick="filtro();">buscar</button>
 
 			</div>
 
@@ -131,7 +133,7 @@
     <?php include "./include/footer.php"; ?>
 
     <script src="../controller/producto/obtenerProducto.js"></script>
-
+    <script src="../controller/producto/filtro.js"></script>
 </body>
 
 

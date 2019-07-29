@@ -2,13 +2,13 @@
   header('Access-Control-Allow-Origin: *'); 
   header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
 
-
+    $consulta = $_POST["consulta"];
   require("../sesion/conexion.php"); // IMPORTA EL ARCHIVO CON LA CONEXION A LA DB
 
   $conexion = conexion(); // CREA LA CONEXION
 
   // REALIZA LA QUERY A LA DB
-  $registros = mysqli_query($conexion, "SELECT * FROM productos");
+  $registros = mysqli_query($conexion, $consulta);
   
   // RECORRE EL RESULTADO Y LO GUARDA EN UN ARRAY
   $datos = array();

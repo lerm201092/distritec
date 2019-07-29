@@ -9,6 +9,7 @@ function detalleProducto() {
         success: function(resp)
         {
 
+            console.log(resp);
             var json         = eval("(" + resp + ")");
             $("#imagenPrincipal").attr({"src": "./src/images/productos/"+json[0][0]+".jpg"});           
             $("#p_descripcion").text( json[0][1] );
