@@ -37,7 +37,7 @@ function crearCaja(x){
 
 function objeto(array){
 
-    var html = `<div class='col_1_of_single1 span_1_of_single1'>					
+    var html = `<div class='col_1_of_single1 span_1_of_single1' style='width:33.3%; height: 300px;'>					
 
     <a href='./single.php?ref=`+array[0]+`'>
 
