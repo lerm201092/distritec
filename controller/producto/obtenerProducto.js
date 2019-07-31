@@ -1,10 +1,13 @@
 obtenerProductos();
 
 function obtenerProductos() {
+    var parametros = {
+        "tipo" : tipo_producto_inicial
+    }
     $.ajax({
         url: "../modelo/producto/obtenerProductos.php",
         type: "POST",
-        data: null,
+        data: parametros,
         success: function(resp){
             console.log(resp);
             var json         = eval("(" + resp + ")");       

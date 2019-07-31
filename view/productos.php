@@ -65,7 +65,13 @@
         </div>
     </div>
     <?php include "./include/footer.php"; ?>
+    <script>
+        var tipo_producto_inicial = "<?php $x=$_GET["tipo"]; echo $x; ?>"; 
+        tipo_producto_inicial = tipo_producto_inicial.toUpperCase();
+    </script>
     <script src="../controller/producto/obtenerProducto.js"></script>
     <script src="../controller/producto/filtro.js"></script>
+
+
 </body>
 </html>

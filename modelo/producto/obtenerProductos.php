@@ -2,9 +2,12 @@
   require("../sesion/conexion.php"); // IMPORTA EL ARCHIVO CON LA CONEXION A LA DB
 
   $conexion = conexion(); // CREA LA CONEXION
-
+  $tipo = $_POST["tipo"];
   // REALIZA LA QUERY A LA DB
-  $registros = mysqli_query($conexion, "SELECT * FROM PRODUCTOS");
+  $registros = mysqli_query($conexion, "SELECT * 
+                                        FROM PRODUCTOS P, TIPO_PRODUCTO T 
+                                        WHERE P.PRO_REFERENCIA = T.ID
+                                              AND T.TIPO = '$tipo'");
   
   // RECORRE EL RESULTADO Y LO GUARDA EN UN ARRAY
   $datos = array();
