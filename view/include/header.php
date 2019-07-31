@@ -68,7 +68,7 @@
 
 				</li>
 
-  			   <li class="active grid"><a class="color4" href="./shop.php">Envases y tapas</a>
+  			   <li class="active grid"><a class="color4" href="./productos.php?tipo=envase">Envases y tapas</a>
 
 				    <div class="megapanel">
 
@@ -94,7 +94,7 @@
 
     			</li>				
 
-				<li><a class="color5" href="#">Atomizadores</a>
+				<li><a class="color5" href="./productos.php?tipo=atomizadores">Atomizadores</a>
 
 				<div class="megapanel">
 
@@ -120,7 +120,7 @@
 
 				</li>
 
-				<li><a class="color6" href="#">Desechables</a>
+				<li><a class="color6" href="./productos.php?tipo=desechable">Desechables</a>
 
 				<div class="megapanel">
 
@@ -146,7 +146,7 @@
 
 				</li>
 
-				<li><a class="color6" href="#">Estibas y piso</a>
+				<li><a class="color6" href="./productos.php?tipo=estibas">Estibas y piso</a>
 
 				<div class="megapanel">
 
@@ -172,7 +172,7 @@
 
 				</li>
 
-				<li><a class="color7" href="#">Zootecnia</a>
+				<li><a class="color7" href="./productos.php?tipo=zootecnia">Zootecnia</a>
 
 				<div class="megapanel">
 
@@ -196,7 +196,7 @@
 
 				</li>
 
-				<li><a class="color8" href="#">Embalaje y otros</a>
+				<li><a class="color8" href="./productos.php?tipo=embalaje">Embalaje y otros</a>
 
 				<div class="megapanel">
 
