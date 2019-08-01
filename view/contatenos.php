@@ -1,5 +1,15 @@
-<?php include "./include/head.php"; ?>
-<?php include "./include/header.php"; ?>
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Distritec</title>
+    <?php include "./include/head.php"; ?>
+    <!-- Estilos Propios -->
+    <link rel="stylesheet" href="./src/css/my_css/somos.css">
+</head>
+<body>
+
+    <?php include "./include/header.php"; ?>
+
 <div class="container">
   <div class="row"> 
     
@@ -75,4 +85,13 @@
     </section>
   </div>
 </div><br><br><br>
+
+
+
 <?php include "./include/footer.php"; ?>
+<?php include "./include/scriptComun.php"; ?>
+<script>
+    $("#li_contact").css("background", "#e60000");
+</script>
+</body>
+</html>

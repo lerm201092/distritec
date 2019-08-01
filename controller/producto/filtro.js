@@ -1,10 +1,13 @@
 function filtro(){
+    $("#cajaPrincipal").addClass("hide");
+    $("#cajaNohay").addClass("hide");
+    $("#cajaEspera").removeClass("hide");   
     var r=0;
     $("#cajaPrincipal").html("");
-    var consulta = "SELECT * FROM PRODUCTOS ";
+    var consulta = "SELECT P.* FROM PRODUCTOS P, TIPO_PRODUCTO T WHERE P.PRO_REFERENCIA = T.ID AND T.TIPO = UPPER('"+tipo_producto_inicial+"') ";
     $("input[name=chk_precio]:checked").each(function(){
         if(r == 0){
-            consulta += " WHERE (PRO_PRECIO_UNI BETWEEN "+$(this).attr("min")+" AND "+$(this).attr("max");
+            consulta += " AND ( PRO_PRECIO_UNI BETWEEN "+$(this).attr("min")+" AND "+$(this).attr("max");
         }else{
             consulta += " OR PRO_PRECIO_UNI BETWEEN  "+$(this).attr("min")+" AND "+$(this).attr("max");
         }
@@ -15,19 +18,12 @@ function filtro(){
     }
     var s = 0;
     $("input[name=chk_capacidad]:checked").each(function(){
-        if(r == 0){
-            consulta += " where (PRO_CAPACIDAD BETWEEN  "+$(this).attr("min")+" AND "+$(this).attr("max");
-            s++;   
-        }else{
-            if(s==0){
-                consulta += " AND ( PRO_CAPACIDAD BETWEEN "+$(this).attr("min")+" AND "+$(this).attr("max");
-            }else{
-                consulta += " OR PRO_CAPACIDAD BETWEEN "+$(this).attr("min")+" AND "+$(this).attr("max");
-            }     
-            s++;     
+        if(s == 0){
+            consulta += " AND (PRO_CAPACIDAD BETWEEN  "+$(this).attr("min")+" AND "+$(this).attr("max");  
+        }else{      
+            consulta += " OR PRO_CAPACIDAD BETWEEN "+$(this).attr("min")+" AND "+$(this).attr("max");               
         }
-
-        r++;
+        s++; 
     });
     if(s>0){
         consulta += ") ";
@@ -46,19 +42,31 @@ function obtenerProductos2(consulta) {
         type: "POST",
         data: parametros,
         success: function(resp){
-            var json         = eval("(" + resp + ")");       
-            var x=1; z=1;
-            crearCaja(z);
-            for(var i=0; i<json.length; i++){
-                var obj = objeto2(json[i]);
-                $("#caja"+z).append(obj);  
-                if(x==3){
-                    x=0;
-                    z=z+1;
-                    crearCaja2(z);
-                }   
-                x++;
-            }
+            var json         = eval("(" + resp + ")");    
+            if(json["error"]){
+                setTimeout(() => { 
+                    $("#cajaEspera").addClass("hide");    
+                    $("#pronohay").text("No se encontraron productos con las especificaciones requeridas.") ;         
+                    $("#cajaNohay").removeClass("hide");
+                }, 400);
+            } else{
+                var x=1; z=1;
+                crearCaja2(z);
+                for(var i=0; i<json.length; i++){
+                    var obj = objeto2(json[i]);
+                    $("#caja"+z).append(obj);  
+                    if(x==3){
+                        x=0;
+                        z=z+1;
+                        crearCaja2(z);
+                    }   
+                    x++;
+                }
+                setTimeout(() => { 
+                    $("#cajaEspera").addClass("hide");               
+                    $("#cajaPrincipal").removeClass("hide");
+                }, 400);
+            } 
         }
     });
 }

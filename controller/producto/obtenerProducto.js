@@ -9,20 +9,32 @@ function obtenerProductos() {
         type: "POST",
         data: parametros,
         success: function(resp){
-            console.log(resp);
-            var json         = eval("(" + resp + ")");       
-            var x=1; z=1;
-            crearCaja(z);
-            for(var i=0; i<json.length; i++){
-                var obj = objeto(json[i]);
-                $("#caja"+z).append(obj);  
-                if(x==3){
-                    x=0;
-                    z=z+1;
-                    crearCaja(z);
-                }   
-                x++;
-            }
+            var json         = eval("(" + resp + ")");    
+            if(json["error"]){
+                setTimeout(() => { 
+                    $("#cajaEspera").addClass("hide");    
+                    $("#pronohay").text("Te invitamos a seguir navegando en el sitio, hay una gran variedad de productos para vos!") ;             
+                    $("#cajaNohay").removeClass("hide");
+                }, 400);
+            } else{
+                var x=1; z=1;
+                crearCaja(z);
+                for(var i=0; i<json.length; i++){
+                    var obj = objeto(json[i]);
+                    $("#caja"+z).append(obj);  
+                    if(x==3){
+                        x=0;
+                        z=z+1;
+                        crearCaja(z);
+                    }   
+                    x++;
+                }
+                setTimeout(() => { 
+                    $("#cajaEspera").addClass("hide");               
+                    $("#cajaPrincipal").removeClass("hide");
+                }, 400);
+            } 
+            
         }
     });
 }
@@ -42,7 +54,7 @@ function objeto(array){
 
     var html = `<div class='col_1_of_single1 span_1_of_single1' style='width:33.3%; height: 300px;'>					
 
-    <a href='./single.php?ref=`+array[0]+`'>
+    <a href='./single.php?ref=`+array[0]+`&tipo=`+tipo_producto_inicial+`'>
 
         <div class='view1 view-fifth1'>
 

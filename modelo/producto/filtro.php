@@ -16,12 +16,19 @@
   
   while ($r = mysqli_fetch_array($registros))  
   {
-    $datos[] = array(
-      0 => $r[0],
-      1 => ($r[1]),
-      2 => ($r[11]),
-      3 => $r[13],
-    );
+    $nombre_fichero = "../../view/src/images/productos/".$r[0].".jpg";
+    if (file_exists($nombre_fichero)) {
+      $datos[] = array(
+        0 => $r[0],
+        1 => ($r[1]),
+        2 => ($r[11]),
+        3 => $r[13],
+      );
+    }
+  }
+
+  if($datos == null){
+    $datos["error"] = "error";
   }
 
   $json = json_encode( $datos ); // GENERA EL JSON CON LOS DATOS OBTENIDOS  

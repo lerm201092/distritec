@@ -24,7 +24,7 @@
 
 			</li>
 
-		</ul> -->
+		</ul> 
 
 		<div class="clear"></div>
 
@@ -40,7 +40,7 @@
 
 		<ul class="megamenu skyblue">
 
-			<li class="grid"><a class="color2 items" href="somos.php">Quiénes somos</a>
+			<li class="li_menu" id="li_qsomos"><a class="color2 items" href="somos.php">Quiénes somos</a>
 
 				<div class="megapanel">
 
@@ -66,7 +66,7 @@
 
 				</li>
 
-  			   <li class="active grid"><a class="color4" href="./productos.php?tipo=envase">Envases y tapas</a>
+  			   <li class="li_menu" id="li_envase"><a class="color4" href="./productos.php?tipo=envase">Envases y tapas</a>
 
 				    <div class="megapanel">
 
@@ -92,7 +92,7 @@
 
     			</li>				
 
-				<li><a class="color5" href="./productos.php?tipo=atomizadores">Atomizadores</a>
+				<li class="li_menu" id="li_atomizadores"><a class="color5" href="./productos.php?tipo=atomizadores">Atomizadores</a>
 
 				<div class="megapanel">
 
@@ -118,7 +118,7 @@
 
 				</li>
 
-				<li><a class="color6" href="./productos.php?tipo=desechable">Desechables</a>
+				<li class="li_menu" id="li_desechable"><a class="color6" href="./productos.php?tipo=desechable">Desechables</a>
 
 				<div class="megapanel">
 
@@ -144,7 +144,7 @@
 
 				</li>
 
-				<li><a class="color6" href="./productos.php?tipo=estibas">Estibas y pisos</a>
+				<li class="li_menu" id="li_estibas"><a class="color6" href="./productos.php?tipo=estibas">Estibas y pisos</a>
 
 				<div class="megapanel">
 
@@ -170,7 +170,7 @@
 
 				</li>
 
-				<li><a class="color7" href="./productos.php?tipo=zootecnia">Zootecnia</a>
+				<li class="li_menu" id="li_zootecnia"><a class="color7" href="./productos.php?tipo=zootecnia">Zootecnia</a>
 
 				<div class="megapanel">
 
@@ -194,7 +194,7 @@
 
 				</li>
 
-				<li><a class="color8" href="./productos.php?tipo=embalaje">Embalaje y otros</a>
+				<li class="li_menu" id="li_embalaje"><a class="color8" href="./productos.php?tipo=embalaje">Embalaje y otros</a>
 
 				<div class="megapanel">
 
@@ -220,7 +220,7 @@
 
 				</li>
 
-				<li><a class="color10" href="./contatenos.php">Contáctenos</a></li>
+				<li class="li_menu" id="li_contact"><a class="color10" href="./contatenos.php">Contáctenos</a></li>
 
 		   </ul>
 

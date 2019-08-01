@@ -47,7 +47,9 @@
 
 <?php include "./include/footer.php"; ?>
 <?php include "./include/scriptComun.php"; ?>
-
+<script>
+    $("#li_qsomos").css("background", "#e60000");
+</script>
 </body>
 </html>
 

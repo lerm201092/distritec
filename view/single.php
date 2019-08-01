@@ -191,7 +191,7 @@
                                         <th>Dimensiones</th>
                                         <td id="td_d"></td>
                                     </tr>
-                                    <tr>
+                                    <tr id="tr_dr" class="hide">
                                         <th>Dimensiones de rosca</th>
                                         <td id="td_dr"></td>
                                     </tr>
@@ -212,7 +212,13 @@
             <?php include "./include/footer.php"; ?>
 
                 <script>
-                    var referencia = <?php $x = $_GET["ref"]; echo $x; ?>
+                    var referencia = <?php $x = $_GET["ref"]; echo $x; ?>;
+                    var tipo_producto = "<?php $x = $_GET["tipo"]; echo $x; ?>";
+                    if(tipo_producto == "ENVASE"){
+                           $("#tr_dr").removeClass("hide"); 
+                    }
+                    tipo_producto = tipo_producto.toLowerCase();
+                    $("#li_"+tipo_producto).css("background", "#e60000");
                 </script>
 
                 <script src="../controller/producto/detalleProducto.js"></script>
