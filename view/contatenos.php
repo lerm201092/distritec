@@ -46,7 +46,7 @@
       <div class="col-md-7">
         <h2 class="lined-heading"><span>Enviar un mensaje</span></h2>
         <p>Comuníquese con nosotros para brindarle una mejor atención e informarle sobre todos nuestros servicios y especialidades.</p>
-        <form class="clearfix mt50" role="form" method="post" action="../model/contact.php" name="contactform" id="contactform">
+        <form class="clearfix mt50" role="form" method="post" action="../modelo/contact.php" name="contactform" id="contactform">
           <!-- Error message -->
 		  <div id="message"></div>
           <div class="row">
@@ -79,7 +79,7 @@
             <label><span class="required">*</span> Pregunta de seguridad: &nbsp;&nbsp;&nbsp;1 + 1 =</label>		  
             <input name="verify" type="text" id="verify" value="" class="form-control" placeholder="Please enter the outcome" />
           </div>
-          <button type="submit" class="btn  btn-lg btn-primary">Enviar mensaje</button>
+          <button type="submit" class="btn btn-lg btn-primary">Enviar mensaje</button>
         </form>
       </div>
     </section>

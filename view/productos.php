@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Envases</title>
+    <title>Distritec</title>
     <?php include "./include/headShop.php"; ?> 
 </head>
 <body>
@@ -56,7 +56,7 @@
                             </label>
                         </div>
                     </div>
-                    <button onclick="filtro();">buscar</button>
+                    <button class="btn btn-primary" onclick="filtro();">Buscar</button>
 			</div>
             <div id="cajaPrincipal" class="cont span_2_of_3">
 
