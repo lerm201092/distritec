@@ -159,7 +159,9 @@
 
                                     <p id="p_uso"></p>
 
-                                    <p id="p_accesorios"></p>
+                                    <p id="p_accesorios"></p> <br>
+
+                                    <a href="./contatenos.php" class="btn btn-primary" role="button">Cotizar</a>
 
                                 </div>
 
@@ -188,11 +190,11 @@
                                         <td id="td_material"></td>
                                     </tr>
                                     <tr>
-                                        <th>Dimensiones</th>
+                                        <th>Dimensiones (diametro x altura)</th>
                                         <td id="td_d"></td>
                                     </tr>
                                     <tr id="tr_dr" class="hide">
-                                        <th>Dimensiones de rosca</th>
+                                        <th>Dimensiones rosca (diametro x altura)</th>
                                         <td id="td_dr"></td>
                                     </tr>
                                 </table>

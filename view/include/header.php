@@ -58,7 +58,7 @@
 
 						<div class="col1"></div>
 
-						<img src="./src/images/somos.png" alt="Quienes somos"/>
+						<a href="somos.php"><img src="./src/images/somos.png" alt="Quienes somos"/></a>
 
 					</div>
 
@@ -84,7 +84,7 @@
 
 						<div class="col1"></div>
 
-						<img src="./src/images/embase.png" alt="Embases"/>
+						<a href="./productos.php?tipo=envase"><img src="./src/images/embase.png" alt="Embases"/></a>
 
                         </div>
 
@@ -110,7 +110,7 @@
 
 					<div class="col1"></div>
 
-						<img src="./src/images/atomizador.png" alt="Atomizador"/>
+				    <a href="./productos.php?tipo=atomizadores"><img src="./src/images/atomizador.png" alt="Atomizador"/></a>
 
 					</div>
 
@@ -136,7 +136,7 @@
 
 					<div class="col1"></div>
 
-						<img src="./src/images/estibas.png" alt="Estibas"/>
+					<a href="./productos.php?tipo=desechable"><img src="./src/images/estibas.png" alt="Estibas"/></a>
 
 					</div>
 
@@ -162,7 +162,7 @@
 
 					<div class="col1"></div>
 
-						<img src="./src/images/estibas.png" alt="Estibas"/>
+					<a href="./productos.php?tipo=estibas"><img src="./src/images/estibas.png" alt="Estibas"/></a>
 
 					</div>
 
@@ -188,7 +188,7 @@
 
 						<div class="col1"></div>
 
-						<img src="./src/images/zoo.png" alt="Zoo"/>
+						<a href="./productos.php?tipo=zootecnia"><img src="./src/images/zoo.png" alt="Zoo"/></a>
 
     				</div>
 
@@ -212,7 +212,7 @@
 
 					<div class="col1"></div>
 
-                        <img src="./src/images/linea.png" alt="Linea de Embalaje"/>
+                    <a href="./productos.php?tipo=embalaje"><img src="./src/images/linea.png" alt="Linea de Embalaje"/></a>
 
 					</div>
 

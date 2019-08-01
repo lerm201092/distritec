@@ -2,7 +2,7 @@
  
     function conexion() {
 
-        $servidor = "LOCAL";    // 1. LOCAL    2. WEB
+        $servidor = "WEB";    // 1. LOCAL    2. WEB
 
         if($servidor == "LOCAL"){
           $conexion = mysqli_connect("localhost", "root", "", "distritec");  

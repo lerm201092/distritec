@@ -60,10 +60,6 @@ function objeto(array){
 
             <div class='top_box'>
 
-                <h3 class='m_1' style='font-size:12px; font-weight:bold; color: #002183'>`+array[1]+`</h3>
-
-                <p class='m_2'>`+array[2]+`</p>
-
                 <div class='grid_img'>
 
                     <div class='css3'><img src='./src/images/productos/`+array[0]+`.jpg' alt='' style='width:200px;height:180px;' /></div>
@@ -75,6 +71,10 @@ function objeto(array){
                     </div>
 
                 </div>
+
+                <h3 class='m_1' style='font-size:12px; font-weight:bold; color: #002183'>`+array[1]+`</h3>
+
+                <p class='m_2'>`+array[2]+`</p>
 
                 <div class='price'>$ `+array[3]+`</div>
 

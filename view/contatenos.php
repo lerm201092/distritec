@@ -26,7 +26,7 @@
             <p><b>Barranquilla - Colombia - Suramérica</b></p>
 
             <abbr title="Direccion">Dirección:</abbr> Carrera 70 No. 76 - 102<br/>
-            <abbr title="Phone">Telefono:</abbr> (5) 368 6247 - 353 0689<br/>
+            <abbr title="Phone">Teléfono:</abbr> (5) 368 6247 - 353 0689<br/>
             <abbr title="Cell">Celular:</abbr> 315 668 8080 - 300 805 7162<br/>
             <abbr title="Email">Email:</abbr> <a href="#"> goperaciones@distritec.com.co</a><br/><br/>
 
