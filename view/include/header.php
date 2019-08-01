@@ -10,11 +10,11 @@
 
 	    </div>
 
-		<ul class="icon2 sub-icon2 profile_img">
+		<!-- <ul class="icon2 sub-icon2 profile_img">
 
 			<li><a class="active-icon c2" href="#"> </a>
 
-				<!-- <ul class="sub-icon2 list">
+				 <ul class="sub-icon2 list">
 
 					<li><h3>Products</h3><a href=""></a></li>
 
@@ -24,7 +24,7 @@
 
 			</li>
 
-		</ul>
+		</ul> -->
 
 		<div class="clear"></div>
 
@@ -39,8 +39,6 @@
    		<!-- start header menu -->
 
 		<ul class="megamenu skyblue">
-
-		    <li><a class="color1" href="index.php">Home</a></li>
 
 			<li class="grid"><a class="color2 items" href="somos.php">Quiénes somos</a>
 
@@ -146,7 +144,7 @@
 
 				</li>
 
-				<li><a class="color6" href="./productos.php?tipo=estibas">Estibas y piso</a>
+				<li><a class="color6" href="./productos.php?tipo=estibas">Estibas y pisos</a>
 
 				<div class="megapanel">
 

@@ -13,29 +13,19 @@
             <div class="panel-title"><i class="fa fa-star"></i> <strong>Contacto</strong></div>
           </div>
           <div class="panel-body">
-            <p><b>Referencia - contra referencia</b></p>
+            <p><b>Barranquilla - Colombia - Suramérica</b></p>
 
-            <abbr title="Phone">Tel:</abbr>(5) 578 1068 EXT: 127<br/>
-            <abbr title="Cell">Cel:</abbr>315 865 2435<br/>
-            <abbr title="Email">Email:</abbr> <a href="#">referenciaclinicasinaisvitais@gmail.com</a><br/><br/>
-
-            <p><b>Admisiones</b></p>
-
-            <abbr title="Phone">Tel:</abbr>(5) 578 1068 EXT: 113<br>
-            <abbr title="Email">Email:</abbr> <a href="#">admisiones@clinicasinaisvitais.com</a><br/><br/>
-
-            <p><b>Consulta externa</b></p>
-
-            <abbr title="Phone">Tel:</abbr>(5) 578 1068 EXT: 111 - 114 - 118<br>
-            <abbr title="Cell">Cel:</abbr>317 638 1535<br>
-            <abbr title="Email">Email:</abbr> <a href="#">consultaexterna@clinicasinaisvitais.com</a><br>
+            <abbr title="Direccion">Dirección:</abbr> Carrera 70 No. 76 - 102<br/>
+            <abbr title="Phone">Telefono:</abbr> (5) 368 6247 - 353 0689<br/>
+            <abbr title="Cell">Celular:</abbr> 315 668 8080 - 300 805 7162<br/>
+            <abbr title="Email">Email:</abbr> <a href="#"> goperaciones@distritec.com.co</a><br/><br/>
 
           </div>
         </div>
         <!-- GMap -->
 		<div class="mt30">
           <div id="map">
-            <p><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15718.038423826114!2d-73.8840097!3d9.9746963!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbd2e6e5ed4ba7eeb!2sCl%C3%ADnica+Sinais+Vitais!5e0!3m2!1ses!2sco!4v1563163776683!5m2!1ses!2sco" width="455" height="297" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+            <p><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15665.457377626752!2d-74.7976817!3d11.0112666!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x47756aa637ec96ab!2sDistritec+S.A.S.!5e0!3m2!1ses!2sco!4v1564634279847!5m2!1ses!2sco"width="455" height="297" frameborder="0" style="border:0" allowfullscreen></iframe></p>
           </div>
 		</div>
       </div>
@@ -44,8 +34,8 @@
     <!-- Contact form -->
     <section id="contact-form" class="mt50">
       <div class="col-md-7">
-        <h2 class="lined-heading"><span>Enviar un mensaje</span></h2>
-        <p>Comuníquese con nosotros para brindarle una mejor atención e informarle sobre todos nuestros productos, precios y descuentos por volumen: Estamos disponibles para usted en horario de oficina 8:00 am-12m. y de 2:00 p.m. -6:00 p.m. y así poder satisfacer cualquier inquietud, nuestro personal estará atento a todos sus comentarios.</p>
+        <h2 class="lined-heading"><span>¡Estaremos encantados de poder ayudarle!</span></h2>
+        <p class="texto">Comuníquese con nosotros para brindarle una mejor atención e informarle sobre todos nuestros productos, precios y descuentos por volumen: Estamos disponibles para usted en horario de oficina 8:00 am-12m. y de 2:00 p.m. -6:00 p.m. y así poder satisfacer cualquier inquietud, nuestro personal estará atento a todos sus comentarios.</p>
         <form class="clearfix mt50" role="form" method="post" action="../modelo/contact.php" name="contactform" id="contactform">
           <!-- Error message -->
 		  <div id="message"></div>
@@ -66,8 +56,8 @@
           <div class="form-group">
             <label for="subject" accesskey="S">Asunto</label>
             <select name="subject" id="subject" class="form-control">
-              <option value="Booking">Solicitud de información</option>
-              <option value="a Room">Interez laboral</option>
+              <option value="Booking">Solicitud de cotización</option>
+              <option value="a Room">Solicitud de más información</option>
               <option value="other">Otros</option>
             </select>
           </div>

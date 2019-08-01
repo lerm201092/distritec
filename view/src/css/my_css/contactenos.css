@@ -33,3 +33,15 @@ h1.lined-heading span, h2.lined-heading span, h3.lined-heading span, h4.lined-he
 .panel-default > .panel-heading {
 	border-bottom: 1px solid #ebebeb;
 }
+
+.texto{
+
+    text-align: justify;
+
+    margin-top: 8px;
+
+    color: #333;
+
+   font-family: 'Open Sans', sans-serif;
+
+}

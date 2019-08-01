@@ -8,7 +8,7 @@
 
 				   	<div class="banner-wrap">
 
-					   	<div class="slider-left">Más de 25 años de experiencia que marcan la diferencia.
+					   	<div class="slider-left">
 
 							<img src="./src/images/banner/banner_embase.png" alt=""/> 
 
