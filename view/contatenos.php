@@ -45,7 +45,7 @@
     <section id="contact-form" class="mt50">
       <div class="col-md-7">
         <h2 class="lined-heading"><span>Enviar un mensaje</span></h2>
-        <p>Comuníquese con nosotros para brindarle una mejor atención e informarle sobre todos nuestros servicios y especialidades.</p>
+        <p>Comuníquese con nosotros para brindarle una mejor atención e informarle sobre todos nuestros productos, precios y descuentos por volumen: Estamos disponibles para usted en horario de oficina 8:00 am-12m. y de 2:00 p.m. -6:00 p.m. y así poder satisfacer cualquier inquietud, nuestro personal estará atento a todos sus comentarios.</p>
         <form class="clearfix mt50" role="form" method="post" action="../modelo/contact.php" name="contactform" id="contactform">
           <!-- Error message -->
 		  <div id="message"></div>
