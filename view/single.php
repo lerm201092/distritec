@@ -189,7 +189,11 @@
                                     </tr>
                                     <tr>
                                         <th>Dimensiones</th>
-                                        <td>10 x 15 x 50</td>
+                                        <td id="td_d"></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Dimensiones de rosca</th>
+                                        <td id="td_dr"></td>
                                     </tr>
                                 </table>
 
