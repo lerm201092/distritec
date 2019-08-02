@@ -76,7 +76,7 @@ function objeto(array){
 
                 <p class='m_2'>`+array[2]+`</p>
 
-                <div class='price'>$ `+array[3]+`</div>
+               <!-- <div class='price'>$ `+array[3]+`</div>-->
 
             </div>
 

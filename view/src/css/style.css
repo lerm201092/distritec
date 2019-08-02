@@ -6268,3 +6268,38 @@ p.cart a:hover {
 	width: 32px;
 	height: 32px;
 }
+
+.derechos{
+	font-size: 10px !important;
+}
+.titulo{
+
+    font-weight: bold;
+    font-size: 24px;
+    color: #002183;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.titulo_2{
+
+    font-weight: bold;
+    font-size: 16px;
+    color: #002183;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+.texto{
+    text-align: justify;
+    margin-top: 8px;
+	color: #333;
+	font-size: 15px;
+   font-family: 'Open Sans', sans-serif;
+}
+
+.img_emb{
+	width: 400px;
+	height: 400px;
+}

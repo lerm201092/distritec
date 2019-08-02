@@ -14,9 +14,7 @@
     <div id="subContenedor">
         <div id="quienes">
             <p class="titulo">¿Quiénes somos?</p>
-            <p class="texto">Somos una empresa comercializadora, fundada en la ciudad de Barranquilla, Colombia en el año 1991. Nos hemos dedicado a la atención y servicio de clientes con necesidades en el sector de empaques en todo el país, con énfasis en la costa norte colombiana.</p> 
-            <p class="texto">Producimos indirectamente en la modalidad de maquila y comercializamos productos manufacturados por industrias nacionales e internacionales.</p>
-            <p class="texto">Atendemos empresas del sector farmacéutico, cosméticos, alimentos, químicos, etc. que pueden certificar nuestra seriedad y cumplimiento.</p>
+            <p class="texto">Desde 1991 nos hemos dedicado a la atención y servicio de clientes con necesidades en el sector de empaques. Producimos indirectamente en la modalidad de maquila y comercializamos productos manufacturados por industrias nacionales e internacionales.</p>
         </div>
         <hr />
         <div id="mision">

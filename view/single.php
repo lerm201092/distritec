@@ -55,7 +55,7 @@
             
             th {
                 border: 1px solid #e7e7e7;
-                color: #656c86;
+                color: #000000;
                 background: #f3f3f3;
                 padding: 5px 10px;
                 text-align: left;

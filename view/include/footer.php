@@ -13,7 +13,7 @@
 					<p><a href="https://www.facebook.com/Distritec-Colombia-101730204507604/?modal=admin_todo_tour" target="_blank"><img class="social_t" src="./src/images/social/face.png" alt="Facebook"></a></p>
 				</div>
 				<div class="col-md-3 col-sm-6">
-					<p><a href="" target="_blank"><img class="social_t" src="./src/images/social/inst.png" alt="instagram"></a></a></p>
+					<p><a href="https://www.instagram.com/distritec_colombia/?hl=es-la" target="_blank"><img class="social_t" src="./src/images/social/inst.png" alt="instagram"></a></a></p>
 				</div>
 
        	 </div>
@@ -25,7 +25,7 @@
 			  	<p class ="text-left"> &copy; 2019 Distritec. All Rights Reserved.</p>
 			  </div>
 			  <div class="col-md-6 col-sm-12">
-				  <p class="text-right">Diseñada y desarrollado por <a href="http://www.solucionaar.com" target="_blank" >Solucionaar.</a> </p>
+				  <p class="text-right derechos">Diseñada y desarrollado por <a href="http://www.solucionaar.com" target="_blank" >Solucionaar.</a> </p>
 			  </div>
 
 				

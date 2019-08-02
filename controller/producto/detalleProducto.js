@@ -13,7 +13,7 @@ function detalleProducto() {
             var json         = eval("(" + resp + ")");
             $("#imagenPrincipal").attr({"src": "./src/images/productos/"+json[0][0]+".jpg"});           
             $("#p_descripcion").text( json[0][1] );
-            $("#p_precio").text("$ " + json[0][13] );
+            // $("#p_precio").text("$ " + json[0][13] );
             $("#p_referencia").html("Referencia: <span style='font-size:14px; font-weight:500'>" + json[0][0] +"</span>" );
             $("#p_uso").html("Usos y/o valores agregados: <span style='font-size:14px; font-weight:500'>" + json[0][4] +"</span>" );
             $("#p_accesorios").html("Accesorios: <span style='font-size:14px; font-weight:500'>" + json[0][2] +"</span>" );

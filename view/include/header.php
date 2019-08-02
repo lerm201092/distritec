@@ -144,7 +144,8 @@
 
 				</li>
 
-				<li class="li_menu" id="li_estibas"><a class="color6" href="./productos.php?tipo=estibas">Estibas y Pisos</a>
+				<!-- <li class="li_menu" id="li_estibas"><a class="color6" href="./productos.php?tipo=estibas">Estibas y Pisos</a> -->
+				<li class="li_menu" id="li_estibas"><a class="color6" href="./pisos.php">Estibas y Pisos</a>
 
 				<div class="megapanel">
 
@@ -162,7 +163,8 @@
 
 					<div class="col1"></div>
 
-					<a href="./productos.php?tipo=estibas"><img src="./src/images/estibas.png" alt="Estibas"/></a>
+					<!-- <a href="./productos.php?tipo=estibas"><img src="./src/images/estibas.png" alt="Estibas"/></a> -->
+					<a href="./pisos.php"><img src="./src/images/estibas.png" alt="Estibas"/></a>
 
 					</div>
 
@@ -194,7 +196,8 @@
 
 				</li>
 
-				<li class="li_menu" id="li_embalaje"><a class="color8" href="./productos.php?tipo=embalaje">Embalaje y Otros</a>
+				<!-- <li class="li_menu" id="li_embalaje"><a class="color8" href="./productos.php?tipo=embalaje">Embalaje y Otros</a> -->
+				<li class="li_menu" id="li_embalaje"><a class="color8" href="./embalaje.php">Embalaje y Otros</a>
 
 				<div class="megapanel">
 
@@ -212,7 +215,8 @@
 
 					<div class="col1"></div>
 
-                    <a href="./productos.php?tipo=embalaje"><img src="./src/images/linea.png" alt="Linea de Embalaje"/></a>
+                    <!-- <a href="./productos.php?tipo=embalaje"><img src="./src/images/linea.png" alt="Linea de Embalaje"/></a> -->
+					<a href="./embalaje.php"><img src="./src/images/linea.png" alt="Linea de Embalaje"/></a>
 
 					</div>
 
