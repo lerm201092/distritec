@@ -40,7 +40,7 @@
 
 		<ul class="megamenu skyblue">
 
-			<li class="li_menu" id="li_qsomos"><a class="color2 items" href="somos.php">Quiénes somos</a>
+			<li class="li_menu" id="li_qsomos"><a class="color2 items" href="somos.php">Quiénes Somos</a>
 
 				<div class="megapanel">
 
@@ -66,7 +66,7 @@
 
 				</li>
 
-  			   <li class="li_menu" id="li_envase"><a class="color4" href="./productos.php?tipo=envase">Envases y tapas</a>
+  			   <li class="li_menu" id="li_envase"><a class="color4" href="./productos.php?tipo=envase">Envases y Tapas</a>
 
 				    <div class="megapanel">
 
@@ -144,7 +144,7 @@
 
 				</li>
 
-				<li class="li_menu" id="li_estibas"><a class="color6" href="./productos.php?tipo=estibas">Estibas y pisos</a>
+				<li class="li_menu" id="li_estibas"><a class="color6" href="./productos.php?tipo=estibas">Estibas y Pisos</a>
 
 				<div class="megapanel">
 
@@ -194,7 +194,7 @@
 
 				</li>
 
-				<li class="li_menu" id="li_embalaje"><a class="color8" href="./productos.php?tipo=embalaje">Embalaje y otros</a>
+				<li class="li_menu" id="li_embalaje"><a class="color8" href="./productos.php?tipo=embalaje">Embalaje y Otros</a>
 
 				<div class="megapanel">
 
