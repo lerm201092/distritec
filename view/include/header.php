@@ -34,7 +34,7 @@
 						<div class="col1"></div>
 						<div class="col1"></div>
 						<a href="./productos.php?tipo=envase"><img src="./src/images/embase.png" alt="Embases"/></a>
-						<a href="./productos.php?tipo=envase"><img src="./src/images/banner/envases_distritec.jpg" alt="Embases"/></a>
+						<!--<a href="./productos.php?tipo=envase"><img src="./src/images/banner/envases_distritec.jpg" alt="Embases"/></a>-->
                         </div>
                     </div>
     			</li>
@@ -60,8 +60,8 @@
 					<div class="col1"></div>
 					<div class="col1"></div>
 					<div class="col1"></div>
-					<a href="./productos.php?tipo=desechable"><img src="./src/images/estibas.png" alt="Estibas"/></a>
 					<a href="./productos.php?tipo=desechable"><img src="./src/images/banner/desechables.jpg" alt="Estibas"/></a>
+					<!--<a href="./productos.php?tipo=desechable"><img src="./src/images/banner/desechables.jpg" alt="Estibas"/></a>-->
 					</div>
 				</div>
 				</li>
@@ -105,7 +105,7 @@
 					<div class="col1"></div>
                     <!-- <a href="./productos.php?tipo=embalaje"><img src="./src/images/linea.png" alt="Linea de Embalaje"/></a> -->
 					<a href="./embalaje.php"><img src="./src/images/linea.png" alt="Linea de Embalaje"/></a>
-					<a href="./embalaje.php"><img src="./src/images/banner/embalaje.jpg" alt="Linea de Embalaje"/></a>
+					<!-- <a href="./embalaje.php"><img src="./src/images/banner/embalaje.jpg" alt="Linea de Embalaje"/></a>-->
 					</div>
 				</div>
 				</li>

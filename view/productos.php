@@ -13,7 +13,7 @@
                     <!-- Filtro Capacidad -->
                     <h4>Capacidad</h4>
                     <div class="row row1 scroll-pane">
-                        <div class="col col-4">
+                        <div class="col col-12">
                             <label class="checkbox">
                                 <input type="checkbox" name="chk_capacidad" max="99999999" min="7001"><i></i>7001 - Superior
                             </label>
@@ -34,7 +34,7 @@
                     <!-- Fin filtro capacidad -->
                     <h4>Precios</h4>
                     <div class="row row1 scroll-pane">
-                        <div class="col col-4">
+                        <div class="col col-12">
                             <label class="checkbox">
                                 <input type="checkbox" name="chk_precio" max="99999999" min="1001"><i></i>1001 - Superior
                             </label>

@@ -15,7 +15,7 @@
     
     <!-- Contact details -->
   <section class="contact-details">
-      <div class="col-md-5">
+      <div class="col-md-12">
         <h2 class="lined-heading  mt50"><span>Dirección</span></h2>
         <!-- Panel -->
         <div class="panel panel-default text-center">

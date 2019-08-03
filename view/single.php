@@ -88,7 +88,7 @@
                     <section class="sky-form">
                         <h4>Capacidad</h4>
                         <div class="row row1 scroll-pane">
-                            <div class="col col-4">
+                            <div class="col col-12">
                                 <label class="checkbox">
                                     <input disabled type="checkbox" name="chk_capacidad" max="99999999" min="301"><i></i>301 - Superior
                                 </label>
@@ -116,7 +116,7 @@
                                     <input disabled type="checkbox" name="chk_precio" max="99999999" min="1001"><i></i>1001 - Superior
                                 </label>
                             </div>
-                            <div class="col col-4">
+                            <div class="col col-12">
                                 <label class="checkbox">
                                     <input disabled type="checkbox" name="chk_precio" max="1000" min="901"><i></i>901 - 1000
                                 </label>
