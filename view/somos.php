@@ -24,7 +24,7 @@
         <hr />
         <div id="vision">
             <p class="titulo">Visión</p>
-            <p class="texto">DISTRITEC SAS será en el año 2020 una empresa rentable con un grupo de empleados comprometidos y orgullosos de su labor. Tendremos unas políticas claras que nos permitan implementar un gobierno corporativo eficiente que ayude a la sostenibilidad de la empresa en los años porvenir.</p>
+            <p class="texto">DISTRITEC SAS será en el año 2020 una empresa rentable con un grupo de empleados comprometidos y orgullosos de su labor. Tendremos unas políticas claras que nos permitan implementar un gobierno corporativo eficiente que ayude a la sostenibilidad de la empresa en los años por venir.</p>
         </div>
         <hr />   
         <div id="valores">

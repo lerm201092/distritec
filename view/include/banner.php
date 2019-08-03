@@ -4,22 +4,6 @@
 
 			  <div class="wmuSliderWrapper">
 
-				  <article style="position: relative; width: 100%; opacity: 1;"> 
-
-				   	<div class="banner-wrap">
-
-					   	<div class="slider-left">
-
-							<img src="./src/images/banner/banner_embase.png" alt=""/> 
-
-						</div>
-
-						 <div class="clear"></div>
-
-					 </div>
-
-					</article>
-
 				   <article style="position: absolute; width: 100%; opacity: 0;"> 
 
 				   	 <div class="banner-wrap">
