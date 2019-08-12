@@ -15,44 +15,36 @@
                     <div class="row row1 scroll-pane">
                         <div class="col col-12">
                             <label class="checkbox">
-                                <input type="checkbox" name="chk_capacidad" max="99999999" min="7001"><i></i>7001 - Superior
+                                <input type="checkbox" onclick="filtro($(this));" name="chk_capacidad" num_filtro="4" checked><i></i>7001 - Superior
                             </label>
                             <label class="checkbox">
-                                <input type="checkbox" name="chk_capacidad" max="7000" min="5001"><i></i>5001 - 7000
+                                <input type="checkbox" onclick="filtro($(this));" name="chk_capacidad" num_filtro="3" checked><i></i>5001 - 7000
                             </label>
                             <label class="checkbox">
-                                <input type="checkbox" name="chk_capacidad" max="5000" min="2001"><i></i>2001 - 5000
+                                <input type="checkbox" onclick="filtro($(this));" name="chk_capacidad" num_filtro="2" checked><i></i>2001 - 5000
                             </label>
                             <label class="checkbox">
-                                <input type="checkbox" name="chk_capacidad" max="2000" min="1001"><i></i>1001 - 2000
+                                <input type="checkbox" onclick="filtro($(this));" name="chk_capacidad" num_filtro="1" checked><i></i>1001 - 2000
                             </label>
                             <label class="checkbox">
-                                <input type="checkbox" name="chk_capacidad" max="1000" min="0"><i></i>0 - 1000
+                                <input type="checkbox" onclick="filtro($(this));" name="chk_capacidad" num_filtro="0" checked><i></i>0 - 1000
                             </label>
                         </div>
                     </div>
                     <!-- Fin filtro capacidad -->
-                    <h4>Precios</h4>
+                    <!-- Filtro Forma -->
+                    <h4>Forma</h4>
                     <div class="row row1 scroll-pane">
                         <div class="col col-12">
                             <label class="checkbox">
-                                <input type="checkbox" name="chk_precio" max="99999999" min="1001"><i></i>1001 - Superior
+                                <input type="checkbox" onclick="filtro2($(this));" name="chk_forma" forma="cil" checked disabled><i></i>Cilindrica
                             </label>
                             <label class="checkbox">
-                                <input type="checkbox" name="chk_precio" max="1000" min="901"><i></i>901 - 1000
-                            </label>
-                            <label class="checkbox">
-                                <input type="checkbox" name="chk_precio" max="900" min="701"><i></i>701 - 900
-                            </label>
-                            <label class="checkbox">
-                                <input type="checkbox" name="chk_precio" max="700" min="401"><i></i>401 - 700
-                            </label>
-                            <label class="checkbox">
-                                <input type="checkbox" name="chk_precio" max="400" min="0"><i></i>0 - 400
+                                <input type="checkbox" onclick="filtro2($(this));" name="chk_forma" forma="rec" checked disabled><i></i>Rectangular
                             </label>
                         </div>
                     </div>
-                    <button class="btn btn-primary" onclick="filtro();">Buscar</button>
+                    <!-- Fin filtro capacidad -->
 			</div>
             <div id="cajaPrincipal" class="cont span_2_of_3 hide">
 

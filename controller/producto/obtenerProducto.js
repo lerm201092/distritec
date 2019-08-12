@@ -51,8 +51,28 @@ function crearCaja(x){
 
 
 function objeto(array){
+    var filtro_capacidad = 0;
+    var capacidad = array[4];
+    if(capacidad <= 1000 ){
+        filtro_capacidad = 0;
+    }
+    if(capacidad > 1000 && capacidad <= 2000 ){
+        filtro_capacidad = 1;
+    }
 
-    var html = `<div class='col_1_of_single1 span_1_of_single1' style='width:33.3%; height: 300px;'>					
+    if(capacidad > 2000 && capacidad <= 5000 ){
+        filtro_capacidad = 2;
+    }
+
+    if(capacidad > 5000 && capacidad <= 7000 ){
+        filtro_capacidad = 3;
+    }
+
+    if(capacidad > 7000){
+        filtro_capacidad = 4;
+    }
+
+    var html = `<div filtro_capacidad='`+filtro_capacidad+`' class='col_1_of_single1 span_1_of_single1' style='width:33.3%; height: 300px;'>					
 
     <a href='./single.php?ref=`+array[0]+`&tipo=`+tipo_producto_inicial+`'>
 
@@ -63,12 +83,6 @@ function objeto(array){
                 <div class='grid_img'>
 
                     <div class='css3'><img src='./src/images/productos/`+array[0]+`.jpg' alt='' style='width:200px;height:180px;' /></div>
-
-                    <div class='mask1'>
-
-                        <div class='info'>Ver más</div>
-
-                    </div>
 
                 </div>
 
