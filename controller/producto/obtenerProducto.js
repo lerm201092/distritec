@@ -72,7 +72,7 @@ function objeto(array){
         filtro_capacidad = 4;
     }
 
-    var html = `<div filtro_capacidad='`+filtro_capacidad+`' class='col_1_of_single1 span_1_of_single1' style='width:33.3%; height: 300px;'>					
+    var html = `<div tipo='cajaElemento' filtro_capacidad='`+filtro_capacidad+`' class='col_1_of_single1 span_1_of_single1' style='width:33.3%; height: 300px;'>					
 
     <a href='./single.php?ref=`+array[0]+`&tipo=`+tipo_producto_inicial+`'>
 
