@@ -9,7 +9,7 @@
 			 <li><a href="./contatenos.php" class="menu_l"><b>Contáctenos</b></a></li> 
 			 <li><a href="#"><img src="./src/images/social/what.png" alt="" class="social_t"></a></li> 
 			 <li><a href="https://www.facebook.com/Distritec-Colombia-101730204507604/?modal=admin_todo_tour" target="_blank"><img class="social_t" src="./src/images/social/face.png" alt="Facebook"></a></li> 
-			 <li><a hhref="https://www.instagram.com/distritec_colombia/?hl=es-la" target="_blank"><img class="social_t" src="./src/images/social/inst.png" alt="instagram"></a></li> 
+			 <li><a href="https://www.instagram.com/distritec_colombia/?hl=es-la" target="_blank"><img class="social_t" src="./src/images/social/inst.png" alt="instagram"></a></li> 
 		   </ul>
 		</div>
 		<div class="clear"></div>
