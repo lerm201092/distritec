@@ -26,9 +26,9 @@
             <abbr title="Phone">Teléfono:</abbr> (5) 368 6247 - 353 0689<br/>
             <abbr title="Cell">Celular:</abbr> 315 668 8080 - 300 805 7162<br/>
             <abbr title="Email">Email:</abbr> <a href="#">dcomercial@distritec.com.co</a><br/>
-            <abbr title="Email">Email:</abbr> <a href="#">ventas01@distritec.com.co</a><br/>
+            <!-- <abbr title="Email">Email:</abbr> <a href="#">ventas01@distritec.com.co</a><br/>
             <abbr title="Email">Email:</abbr> <a href="#">ventasexternas01@distritec.com.co</a><br/>
-            <abbr title="Email">Email:</abbr> <a href="#">goperaciones@distritec.com.co</a><br/>
+            <abbr title="Email">Email:</abbr> <a href="#">goperaciones@distritec.com.co</a><br/> -->
           </div>
         </div>
         <!-- GMap -->
@@ -42,7 +42,7 @@
     <!-- Contact form -->
       <div class="col-md-7">
         <h2 class="lined-heading mt50"><span>¡Estaremos encantados de poder ayudarle!</span></h2>
-        <p class="texto">Comuníquese con nosotros para brindarle una mejor atención e informarle sobre todos nuestros productos, precios y descuentos por volumen: Estamos disponibles para usted en horario de oficina 8:00 am-12m. y de 2:00 p.m. -6:00 p.m. y así poder satisfacer cualquier inquietud, nuestro personal estará atento a todos sus comentarios.</p>
+        <!-- <p class="texto">Comuníquese con nosotros para brindarle una mejor atención e informarle sobre todos nuestros productos, precios y descuentos por volumen: Estamos disponibles para usted en horario de oficina 8:00 am-12m. y de 2:00 p.m. -6:00 p.m. y así poder satisfacer cualquier inquietud, nuestro personal estará atento a todos sus comentarios.</p> -->
         <form class="clearfix mt50" role="form" method="post" action="../modelo/contact.php" name="contactform" id="contactform">
           <!-- Error message -->
         <div id="message"></div>
@@ -74,7 +74,7 @@
             </div>
             <div class="form-group">
               <label><span class="required">*</span> Pregunta de seguridad: &nbsp;&nbsp;&nbsp;1 + 1 =</label>		  
-              <input name="verify" type="text" id="verify" value="" class="form-control" placeholder="Please enter the outcome" />
+              <input name="verify" type="text" id="verify" value="" class="form-control" placeholder="Ingresar respuesta" />
             </div>
             <button type="submit" class="btn btn-lg btn-primary">Enviar mensaje</button>
           </form>

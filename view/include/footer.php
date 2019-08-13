@@ -21,10 +21,16 @@
 
        	   <div class="wrap">
 
-			  <div class="col-md-6 col-sm-12">
+			  <div class="col-md-3 col-sm-12">
 			  	<p class ="text-left"> &copy; 2019 Distritec. All Rights Reserved.</p>
 			  </div>
-			  <div class="col-md-6 col-sm-12">
+			  <div class="col-md-3 col-sm-12">
+			  	<p class ="text-left"> &copy; 2019 Distritec. All Rights Reserved.</p>
+			  </div>
+			  <div class="col-md-3 col-sm-12">
+			  	<p class ="text-left"> &copy; 2019 Distritec. All Rights Reserved.</p>
+			  </div>
+			  <div class="col-md-3 col-sm-12">
 				  <p class="text-right derechos">Diseñada y desarrollado por <a href="http://www.solucionaar.com" target="_blank" >Solucionaar.</a> </p>
 			  </div>
 
