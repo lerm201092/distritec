@@ -3,12 +3,22 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="./src/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />  
 <link href="./src/css/style.css" rel="stylesheet" type="text/css" media="all" />    
+<link href="./src/css/style2.css" rel="stylesheet" type="text/css" media="all" />   
 <link rel="icon" type="image/png" href="./src/images/favicon.png">
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 <link href="./src/css/form.css" rel="stylesheet" type="text/css" media="all" />
 <script type="text/javascript" src="./src/js/jquery.min.js"></script>
 <script type="text/javascript">
         $(document).ready(function() {
+
+            $(".a_menu").mouseover(function(){
+                $(this).children("p.a_p_menu").css("border-top", "3px solid #001285");
+            });
+        
+            $(".a_menu").mouseout(function(){
+                $(this).children("p.a_p_menu").css("border-top", "3px solid white");
+            });
+
             $(".dropdown img.flag").addClass("flagvisibility");
             $(".dropdown dt a").click(function() {
                 $(".dropdown dd ul").toggle();
@@ -23,6 +33,7 @@
             function getSelectedValue(id) {
                 return $("#" + id).find("dt a span.value").html();
             }
+
             $(document).bind('click', function(e) {
                 var $clicked = $(e.target);
                 if (! $clicked.parents().hasClass("dropdown"))

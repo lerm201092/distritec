@@ -2,7 +2,7 @@
  
     function conexion() {
 
-        $servidor = "WEB";  
+        $servidor = "LOCAL";  
         // $servidor = "WEB";  
 
         if($servidor == "LOCAL"){

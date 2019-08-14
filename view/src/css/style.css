@@ -115,65 +115,42 @@ body{
 	display: block;
 
 	margin: 0px 10px;
-
 	/*text-transform: uppercase;*/
-
 	font-size: 0.8125em;
-
 }
 
 .cssmenu ul li a:hover{
-
 	color:#555;
-
 }
 
 .header-bottom{
-
-	background:#002183;
-
+	background:white;
 	padding: 5px 0;
-
 }
 
 
 
 .bottom-menu {
-
 	float: right;
-
 }
 
 .bottom-menu ul li {
-
 	display: inline-block;
-
 }
 
 .bottom-menu ul li a {
-
 	color: #fff;
-
 	display: block;
-
 	margin: 0px 10px;
-
 	font-size: 0.8125em;
-
 }
 
 .h_nav h4{
-
 	border-bottom:1px solid rgb(236, 236, 236);
-
 	font-size: 1.1em;
-
 	color: #000;
-
 	line-height: 1.8em;
-
 	margin-bottom: 4%;
-
 }
 
 .h_nav h4.top{
@@ -1791,12 +1768,10 @@ ul.sub_list2 li a:hover{
 }
 
 .copy{
-
 	background:#08080b;
 	padding:10px 0;
 	display: block;
-	width: 101%;
-
+	width: 100%;
 }
 
 .copy p{
@@ -6265,6 +6240,7 @@ p.cart a:hover {
 .social_t{
 	width: 32px;
 	height: 32px;
+	vertical-align: middle;
 }
 
 .derechos{
@@ -6306,3 +6282,5 @@ p.cart a:hover {
 {
 	color: #002183 !important;
 }
+
+

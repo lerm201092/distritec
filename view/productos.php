@@ -6,7 +6,7 @@
 </head>
 <body>
     <?php include "./include/header.php"; ?>
-    <div class="login">
+    <div class="login" id="contenedor_principal" style="position : absolute ; width:100%;">
         <div class="wrap">
             <div class="rsidebar span_1_of_left">
                 <section class="sky-form">
