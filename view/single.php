@@ -109,27 +109,6 @@
                             </div>
                         </div>
                         <!-- Fin filtro capacidad -->
-                        <h4>Precios</h4>
-                        <div class="row row1 scroll-pane">
-                            <div class="col col-12">
-                                <label class="checkbox">
-                                    <input disabled type="checkbox" name="chk_precio" max="99999999" min="1001"><i></i>1001 - Superior
-                                </label>
-                            </div>
-                            <div class="col col-12">
-                                <label class="checkbox">
-                                    <input disabled type="checkbox" name="chk_precio" max="1000" min="901"><i></i>901 - 1000
-                                </label>
-                                <label class="checkbox">
-                                    <input disabled type="checkbox" name="chk_precio" max="900" min="701"><i></i>701 - 900
-                                </label>
-                                <label class="checkbox">
-                                    <input disabled type="checkbox" name="chk_precio" max="700" min="401"><i></i>401 - 700
-                                </label>
-                                <label class="checkbox">
-                                    <input disabled type="checkbox" name="chk_precio" max="400" min="0"><i></i>0 - 400
-                                </label>
-                            </div>
                     </section>
                     </div>
 
