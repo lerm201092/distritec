@@ -82,7 +82,7 @@ function objeto(array){
 
                 <div class='grid_img'>
 
-                    <div class='css3'><img src='./src/images/productos/`+array[0]+`.jpg' alt='' style='width:200px;height:180px;' /></div>
+                    <div class='css3'><img src='./src/images/productos/`+array[0]+`.jpg' alt='' style='width:200px;height:138px;' /></div>
 
                 </div>
 
