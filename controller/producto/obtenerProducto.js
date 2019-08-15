@@ -72,7 +72,7 @@ function objeto(array){
         filtro_capacidad = 4;
     }
 
-    var html = `<div tipo='cajaElemento' filtro_capacidad='`+filtro_capacidad+`' class='col_1_of_single1 span_1_of_single1 v_productos'>					
+    var html = `<div tipo='cajaElemento' filtro_capacidad='`+filtro_capacidad+`' class='col_1_of_single1 span_1_of_single1' style='width:33.3%; height: 300px;'>					
 
     <a href='./single.php?ref=`+array[0]+`&tipo=`+tipo_producto_inicial+`'>
 
@@ -82,7 +82,7 @@ function objeto(array){
 
                 <div class='grid_img'>
 
-                    <div class='css3 vista_p'><img src='./src/images/productos/`+array[0]+`.jpg' alt='' /></div>
+                    <div class='css3'><img src='./src/images/productos/`+array[0]+`.jpg' alt='' style='width:200px;height:138px;' /></div>
 
                 </div>
 

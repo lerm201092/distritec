@@ -30,6 +30,12 @@
     border-top:.5px solid #cccccc;
 }
 
+#menu_movil div li a {
+	font-weight: bold;
+	color: #001285;
+	font-size: 13px;
+}
+
 #menu_movil {
      border:1px solid #cccccc;
 }
@@ -47,6 +53,11 @@
 #menu_movil .container{
     margin: 0px;
     padding: 0;
+}
+
+#p_footer{
+	text-align: right;
+	width: 100%;
 }
 
 @media (max-width: 1200px) {
@@ -72,15 +83,26 @@
 
 .img_menu_movil{
     height: 20px;
-    list-style: none;
+	list-style: none;
+	margin-right: 20px;
+	margin-left: 10px;
 }
 
 #menu_movil{
     position: absolute;
     height: 100%;
-    width: 300px;
-    left: -300px;
+	width: 100%;
+	background: #000000c9;
+	color:black;
+	left: -100%;
+	z-index: 999;
 }
+
+#sub_menu_principal{
+	width : 300px;
+	background: white;
+}
+
 
 body{
     overflow-x: hidden; 
@@ -127,5 +149,10 @@ body{
 	.img_menu {
 		height: 50px;
 		width: auto;
+	}
+
+	#p_footer{
+		text-align: left;
+		width: 100%;
 	}
 }
