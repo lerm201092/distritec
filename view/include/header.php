@@ -72,32 +72,31 @@
 		</ul>
 		<li>
 			<a href="./productos.php?tipo=atomizadores" class="a_menu">
-				<p><img src="./src/images/menu/a.png" class="img_menu_movil">&nbsp;&nbsp;&nbsp;Atomizadores</p>
+				<p><img src="./src/images/menu/a.png" class="img_menu_movil">Atomizadores</p>
 			</a>
 		</li>
 		<li>
 			<a href="./productos.php?tipo=desechable" class="a_menu">
-				<p><img src="./src/images/menu/d.png" class="img_menu_movil">&nbsp;&nbsp;&nbsp;Desechables</p>	
+				<p><img src="./src/images/menu/d.png" class="img_menu_movil">Desechables</p>	
 			</a>
 		</li>
 		<li>
 			<a href="./pisos.php" class="a_menu">
-				<p><img src="./src/images/menu/p.jpg" class="img_menu_movil">&nbsp;&nbsp;&nbsp;Estibas y Pisos</p>		
+				<p><img src="./src/images/menu/p.jpg" class="img_menu_movil">Estibas y Pisos</p>		
 			</a>
 		</li>
 		<li>
 			<a  href="./productos.php?tipo=zootecnia" class="a_menu">
-				<p><img src="./src/images/menu/c.png" class="img_menu_movil">&nbsp;&nbsp;&nbsp;Zootecnia</p>
+				<p><img src="./src/images/menu/c.png" class="img_menu_movil">Zootecnia</p>
 			</a>
 		</li>
 		<li>
 			<a href="./embalaje.php" class="a_menu">
-				<p style="vertical-align: middle"><img src="./src/images/menu/l.jpg" class="img_menu_movil">&nbsp;&nbsp;&nbsp;Embalaje y Otros</p>
+				<p style="vertical-align: middle"><img src="./src/images/menu/l.jpg" class="img_menu_movil">Embalaje y Otros</p>
 			</a>
 		</li>
 	</div>
 </div>
-
 <div class="row" id="menu_principal">
 	<div class="container">
 		<li>
