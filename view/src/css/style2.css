@@ -60,14 +60,6 @@
 	width: 100%;
 }
 
-@media (max-width: 1200px) {
-	#menu_principal div li{
-		list-style: none;
-		display: inline-block; 
-		padding : 10px 5px;
-	}
-}
-
 .a_p_menu{
 	border-top: 3px solid white;
 }
@@ -112,6 +104,69 @@ body{
     text-decoration: none;
     list-style: none;
 }
+
+
+li#li_envases ul {
+    position: absolute;
+    z-index: 1000;
+    border: 1px solid #001285;
+    width: 320px;
+	background: white;
+	border: 1px solid #cccccc;
+	border-radius : 6px;
+	margin-top: 20px;
+	padding: 0px;
+}
+
+li#li_envases ul li{
+	/* background: yellow; */
+	border-bottom : 1px solid #cccccc;
+	width: 80%;
+	margin: 0 auto;
+	display: table;
+	font-size: 14px;
+}
+
+li#li_envases ul li:last-child{
+	border-bottom : none;
+	padding-bottom:15px;
+}
+#top_li {
+    width: 18px!important;
+    height: 20px!important;
+    background: #fff;
+	position: absolute;
+	transform: rotate(45deg);
+	margin-left:30px!important;
+	top: -10px;
+	border: none!important;
+	border-top: 1px solid #ccc!important;
+	border-left: 1px solid #ccc!important;
+	padding: 0!important;
+}
+
+img[alt=imagen_menu]{
+	height: 20px;
+}
+
+/*    *******************************************************************************************+    */
+/*    *******************************************************************************************+    */
+/*    *******************************************************************************************+    */
+/*    *******************************************************************************************+    */
+/*    *******************************************************************************************+    */
+/*    *******************************************************************************************+    */
+/*    *******************************************************************************************+    */
+/*    *******************************************************************************************+    */
+
+@media (max-width: 1200px) {
+	#menu_principal div li{
+		list-style: none;
+		display: inline-block; 
+		padding : 10px 5px;
+	}
+}
+
+
 
 @media (max-width: 1000px) {
 	#menu_principal div li{

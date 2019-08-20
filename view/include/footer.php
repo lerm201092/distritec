@@ -26,6 +26,11 @@
 			$("#menu_movil").css({"left" : "-100%", "transition" : "0.1s"});
 		}
 	});
+	$("#li_envases").hover(function(){
+		$("#submenu_envases").show();
+		}, function(){
+			$("#submenu_envases").hide();
+		});
 
 	function menu(){
 		$("#menu_movil").show();

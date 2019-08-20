@@ -5,6 +5,7 @@
 <link href="./src/css/style.css" rel="stylesheet" type="text/css" media="all" />
 <link href="./src/css/style2.css" rel="stylesheet" type="text/css" media="all" /> 
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 <link href="./src/css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
 <link href="./src/css/my_css/contactenos.css" rel="stylesheet" type="text/css" media="all" />
 <script type="text/javascript" src="./src/js/jquery.min.js"></script>

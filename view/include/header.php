@@ -97,13 +97,30 @@
 		</li>
 	</div>
 </div>
+
+
+
+
+
+
+
+
 <div class="row" id="menu_principal">
 	<div class="container">
-		<li>
-			<a href="./productos.php?tipo=envase" class="a_menu">
+		<li id="li_envases">
+			<a href="#" class="a_menu">
 				<p><img src="./src/images/menu/l.jpg" class="img_menu"></p>		
 				<p class="a_p_menu">Envases y Tapas</p>
 			</a>
+			<ul  id="submenu_envases" style="display:none">
+				<li id="top_li"></li>
+				<li><a href="#"> <img src="../view/src/images/menu/l.jpg" alt="imagen_menu"> Farmacéuticos</a></li>
+				<li><a href="#"> <img src="../view/src/images/menu/l.jpg" alt="imagen_menu"> Alimentos</a></li>
+				<li><a href="#"> <img src="../view/src/images/menu/l.jpg" alt="imagen_menu"> Cosméticos</a></li>		
+				<li><a href="#"> <img src="../view/src/images/menu/l.jpg" alt="imagen_menu"> Químicos Industriales y Aseo</a></li>
+				<li><a href="#"> <img src="../view/src/images/menu/l.jpg" alt="imagen_menu"> Variedades</a></li>	
+				<li><a href="#"> <img src="../view/src/images/menu/l.jpg" alt="imagen_menu"> Tapas y Tapones</a></li>		
+			</ul>
 		</li>
 		<li>
 			<a href="./productos.php?tipo=atomizadores" class="a_menu">
