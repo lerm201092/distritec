@@ -1,0 +1,108 @@
+#p_descripcion {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#p_precio {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFAF02;
+    margin-top: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#p_referencia {
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    margin-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#p_uso {
+    font-size: 14px;
+    font-weight: 550;
+    color: black;
+    margin-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#p_accesorios {
+    font-size: 14px;
+    font-weight: 550;
+    color: black;
+    margin-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+table {
+    width: 80%;
+    border: 1px solid #e7e7e7;
+    font-family: 'Open Sans', sans-serif;
+}
+
+th {
+    border: 1px solid #e7e7e7;
+    color: #000000;
+    background: #f3f3f3;
+    padding: 5px 10px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+td {
+    background: #ffffff;
+    border: 1px solid #e7e7e7;
+    padding: 5px 10px;
+    text-align: left;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#p_carac{
+    border: 1px solid #cccccc;
+    padding: 5px 8px;
+    width: 150px;
+    margin-top: 2px;
+    border-bottom: none;
+    position: relative;
+    top: 1px;
+    z-index: 9999;
+    background: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #533e9d;
+    font-size: 14px;
+    font-weight: 650;
+    margin-top: 25px;
+}
+
+table tr td:first-child{
+    background: #f5f5f5;
+    width: 160px;
+}
+
+#tabla_producto{
+    border: 1px solid #cccccc; 
+    padding: 15px 20px;
+    width:100%;
+}
+
+table{
+    width: 100%;
+}
+
+table tr td{
+    font-size: 12px;
+    padding: 4px 5px;
+}
+
+
+#descripcion_producto{
+    font-size: 15px;
+    font-weight: 700;
+    color: #001285;
+}

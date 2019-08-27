@@ -8,22 +8,35 @@ function detalleProducto() {
         data: "ref="+referencia,
         success: function(resp)
         {
+            try {
+                var json         = eval("(" + resp + ")");
+                console.log(json);
+                if(json){
+                    $("#img_producto").attr("src", "./src/images/productos/"+json[0][0]+".jpg");
+                    $("#descripcion_producto").text(json[0][1]);
+                    
+                    $("#td_referencia").text(json[0][0]);
+                    $("#td_usos").text(json[0][4]);
 
-            console.log(resp);
-            var json         = eval("(" + resp + ")");
-            $("#imagenPrincipal").attr({"src": "./src/images/productos/"+json[0][0]+".jpg"});           
-            $("#p_descripcion").text( json[0][1] );
-            // $("#p_precio").text("$ " + json[0][13] );
-            $("#p_referencia").html("Referencia: <span style='font-size:14px; font-weight:500'>" + json[0][0] +"</span>" );
-            $("#p_uso").html("Usos y/o valores agregados: <span style='font-size:14px; font-weight:500'>" + json[0][4] +"</span>" );
-            $("#p_accesorios").html("Accesorios: <span style='font-size:14px; font-weight:500'>" + json[0][2] +"</span>" );
-            $("#td_peso").text(json[0][6]);
-            $("#td_dr").text(json[0][7]+" x "+json[0][8]);
-            $("#td_d").text(json[0][9]+" x "+json[0][10]);
-          
-            $("#td_color").text(json[0][11]);
-            $("#td_material").text(json[0][12]);
+                    $("#td_accesorios").text(json[0][2]);
+                    $("#td_peso").text(json[0][6]);
+                    $("#td_color").text(json[0][11]);
 
+                    $("#td_material").text(json[0][12]);
+                    $("#td_diametro").text(json[0][9]);
+                    $("#td_altura").text(json[0][10]);
+
+                    $("#td_diametro_r").text(json[0][7]);
+                    $("#td_altura_r").text(json[0][8]);
+
+                }else{
+                    alert("Tabla vacia");
+                }
+            } catch (error) {
+                alert("Error");
+                console.error(error);
+                console.error(resp);
+            }
         }
     });
 }

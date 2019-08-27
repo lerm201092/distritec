@@ -1,6 +1,3 @@
-<div id="top_header" style="background: #001285; height:20px;">
-
-</div>
 <div class="header-top" id="top_menu_principal">
 	<div class="container">
 		<div class="row">
@@ -108,19 +105,23 @@
 <div class="row" id="menu_principal">
 	<div class="container">
 		<li id="li_envases">
-			<a href="#" class="a_menu">
+			<a href="./productos.php?tipo=envase" class="a_menu">
 				<p><img src="./src/images/menu/l.jpg" class="img_menu"></p>		
 				<p class="a_p_menu">Envases y Tapas</p>
 			</a>
-			<ul  id="submenu_envases" style="display:none">
-				<li id="top_li"></li>
-				<li><a href="#"> <img src="../view/src/images/menu/l.jpg" alt="imagen_menu"> Farmacéuticos</a></li>
-				<li><a href="#"> <img src="../view/src/images/menu/l.jpg" alt="imagen_menu"> Alimentos</a></li>
-				<li><a href="#"> <img src="../view/src/images/menu/l.jpg" alt="imagen_menu"> Cosméticos</a></li>		
-				<li><a href="#"> <img src="../view/src/images/menu/l.jpg" alt="imagen_menu"> Químicos Industriales y Aseo</a></li>
-				<li><a href="#"> <img src="../view/src/images/menu/l.jpg" alt="imagen_menu"> Variedades</a></li>	
-				<li><a href="#"> <img src="../view/src/images/menu/l.jpg" alt="imagen_menu"> Tapas y Tapones</a></li>		
-			</ul>
+			<div style="padding-top: 20px;">
+			<!-- <ul  id="submenu_envases"> -->
+				<ul  id="submenu_envases" style="display:none">
+					<li id="top_li"></li>
+					<li><a href="#"> <img src="../view/src/images/menu/l.jpg" alt="imagen_menu"> Farmacéuticos</a></li>
+					<li><a href="#"> <img src="../view/src/images/menu/l.jpg" alt="imagen_menu"> Alimentos</a></li>
+					<li><a href="#"> <img src="../view/src/images/menu/l.jpg" alt="imagen_menu"> Cosméticos</a></li>		
+					<li><a href="#"> <img src="../view/src/images/menu/l.jpg" alt="imagen_menu"> Químicos Industriales y Aseo</a></li>
+					<li><a href="#"> <img src="../view/src/images/menu/l.jpg" alt="imagen_menu"> Variedades</a></li>	
+					<li><a href="#"> <img src="../view/src/images/menu/l.jpg" alt="imagen_menu"> Tapas y Tapones</a></li>		
+				</ul>			
+			</div>
+
 		</li>
 		<li>
 			<a href="./productos.php?tipo=atomizadores" class="a_menu">

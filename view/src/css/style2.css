@@ -110,18 +110,18 @@ li#li_envases ul {
     position: absolute;
     z-index: 1000;
     border: 1px solid #001285;
-    width: 320px;
+    width: 300px;
 	background: white;
 	border: 1px solid #cccccc;
-	border-radius : 6px;
-	margin-top: 20px;
+	border-radius : 6px;	
 	padding: 0px;
+	/* padding-top: 20px; */
 }
 
 li#li_envases ul li{
 	/* background: yellow; */
 	border-bottom : 1px solid #cccccc;
-	width: 80%;
+	width: 85%;
 	margin: 0 auto;
 	display: table;
 	font-size: 14px;
