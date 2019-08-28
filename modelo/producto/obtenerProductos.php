@@ -15,7 +15,7 @@
   
   while ($r = mysqli_fetch_array($registros))  
   {
-    $nombre_fichero = "../../view/src/images/productos/".$r[0].".jpg";
+    $nombre_fichero = "../../view/src/images/productos/".$r[0].".png";
     if (file_exists($nombre_fichero)) {
       $datos[] = array(
         0 => $r[0],

@@ -12,7 +12,7 @@ function detalleProducto() {
                 var json         = eval("(" + resp + ")");
                 console.log(json);
                 if(json){
-                    $("#img_producto").attr("src", "./src/images/productos/"+json[0][0]+".jpg");
+                    $("#img_producto").attr("src", "./src/images/productos/"+json[0][0]+".png");
                     $("#descripcion_producto").text(json[0][1]);
                     
                     $("#td_referencia").text(json[0][0]);
