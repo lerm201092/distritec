@@ -27,9 +27,7 @@
             <p class="texto">DISTRITEC SAS será en el año 2020 una empresa rentable con un grupo de empleados comprometidos y orgullosos de su labor. Tendremos unas políticas claras que nos permitan implementar un gobierno corporativo eficiente que ayude a la sostenibilidad de la empresa en los años por venir.</p>
         </div>
         <hr />   
-        <div id="valores">
-            <p class="titulo">Valores</p> 
-            <p class="texto">
+            <!-- <p class="texto">
                 <li>Respeto</li>
                 <li>Honestidad</li>
                 <li>Transparencia</li>
@@ -38,10 +36,45 @@
                 <li>Perseverancia</li>
                 <li>Responsabilidad social</li>
                 <li>Ética</li>
-            <p>
-
-    </div>
+            <p> -->
 </div>
+
+<div class="container">
+    <p class="titulo">Valores</p> 
+        <div class="row">
+        <div class="col-md-1 col-sm-0"></div>
+        <div class="col-md-10 col-sm-12">
+            <img src="src/images/somos/valores.jpg" alt="valores" class="img-fluid">
+        </div>
+
+        <div class="col-md-1 col-sm-12"></div>
+        
+            <!-- <div class="col-md-1 col-sm-12">
+                <img src="src/images/somos/respeto.jpg" alt="respeto" class="img-fluid">
+            </div>
+            <div class="col-md-1 col-sm-12">
+                <img src="src/images/somos/honestidad.jpg" alt="honestidad" class="img-fluid">
+            </div>
+            <div class="col-md-1 col-sm-12">
+                <img src="src/images/somos/transparencia.jpg" alt="transparencia" class="img-fluid">
+            </div>
+            <div class="col-md-1 col-sm-12">
+                <img src="src/images/somos/seriedad.jpg" alt="seriedad" class="img-fluid">
+            </div>
+            <div class="col-md-1 col-sm-12">
+                <img src="src/images/somos/cumplimiento.jpg" alt="cumplimiento" class="img-fluid">
+            </div>
+            <div class="col-md-1 col-sm-12">
+                <img src="src/images/somos/responsabilidad.jpg" alt="responsabilidad" class="img-fluid">
+            </div>
+            <div class="col-md-1 col-sm-12">
+                <img src="src/images/somos/perseverancia.jpg" alt="perseverancia" class="img-fluid">
+            </div>
+            <div class="col-md-1 col-sm-12">
+                <img src="src/images/somos/etica.jpg" alt="etica" class="img-fluid">
+            </div> -->
+    </div>
+</div><br><br><br><br>
 
 <?php include "./include/footer.php"; ?>
 <?php include "./include/scriptComun.php"; ?>
