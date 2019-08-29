@@ -89,7 +89,7 @@
 		</li>
 		<li>
 			<a href="./embalaje.php" class="a_menu">
-				<p style="vertical-align: middle"><img src="./src/images/menu/l.jpg" class="img_menu_movil">Embalaje y Otros</p>
+				<p style="vertical-align: middle"><img src="./src/images/menu/e.png" class="img_menu_movil">Embalaje y Otros</p>
 			</a>
 		</li>
 	</div>
@@ -149,7 +149,7 @@
 		</li>
 		<li>
 			<a href="./embalaje.php" class="a_menu">
-				<p><img src="./src/images/menu/l.jpg" class="img_menu"></p>		
+				<p><img src="./src/images/menu/e.png" class="img_menu"></p>		
 				<p class="a_p_menu">Embalaje y Otros</p>
 			</a>
 		</li>
