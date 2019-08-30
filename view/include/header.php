@@ -79,7 +79,7 @@
 		</li>
 		<li>
 			<a href="./pisos.php" class="a_menu">
-				<p><img src="./src/images/menu/p.jpg" class="img_menu_movil">Estibas y Pisos</p>		
+				<p><img src="./src/images/menu/p.png" class="img_menu_movil">Estibas y Pisos</p>		
 			</a>
 		</li>
 		<li>
@@ -116,7 +116,7 @@
 					<li><a href="#"> <img src="../view/src/images/menu/l.jpg" alt="imagen_menu"> Farmacéuticos</a></li>
 					<li><a href="#"> <img src="../view/src/images/menu/l.jpg" alt="imagen_menu"> Alimentos</a></li>
 					<li><a href="#"> <img src="../view/src/images/menu/l.jpg" alt="imagen_menu"> Cosméticos</a></li>		
-					<li><a href="#"> <img src="../view/src/images/menu/l.jpg" alt="imagen_menu"> Químicos Industriales y Aseo</a></li>
+					<li><a href="#"> <img src="../view/src/images/menu/l.jpg" alt="imagen_menu"> Químicos</a></li>
 					<li><a href="#"> <img src="../view/src/images/menu/l.jpg" alt="imagen_menu"> Variedades</a></li>	
 					<li><a href="#"> <img src="../view/src/images/menu/l.jpg" alt="imagen_menu"> Tapas y Tapones</a></li>		
 				</ul>			
@@ -137,7 +137,7 @@
 		</li>
 		<li>
 			<a href="./pisos.php" class="a_menu">
-				<p><img src="./src/images/menu/p.jpg" class="img_menu"></p>		
+				<p><img src="./src/images/menu/p.png" class="img_menu"></p>		
 				<p class="a_p_menu">Estibas y Pisos</p>
 			</a>
 		</li>
