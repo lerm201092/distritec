@@ -6293,3 +6293,7 @@ p.cart a:hover {
 .color_f a{
 	color: #ffffff !important;
 }
+
+.n_border{
+	border: none !important; 
+}

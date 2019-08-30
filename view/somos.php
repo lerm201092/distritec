@@ -14,7 +14,9 @@
     <div id="subContenedor">
         <div id="quienes">
             <p class="titulo">¿Quiénes somos?</p>
-            <p class="texto">Desde 1991 nos hemos dedicado a la atención y servicio de clientes con necesidades en el sector de empaques. Producimos indirectamente en la modalidad de maquila y comercializamos productos manufacturados por industrias nacionales e internacionales.</p>
+            <p class="texto">Desde 1991 nos hemos dedicado a la atención y servicio de clientes con necesidades en el sector de empaques. Producimos indirectamente en la modalidad de maquila y comercializamos productos manufacturados por industrias nacionales e internacionales.</p><br><br>
+
+            <img src="src/images/quienes_somos.jpg" alt="" class="img-fluid img-thumbnail n_border">
         </div>
         <hr />
         <div id="mision">
@@ -71,7 +73,7 @@
                 <img src="src/images/somos/perseverancia.jpg" alt="perseverancia" class="img-fluid">
             </div>
             <div class="col-md-1 col-sm-12">
-                <img src="src/images/somos/etica.jpg" alt="etica" class="img-fluid">
+                <img src="src/images/somos/etica.jpg" alt="etica" class="img-fluid img-thumbnail">
             </div> -->
     </div>
 </div><br><br><br><br>
