@@ -81,9 +81,12 @@ body{
 .header-top{
 
 	background:#fff;
-
 	padding: 10px 0;
 
+}
+
+.header_t{
+	padding: 20px 0 ;
 }
 
 .logo{
@@ -6284,3 +6287,9 @@ p.cart a:hover {
 }
 
 
+.text-center{
+	text-align: center;
+}
+.color_f a{
+	color: #ffffff !important;
+}

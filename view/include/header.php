@@ -1,5 +1,5 @@
 <div class="header-top" id="top_menu_principal">
-	<div class="container">
+	<div class="container header_t">
 		<div class="row">
 			<div class="col-md-6">
 				<div class="logo">

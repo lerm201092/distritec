@@ -2,16 +2,16 @@
 	<div class="copy row">
 		<div class="wrap" style="padding:15px 15px 30px;">
 			<div class="col-md-3 col-sm-12">
-				<p class ="text-left"> &copy; 2019 Distritec. All Rights Reserved.</p>
+				<p class="text-center color_f"> &copy; 2019 Distritec. All Rights Reserved.</p>
 			</div>
-			<div class="col-md-2 col-sm-12">
-				<p class ="text-center"><a href="https://distritec.blogspot.com/" target="_blank">Blog</a></p>
+			<div class="col-md-3 col-sm-12">
+				<p class="text-center color_f"><a href="https://distritec.blogspot.com/" target="_blank">Blog</a></p>
 			</div>
-			<div class="col-md-2 col-sm-12">
-				<p class ="text-center"><a href="./src/pdf/politicas_distritec.pdf" target="_blank">Politicas del sitio</a></p>
+			<div class="col-md-3 col-sm-12">
+				<p class="text-center color_f"><a href="./src/pdf/politicas_distritec.pdf" target="_blank">Politicas del sitio</a></p>
 			</div>
-			<div class="col-md-5 col-sm-12">
-				<p id="p_footer">Diseñada y desarrollado por <a href="http://www.solucionaar.com" target="_blank" >Solucionaar.</a> </p>
+			<div class="col-md-3 col-sm-12">
+				<p id="p_footer" class="text-center color_f">Diseñada y desarrollado por <a href="http://www.solucionaar.com" target="_blank" >Solucionaar.</a> </p>
 			</div>			
 		</div>
 	</div>
