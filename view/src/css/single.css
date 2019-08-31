@@ -58,7 +58,7 @@ td {
     border: 1px solid #e7e7e7;
     padding: 5px 10px;
     text-align: left;
-    font-size: 14px;
+    font-size: 15px;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -75,9 +75,11 @@ td {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     color: #533e9d;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 650;
     margin-top: 25px;
+    padding-left:20px;
+    padding-right:20px;
 }
 
 table tr td:first-child{
@@ -93,10 +95,11 @@ table tr td:first-child{
 
 table{
     width: 100%;
+    margin-bottom: 10px;
 }
 
 table tr td{
-    font-size: 12px;
+    font-size: 14px;
     padding: 4px 5px;
 }
 
@@ -105,4 +108,8 @@ table tr td{
     font-size: 15px;
     font-weight: 700;
     color: #001285;
+}
+
+.item_menu{
+    width:16%;
 }

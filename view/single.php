@@ -17,7 +17,7 @@
     <div class="row" style="padding-bottom: 80px;">
         <div class="col-md-10 col-md-offset-1">
             <div class="row">
-                <div class="col-md-4" style="line-height: 400px; text-align:center">
+                <div class="col-md-5" style="line-height: 400px; text-align:center">
                     <div id="div_img">
                         <img src="./src/images/productos/1111.png" id="img_producto" sytle="max-height: 380px; width : auto;">
                     </div>
@@ -71,7 +71,9 @@
                             <td id="td_altura_r"></td>
                         </tr>
                     </table>
-                        </div>
+
+                        <p style="width:100%; text-align: right"><a href="#" class="btn btn-primary">Cotizar</a></p>
+                    </div>
                     </div>
                    
                 </div>

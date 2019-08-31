@@ -6,8 +6,8 @@
 					<a href="index.php"><img src="./src/images/logo.jpg" alt="Logo"/></a>
 				</div>
 			</div>
-			<div class="col-md-6" >
-				<div class="cssmenu">
+			<div class="col-md-6" style="text-align: right" >
+				<div class="cssmenu" style="width:100%;">
 					<ul>
 						<li><a href="./somos.php" class="menu_l"><b>Nuestra Empresa</b></a></li> 
 						<li><a href="./contatenos.php" class="menu_l"><b>Contáctenos</b></a></li> 
@@ -103,8 +103,8 @@
 
 
 <div class="row" id="menu_principal">
-	<div class="container">
-		<li id="li_envases">
+	<div class="container" id="menu_principal_cont">
+		<li  class="item_menu" id="li_envases">
 			<a href="./productos.php?tipo=envase" class="a_menu">
 				<p><img src="./src/images/menu/l.jpg" class="img_menu"></p>		
 				<p class="a_p_menu">Envases y Tapas</p>
@@ -123,31 +123,31 @@
 			</div>
 
 		</li>
-		<li>
+		<li class="item_menu" >
 			<a href="./productos.php?tipo=atomizadores" class="a_menu">
 				<p><img src="./src/images/menu/a.png" class="img_menu"></p>		
 				<p class="a_p_menu">Atomizadores</p>
 			</a>
 		</li>
-		<li>
+		<li class="item_menu" >
 			<a href="./productos.php?tipo=desechable" class="a_menu">
 				<p><img src="./src/images/menu/d.png" class="img_menu"></p>		
 				<p class="a_p_menu">Desechables</p>
 			</a>
 		</li>
-		<li>
+		<li class="item_menu" >
 			<a href="./pisos.php" class="a_menu">
 				<p><img src="./src/images/menu/p.png" class="img_menu"></p>		
 				<p class="a_p_menu">Estibas y Pisos</p>
 			</a>
 		</li>
-		<li>
+		<li class="item_menu" >
 			<a  href="./productos.php?tipo=zootecnia" class="a_menu">
 				<p><img src="./src/images/menu/c.png" class="img_menu"></p>		
 				<p class="a_p_menu">Zootecnia</p>
 			</a>
 		</li>
-		<li>
+		<li class="item_menu" >
 			<a href="./embalaje.php" class="a_menu">
 				<p><img src="./src/images/menu/e.png" class="img_menu"></p>		
 				<p class="a_p_menu">Embalaje y Otros</p>

@@ -1,5 +1,18 @@
 detalleProducto();
 
+$(document).ready(function(){
+    calcular_ancho_menu();
+});
+
+function calcular_ancho_menu(){
+    var ancho = $("#menu_principal_cont").width();
+    var ancho_sub = parseInt(ancho / 6);
+
+    
+
+    $("li.item_menu").css("width", );
+    console.log(ancho_sub + " ---> " + ancho);
+}
 
 function detalleProducto() {
     $.ajax({
