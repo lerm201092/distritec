@@ -32,43 +32,43 @@
                         <table border="1px">
                         <tr>
                             <td>Referencia</td>
-                            <td id="td_referencia"></td>
+                            <td id="td_referencia" style="font-weight:600"></td>
                         </tr>
                         <tr>
                             <td>Usos</td>
-                            <td id="td_usos"></td>
+                            <td id="td_usos" style="font-weight:600"></td>
                         </tr>
                         <tr>
                             <td>Accesorios</td>
-                            <td id="td_accesorios"></td>
+                            <td id="td_accesorios" style="font-weight:600"></td>
                         </tr>
                         <tr>
                             <td>Peso</td>
-                            <td id="td_peso"></td>
+                            <td id="td_peso" style="font-weight:600"></td>
                         </tr>
                         <tr>
                             <td>Color</td>
-                            <td id="td_color"></td>
+                            <td id="td_color" style="font-weight:600"></td>
                         </tr>
                         <tr>
                             <td>Material</td>
-                            <td id="td_material"></td>
+                            <td id="td_material" style="font-weight:600"></td>
                         </tr>
                         <tr>
                             <td>Diametro</td>
-                            <td id="td_diametro"></td>
+                            <td id="td_diametro" style="font-weight:600"></td>
                         </tr>
                         <tr>
                             <td>Altura</td>
-                            <td id="td_altura"></td>
+                            <td id="td_altura" style="font-weight:600"></td>
                         </tr>
                         <tr>
                             <td>Diametro de rosca</td>
-                            <td id="td_diametro_r"></td>
+                            <td id="td_diametro_r" style="font-weight:600"></td>
                         </tr>
                         <tr>
                             <td>Altura de rosca</td>
-                            <td id="td_altura_r"></td>
+                            <td id="td_altura_r" style="font-weight:600"></td>
                         </tr>
                     </table>
 
