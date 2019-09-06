@@ -52,18 +52,38 @@
 	<div class="container"  id="sub_menu_principal">
 		<li >
 			<a href="#" class="a_menu">
-				<p><img src="./src/images/menu/l.jpg" class="img_menu_movil">Envases y Tapas <span onclick="$('#ul_sub_menu').slideToggle()" class="pull-right" style="border:2px solid #ccc; margin-right:10px; padding: 0px 5px; font-weight:bold;">+</span></p>	
+				<p><img src="./src/images/menu/l.png" class="img_menu_movil">Envases y Tapas <span onclick="$('#ul_sub_menu').slideToggle()" class="pull-right" style="border:2px solid #ccc; margin-right:10px; padding: 0px 5px; font-weight:bold;">+</span></p>	
 			</a>
 		</li>
 		<ul id="ul_sub_menu" style="display:none;">
 			<li style="border-left: 5px solid #001285; padding-left: 25px; background: #eaeaea;">
 				<a href="./productos.php?tipo=envase" class="a_menu">
-					<p><img src="./src/images/menu/l.jpg" class="img_menu_movil">Envases y Tapas</p>	
+					<p>Farmacéuticos</p>	
 				</a>
 			</li>
 			<li style="border-left: 5px solid #001285; padding-left: 25px; background: #eaeaea;">
 				<a href="./productos.php?tipo=envase" class="a_menu">
-					<p><img src="./src/images/menu/l.jpg" class="img_menu_movil">Envases y Tapas</p>	
+					<p>Alimentos</p>	
+				</a>
+			</li>
+			<li style="border-left: 5px solid #001285; padding-left: 25px; background: #eaeaea;">
+				<a href="./productos.php?tipo=envase" class="a_menu">
+					<p>Cosméticos</p>	
+				</a>
+			</li>
+			<li style="border-left: 5px solid #001285; padding-left: 25px; background: #eaeaea;">
+				<a href="./productos.php?tipo=envase" class="a_menu">
+					<p>Químicos</p>	
+				</a>
+			</li>
+			<li style="border-left: 5px solid #001285; padding-left: 25px; background: #eaeaea;">
+				<a href="./productos.php?tipo=envase" class="a_menu">
+					<p>Variedades</p>	
+				</a>
+			</li>
+			<li style="border-left: 5px solid #001285; padding-left: 25px; background: #eaeaea;">
+				<a href="./productos.php?tipo=envase" class="a_menu">
+					<p>Tapas y Tapones</p>	
 				</a>
 			</li>
 		</ul>
@@ -74,7 +94,7 @@
 		</li>
 		<li>
 			<a href="./productos.php?tipo=desechable" class="a_menu">
-				<p><img src="./src/images/menu/d.png" class="img_menu_movil">Desechables</p>	
+				<p><img src="./src/images/menu/d.jpg" class="img_menu_movil">Desechables</p>	
 			</a>
 		</li>
 		<li>
@@ -101,19 +121,19 @@
 	<div class="container" id="menu_principal_cont" style="padding:0">
 		<li  class="item_menu" id="li_envases" style="width:16%">
 			<a href="./productos.php?tipo=envase" class="a_menu">
-				<p><img src="./src/images/menu/l.jpg" class="img_menu"></p>		
+				<p><img src="./src/images/menu/l.png" class="img_menu"></p>		
 				<p class="a_p_menu">Envases y Tapas</p>
 			</a>
 			<div style="padding-top: 20px;">
 			<!-- <ul  id="submenu_envases"> -->
 				<ul  id="submenu_envases" style="display:none">
 					<li id="top_li"></li>
-					<li><a href="#"> <img src="../view/src/images/menu/l.jpg" alt="imagen_menu"> Farmacéuticos</a></li>
-					<li><a href="#"> <img src="../view/src/images/menu/l.jpg" alt="imagen_menu"> Alimentos</a></li>
-					<li><a href="#"> <img src="../view/src/images/menu/l.jpg" alt="imagen_menu"> Cosméticos</a></li>		
-					<li><a href="#"> <img src="../view/src/images/menu/l.jpg" alt="imagen_menu"> Químicos</a></li>
-					<li><a href="#"> <img src="../view/src/images/menu/l.jpg" alt="imagen_menu"> Variedades</a></li>	
-					<li><a href="#"> <img src="../view/src/images/menu/l.jpg" alt="imagen_menu"> Tapas y Tapones</a></li>		
+					<li><a href="#">Farmacéuticos</a></li>
+					<li><a href="#">Alimentos</a></li>
+					<li><a href="#">Cosméticos</a></li>		
+					<li><a href="#">Químicos</a></li>
+					<li><a href="#">Variedades</a></li>	
+					<li><a href="#">Tapas y Tapones</a></li>		
 				</ul>			
 			</div>
 
@@ -126,7 +146,7 @@
 		</li>
 		<li class="item_menu"  style="width:16%">
 			<a href="./productos.php?tipo=desechable" class="a_menu">
-				<p><img src="./src/images/menu/d.png" class="img_menu"></p>		
+				<p><img src="./src/images/menu/d.jpg" class="img_menu"></p>		
 				<p class="a_p_menu">Desechables</p>
 			</a>
 		</li>
