@@ -2,10 +2,10 @@
 	<div class="wmuSlider example1" style="height: 560px;">
 		<!-- Inicio -  wmuSliderWrapper -->
 		<div class="wmuSliderWrapper">
-			<article style="position: absolute; width: 100%; opacity: 0;"> 
+			<article style="position: absolute; width: 100%; opacity: 0;">
 				<div class="banner-wrap">
 					<div class="slider-left">
-						<img src="./src/images/banner/banner_embase_2.png" alt=""/> 
+						<img src="./src/images/banner/banner_embase_2.jpg" alt=""/> 
 					</div>
 					<div class="clear"></div>
 				</div>
@@ -13,7 +13,7 @@
 			<article style="position: absolute; width: 100%; opacity: 0;">
 				<div class="banner-wrap">
 					<div class="slider-left">
-						<img src="./src/images/banner/banner_embase_3.png" alt=""/> 
+						<img src="./src/images/banner/banner_embase_3.jpg" alt=""/> 
 					</div>
 					<div class="clear"></div>
 				</div>
@@ -21,15 +21,7 @@
 			<article style="position: absolute; width: 100%; opacity: 0;">
 				<div class="banner-wrap">
 					<div class="slider-left">
-						<img src="./src/images/banner/banner_embase_4.png" alt=""/> 
-					</div>
-					<div class="clear"></div>
-				</div>
-			</article>
-			<article style="position: absolute; width: 100%; opacity: 0;">
-				<div class="banner-wrap">
-					<div class="slider-left">
-						<img src="./src/images/banner/banner_embase_5.png" alt=""/> 
+						<img src="./src/images/banner/banner_embase_4.jpg" alt=""/> 
 					</div>
 					<div class="clear"></div>
 				</div>
@@ -37,7 +29,7 @@
 			<article style="position: absolute; width: 100%; opacity: 0;"> 
 				<div class="banner-wrap">
 					<div class="slider-left">
-						<img src="./src/images/banner/banner_embase_6.png" alt=""/> 
+						<img src="./src/images/banner/banner_embase_5.jpg" alt=""/> 
 					</div>
 					<div class="clear"></div>
 				</div>
@@ -45,39 +37,7 @@
 			<article style="position: absolute; width: 100%; opacity: 0;"> 
 				<div class="banner-wrap">
 					<div class="slider-left">
-						<img src="./src/images/banner/banner_embase_7.png" alt=""/> 
-					</div>
-					<div class="clear"></div>
-				</div>
-			</article>
-			<article style="position: absolute; width: 100%; opacity: 0;"> 
-				<div class="banner-wrap">
-					<div class="slider-left">
-						<img src="./src/images/banner/banner_embase_8.png" alt=""/> 
-					</div>
-					<div class="clear"></div>
-				</div>
-			</article>
-			<article style="position: absolute; width: 100%; opacity: 0;"> 
-				<div class="banner-wrap">
-					<div class="slider-left">
-						<img src="./src/images/banner/banner_embase_9.jpg" alt=""/> 
-					</div>
-					<div class="clear"></div>
-				</div>
-			</article>
-			<article style="position: absolute; width: 100%; opacity: 0;"> 
-				<div class="banner-wrap">
-					<div class="slider-left">
-						<img src="./src/images/banner/banner_embase_10.jpg" alt=""/> 
-					</div>
-					<div class="clear"></div>
-				</div>
-			</article>
-			<article style="position: absolute; width: 100%; opacity: 0;"> 
-				<div class="banner-wrap">
-					<div class="slider-left">
-						<img src="./src/images/banner/banner_embase_11.jpg" alt=""/> 
+						<img src="./src/images/banner/banner_embase_6.jpg" alt=""/> 
 					</div>
 					<div class="clear"></div>
 				</div>
@@ -103,5 +63,5 @@
 			<li><a href="#" class="">4</a></li>
 		</ul>
 	</div>
-</div>
+</div><br><br>
 
