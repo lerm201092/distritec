@@ -104,7 +104,7 @@
 						<div class="col-lg-3">
 							<div class="col-12 form-group">
 								<img src="../vendor/src/img/user2-160x160.jpg" alt="" style="border:1px solid #ccc; width:100%; height:auto;">							
-								<span id="btnAddImage" class="fa fa-camera" title="agregar imagen"></span>
+								<input type="file" id="btnAddImage" class="fa fa-camera" title="agregar imagen"></span>
 							</div>
 							<div class="col-12 form-group">
 								<label for="">Referencia:</label>

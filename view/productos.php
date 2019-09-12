@@ -10,7 +10,8 @@
         <div class="wrap">
             <div class="rsidebar span_1_of_left">
                 <section class="sky-form">
-                    <!-- Filtro Capacidad -->
+                    
+                    <!-- Filtro Forma -->
                     <h4>Capacidad</h4>
                     <div class="row row1 scroll-pane">
                         <div class="col col-12">
@@ -32,6 +33,7 @@
                         </div>
                     </div>
                     <!-- Fin filtro capacidad -->
+
                     <!-- Filtro Forma -->
                     <h4 class="hide" tipo="filtro_forma">Forma</h4>
                     <div class="hide" tipo="filtro_forma" class="row row1 scroll-pane">

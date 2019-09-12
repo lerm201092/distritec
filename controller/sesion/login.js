@@ -18,6 +18,7 @@ function login() {
             }catch(error){
                 alert("Se ha presentado un error, con el servidor, por favor contactar al administrador de la pagina.")
                 console.error(error);
+                console.error(resp);
             }
         }
     });    
