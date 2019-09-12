@@ -72,7 +72,7 @@
                         </tr>
                     </table>
 
-                        <p style="width:100%; text-align: right"><a href="#" class="btn btn-primary">Cotizar</a></p>
+                        <p style="width:100%; text-align: right"><a href="./contatenos.php" class="btn btn-primary">Cotizar</a></p>
                     </div>
                     </div>
                    
