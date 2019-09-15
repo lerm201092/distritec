@@ -11,7 +11,18 @@ $rpta = array();
 $rpta = null;  
 
 	// si el elemento insertar no viene nulo llama al crud e inserta un libro
-	if (isset($_POST['insertar'])) {        
+	if (isset($_POST['insertar'])) { 
+
+        $file = $_FILES["file"];
+        $nombre = $file["name"];
+        $tipo = $file["type"];
+        $ruta_provisional = $file["tmp_name"];
+        $size = $file["size"];
+        $dimensiones = getimagesize($ruta_provisional);
+        $width = $dimensiones[0];
+        $height = $dimensiones[1];
+        $carpeta = "../../view/envases/img/".$_POST["referencia"].".png";
+
         $envase->setReferencia($_POST["referencia"]);
         $envase->setDescripcion($_POST["descripcion"]); 
         $envase->setAccesorios($_POST["accesorios"]);   
@@ -33,6 +44,7 @@ $rpta = null;
         $envase->setCodLinea($_POST["cod_linea"]);   
         try{
             $crud->insertar($envase);
+            move_uploaded_file($ruta_provisional, $carpeta);
             $rpta["proceso"]="OK";	
 	    }catch (PDOException $e) {
             $rpta["proceso"] = "ERROR";

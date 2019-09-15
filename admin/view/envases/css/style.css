@@ -1,0 +1,73 @@
+
+.content-wrapper {
+    background: #f7f7f7;
+    }
+    
+    .form-group label {
+    margin-bottom:0px;
+    font-weight: 500!important;
+    font-size: 14px;
+    padding-left: 4px;
+    }
+/*     
+    .form-group input {
+    font-size: 14px;
+    height: 28px;
+    line-height: 28px;
+    } */
+    
+    .row{
+    margin: 0;
+    margin-bottom: 15px;
+    }
+    
+    #btnAddImage{
+    position: absolute;
+    right: 25px;
+    bottom: 10px;
+    background: #fd7e1491;
+    color: white;
+    padding: 6px;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 40px;
+    width : 40px;
+    line-height: 30px;
+    text-align: center
+    }
+    
+    .nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+    }
+    
+    .myHr{
+        margin:0; margin-bottom: 15px; margin-top: -10px; margin-left: 20px; margin-right: 20px;
+    }
+    
+    .custom-file-label::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 3;
+        display: block;
+        height: calc(1.5em + .75rem);
+        padding: .375rem .75rem;
+        line-height: 1.5;
+        color: #495057;
+        content :""!important;
+        background-image : url("../../../view/vendor/src/img/cam.png")!important;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 20px 20px;min-width: 40px
+        /* position: relative; */
+    
+      }
+
+
+      form{
+        width:90%; margin: 0 auto; padding-bottom:30px;
+      }
+    
+    
