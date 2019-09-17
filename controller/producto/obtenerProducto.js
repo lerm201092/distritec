@@ -2,38 +2,48 @@ obtenerProductos();
 
 function obtenerProductos() {
     var parametros = {
-        "tipo" : tipo_producto_inicial
+        "tabla" : tipo_producto_inicial,
+        "linea" : linea_producto
     }
+
     $.ajax({
         url: "../modelo/producto/obtenerProductos.php",
         type: "POST",
         data: parametros,
         success: function(resp){
-            var json         = eval("(" + resp + ")");    
-            if(json["error"]){
-                setTimeout(() => { 
-                    $("#cajaEspera").addClass("hide");    
-                    $("#pronohay").text("Te invitamos a seguir navegando en el sitio, hay una gran variedad de productos para vos!") ;             
-                    $("#cajaNohay").removeClass("hide");
-                }, 400);
-            } else{
-                var x=1; z=1;
-                crearCaja(z);
-                for(var i=0; i<json.length; i++){
-                    var obj = objeto(json[i]);
-                    $("#caja"+z).append(obj);  
-                    if(x==3){
-                        x=0;
-                        z=z+1;
-                        crearCaja(z);
-                    }   
-                    x++;
-                }
-                setTimeout(() => { 
-                    $("#cajaEspera").addClass("hide");               
-                    $("#cajaPrincipal").removeClass("hide");
-                }, 400);
-            } 
+            try {
+                console.log(resp);
+                var json         = eval("(" + resp + ")");    
+                if(json["error"]){
+                    setTimeout(() => { 
+                        $("#cajaEspera").addClass("hide");    
+                        $("#pronohay").text("Te invitamos a seguir navegando en el sitio, hay una gran variedad de productos para vos!") ;             
+                        $("#cajaNohay").removeClass("hide");
+                    }, 400);
+                } else{
+                    var x=1; z=1;
+                    crearCaja(z);
+                    for(var i=0; i<json.length; i++){
+                        var obj = objeto(json[i]);
+                        $("#caja"+z).append(obj);  
+                        if(x==3){
+                            x=0;
+                            z=z+1;
+                            crearCaja(z);
+                        }   
+                        x++;
+                    }
+                    setTimeout(() => { 
+                        $("#cajaEspera").addClass("hide");               
+                        $("#cajaPrincipal").removeClass("hide");
+                    }, 400);
+                } 
+            } catch (error) {
+                alert("Error al cargar pagina");
+                console.error(error);
+                console.error(resp);
+            }
+
             
         }
     });
@@ -82,7 +92,7 @@ function objeto(array){
 
                 <div class='grid_img'>
 
-                    <div class='css3'><img src='./src/images/productos/`+array[0]+`.png' alt='' style='width:200px;height:200px;' /></div>
+                    <div class='css3'><img src='../admin/view/productos/`+array[0]+`.png' alt='' style='width:200px;height:200px;' /></div>
 
                 </div>
 

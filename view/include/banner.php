@@ -42,30 +42,6 @@
 					<div class="clear"></div>
 				</div>
 			</article>
-			<article style="position: absolute; width: 100%; opacity: 0;"> 
-				<div class="banner-wrap">
-					<div class="slider-left">
-						<img src="./src/images/banner/banner_embase_7.jpg" alt=""/> 
-					</div>
-					<div class="clear"></div>
-				</div>
-			</article>
-			<article style="position: absolute; width: 100%; opacity: 0;"> 
-				<div class="banner-wrap">
-					<div class="slider-left">
-						<img src="./src/images/banner/banner_embase_8.jpg" alt=""/> 
-					</div>
-					<div class="clear"></div>
-				</div>
-			</article>
-			<article style="position: absolute; width: 100%; opacity: 0;"> 
-				<div class="banner-wrap">
-					<div class="slider-left">
-						<img src="./src/images/banner/banner_embase_9.jpg" alt=""/> 
-					</div>
-					<div class="clear"></div>
-				</div>
-			</article>
 		</div>
 		<!-- Fin -  wmuSliderWrapper -->
 		<a class="wmuSliderPrev">Previous</a>

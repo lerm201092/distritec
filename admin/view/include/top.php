@@ -15,7 +15,7 @@
     <!-- Menu -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
         <!-- Brand Logo -->
-        <a href="index.html" class="brand-link">
+        <a href="./" class="brand-link">
         <img src="../vendor/src/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
             style="opacity: .8">
         <span class="brand-text font-weight-light">Distritec S.A.</span>
@@ -38,54 +38,22 @@
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
             <!-- Add icons to the links using the .nav-icon class
                 with font-awesome or any other icon font library -->         
-            <li class="nav-header">PRODUCTOS</li>
-            <li class="nav-item">
-                <a href="../envases/index.php" class="nav-link">
-                <i class="nav-icon fa fa-bitbucket"></i>
-                <p>
-                    Envases
-                </p>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">
-                <i class="nav-icon fa fa-bitbucket"></i>
-                <p>
-                    Atomizadores
-                </p>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">
-                <i class="nav-icon fa fa-archive"></i>
-                <p>
-                    Desechables
-                </p>
-                </a>
-            </li>
-            <li class="nav-item has-treeview">
-                <a href="#" class="nav-link">
-                <i class="nav-icon fa fa-envelope"></i>
-                <p>
-                    Estibas y pisos
-                    <i class="fa fa-angle-left right"></i>
-                </p>
-                </a>
-                <ul class="nav nav-treeview">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                    <i class="fa fa-circle nav-icon"></i>
-                    <p>Estibas</p>
-                    </a>
+                <li class="nav-header">PRODUCTOS</li>
+                    <li class="nav-item">
+                        <a href="../envases/" class="nav-link">
+                            <i class="nav-icon fa fa-bitbucket"></i>
+                            <p>Envases</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../atomizadores/" class="nav-link">
+                        <i class="nav-icon fa fa-bitbucket"></i>
+                        <p>
+                            Atomizadores
+                        </p>
+                        </a>
+                    </li>
                 </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                    <i class="fa fa-circle nav-icon"></i>
-                    <p>Pisos</p>
-                    </a>
-                </li>
-                </ul>
-            </li>
             </ul>
         </nav>
         <!-- /.sidebar-menu -->

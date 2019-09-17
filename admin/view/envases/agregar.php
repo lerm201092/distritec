@@ -10,17 +10,16 @@
 <link rel="stylesheet" href="../vendor/src/css/adminlte.min.css"             />
 <link rel="stylesheet" href="../vendor/src/css/fonts.css"                    />
 <link rel="stylesheet" href="../vendor/bootstrap/dist/css/bootstrap.min.css" />
-<link rel="stylesheet" href="//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
 <!-- Scripts -->
 <script src="../vendor/jquery/dist/jquery.min.js"></script>
 <script src="../vendor/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="../vendor/popper.js/dist/umd/popper.min.js"></script>
 <script src="../vendor/src/js/adminlte.min.js"></script>
-<script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 
 <!-- Propios  -->
 <link rel="stylesheet" href="./css/style.css" />
-<script src="./js/agregar.js" type="text/javascript"></script>	
+<link rel="stylesheet" href="./css/agregar.css" />
+<script src="../../controller/envases/agregar.js"></script>
 
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -40,7 +39,7 @@
 						<div class="col-sm-6">
 							<ol class="breadcrumb float-sm-right">
 								<li class="breadcrumb-item">Envases</li>
-								<li class="breadcrumb-item">Editar Productos</li>						
+								<li class="breadcrumb-item">Agregar</li>						
 							</ol>
 						</div>						
 					</div>
@@ -50,10 +49,12 @@
 
 			<section class="content">
 				<div class="container">
-					<!-- INICIO DEL FORMULARIO -->
-					<form id="formulario" action="../../controller/envases/controller.php" method="POST" enctype="multipart/form-data">
-						<div class="row">
 
+
+					<!-- INICIO DEL FORMULARIO -->
+					<form id="formulario" action="" method="POST" enctype="multipart/form-data">
+						<div class="row">
+							<p></p>
   							<!-- PRIMERA CARD -->
 							<div class="card col-12 nopadding">
 								<div class="card-body col-12 nopadding">
@@ -65,9 +66,11 @@
 
 										<div class="col-md-4">
 											<div class="col-12 form-group form-group-sm">
-												<img id="imgProducto" src="../vendor/src/img/img.png" alt="" style="border:1px solid #ccc; width:100%; height:auto;">							
+												<div style="width: 100%; border:1px solid #ccc;text-align: center; min-height: 150px;">
+													<img id="imgProducto" src="../vendor/src/img/img.png" alt="" style="width: auto; max-width:100%; max-height: 180px;">	
+												</div>																	
 												<div class="custom-file">
-													<input name="file" type="file" class="custom-file-input form-control form-control-sm"  id="file"/>
+													<input  name="file" type="file" class="custom-file-input form-control form-control-sm"  id="file" requerido="SI"/>
 													<label class="custom-file-label form-control form-control-sm" for="file">Seleccione imagen</label>
 													<input name="rutaImagen" type="hidden" value="" />
 												</div>
@@ -75,34 +78,34 @@
 											</div>
 										</div>
 
-										<div class="col-md-4">	
-											<div class="col-12 form-group">
-												<label for="">Referencia:</label>
-												<input type="number" class="form-control form-control-sm" name='referencia' required/>
+										<div class="col-md-8">	
+											<div class="row">
+												<div class="col-md-6 form-group">
+													<label for="">Referencia:</label>
+													<input type="number" class="form-control form-control-sm" name='referencia' requerido="SI"/>
+												</div>
+												<div class="col-md-6 form-group">
+													<label for="">Descripcion:</label>
+													<input type="text" class="form-control form-control-sm" name='descripcion' requerido="SI"/>
+												</div>
+												<div class="col-md-6 form-group">
+													<label for="">Cod. Unidad:</label>
+													<input type="text" class="form-control form-control-sm" name='cod_unidad' requerido="SI"/>
+												</div>
+												<div class="col-md-6 form-group">
+													<label for="">Accesorios:</label>
+													<input type="text" class="form-control form-control-sm" name='accesorios' />
+												</div>
+												<div class="col-md-6 form-group">
+													<label for="">Usos:</label>
+													<input type="text" class="form-control form-control-sm" name='usos' />
+												</div>	
+												<div class="col-md-6 form-group">
+													<label for="">Color:</label>
+													<input type="text" class="form-control form-control-sm" name='color'  />
+												</div>
 											</div>
-											<div class="col-12 form-group">
-												<label for="">Descripcion:</label>
-												<input type="text" class="form-control form-control-sm" name='descripcion' required/>
-											</div>
-											<div class="col-12 form-group">
-												<label for="">Cod. Unidad:</label>
-												<input type="text" class="form-control form-control-sm" name='cod_unidad' required/>
-											</div>
-										</div>
 
-										<div class="col-md-4">
-											<div class="col-12 form-group">
-												<label for="">Accesorios:</label>
-												<input type="text" class="form-control form-control-sm" name='accesorios' />
-											</div>
-											<div class="col-12 form-group">
-												<label for="">Usos:</label>
-												<input type="text" class="form-control form-control-sm" name='usos' />
-											</div>	
-											<div class="col-12 form-group">
-												<label for="">Color:</label>
-												<input type="text" class="form-control form-control-sm" name='color'  />
-											</div>
 										</div>
 									</div>
 								</div>
@@ -116,78 +119,75 @@
 										<div class="col-12 text-center">
 												<p style="border-bottom: 2px solid #ececec; padding: 20px 10px 8px 10px; margin: 15px 18px 25px;"><b>Caracteristicas y/o Dimensiones</b></p>
 										</div>
-										<div class="col-md-4">
-											<div class="col-12 form-group">
-												<label for="">Capacidad (ml):</label>
-												<input type="text" class="form-control form-control-sm" name='capacidad_ml' />
-											</div>
-											<div class="col-12 form-group">
-												<label for="">Peso (gr):</label>
-												<input type="text" class="form-control form-control-sm" name='peso_g'  />
-											</div>
-											<div class="col-12 form-group">
-												<label for="">Diametro (mm):</label>
-												<input type="text" class="form-control form-control-sm" name='diametro_mm' />
-											</div>
-											<div class="col-12 form-group">
-												<label for="">Precio Und:</label>
-												<input type="text" class="form-control form-control-sm" name='precio_und'  />
-											</div>
-											<div class="col-12 form-group">
-												<label for="">Linea de producto</label>
-												<select class="form-control form-control-sm" name='cod_linea' required>
-													<option value="">Esconja una opcion</option>
-													<option value="R">Rectangular</option>
-													<option value="C">Circular</option>
-												</select>
-											</div>
-										</div>
-										<div class="col-md-4">
-											<div class="col-12 form-group">
-												<label for="">Largo (mm):</label>
-												<input type="text" class="form-control form-control-sm" name='largo_mm'  />
-											</div>
-											<div class="col-12 form-group">
-												<label for="">Ancho (mm):</label>
-												<input type="text" class="form-control form-control-sm" name='ancho_mm' />
-											</div>
-											<div class="col-12 form-group">
-												<label for="">Diametro Rosca (mm):</label>
-												<input type="text" class="form-control form-control-sm" name='diametro_r'  />
-											</div>
-											<div class="col-12 form-group">
-												<label for="">Forma:</label>
-												<select class="form-control form-control-sm" name='cod_forma' required>
-													<option value="">Esconja una opcion</option>
-													<option value="R">Rectangular</option>
-													<option value="C">Circular</option>
-												</select>
-											</div>
-										</div>
-										<div class="col-md-4">
-											<div class="col-12 form-group">
-												<label for="">Altura Rosca (mm):</label>
-												<input type="text" class="form-control form-control-sm" name='altura_r'  />
-											</div>
-
-											<div class="col-12 form-group">
+											<div class="col-md-4 form-group">
 												<label for="">Material:</label>
 												<input type="text" class="form-control form-control-sm" name='material'  />
 											</div>
-											<div class="col-12 form-group">
+											<div class="col-md-4 form-group">
+												<label for="">Capacidad (ml):</label>
+												<input type="text" class="form-control form-control-sm" name='capacidad_ml' />
+											</div>
+											<div class="col-md-4 form-group">
+												<label for="">Peso (gr):</label>
+												<input type="text" class="form-control form-control-sm" name='peso_g'  />
+											</div>
+											<div class="col-md-4 form-group">
+												<label for="">Diametro (mm):</label>
+												<input type="text" class="form-control form-control-sm" name='diametro_mm' />
+											</div>
+											<div class="col-md-4 form-group">
+												<label for="">Largo (mm):</label>
+												<input type="text" class="form-control form-control-sm" name='largo_mm'  />
+											</div>
+											<div class="col-md-4 form-group">
+												<label for="">Ancho (mm):</label>
+												<input type="text" class="form-control form-control-sm" name='ancho_mm' />
+											</div>
+											<div class="col-md-4 form-group">
+												<label for="">Diametro Rosca (mm):</label>
+												<input type="text" class="form-control form-control-sm" name='diametro_r'  />
+											</div>
+											<div class="col-md-4 form-group">
+												<label for="">Altura Rosca (mm):</label>
+												<input type="text" class="form-control form-control-sm" name='altura_r'  />
+											</div>
+											<div class="col-md-4 form-group">
+												<label for="">Forma:</label>
+												<select class="form-control form-control-sm" name='cod_forma' requerido="SI">
+													<option value="">Esconja una opcion</option>
+													<option value="R">Rectangular</option>
+													<option value="C">Cilindrica</option>
+												</select>
+											</div>
+											<div class="col-md-4 form-group">
+												<label for="">Linea de producto</label>
+												<select class="form-control form-control-sm" name='cod_linea' requerido="SI">
+													<option value="">Esconja una opcion</option>
+													<option value="F">Farmaceuticos</option>
+													<option value="A">Alimentos</option>
+													<option value="C">Cosmeticos</option>
+													<option value="Q">Quimicos</option>
+													<option value="V">Variedades</option>
+													<option value="T">Tapas y Tapones</option>
+												</select>
+											</div>
+											<div class="col-md-4 form-group">
+												<label for="">Precio Und:</label>
+												<input type="text" class="form-control form-control-sm" name='precio_und'  />
+											</div>
+											<div class="col-md-4 form-group">
 												<label for="">Contenido Pack:</label>
 												<input type="text" class="form-control form-control-sm" name='contenido_pack'  />
 											</div>
-											<div class="col-12 form-group">
+											<div class="col-md-4 form-group">
 												<label for="">Precio Pack:</label>
 												<input type="text" class="form-control form-control-sm" name='precio_pack'  />
 											</div>
 
 											<div class="col-12 text-right" style="padding-top: 20px;">
-												<input type='hidden' name='insertar' value='insertar'>
-												<input class="btn btn-primary" type="submit" id="btnEnviar" name="btnEnviar" value="Registrar Producto">	
+												<input type='hidden' name='tabla' value='ENVASES'>
+												<a class="btn btn-primary" type="submit" id="btnEnviar" name="btnEnviar" value="Registrar Producto">Guardar</a>
 											</div>
-										</div>
 									</div>
 								</div>
 							</div>
@@ -195,6 +195,10 @@
 						</div>	
 			
 					</form>
+					<!-- /. FIN DEL FORMULARIO  -->
+
+
+
 				</div>
 			</section>
 			<!-- /.Contenido de la pagina -->
@@ -202,7 +206,8 @@
 		<!-- /.Contenedor principal -->
 		<?php include "../include/footer.php"; ?>
 	</div>
+	<p id="mensajeAlerta">COMPLETE LOS CAMPOS</p>
 	<!-- /.Lienzo de la pagina -->
-
+	<?php include "../include/modal.php"; ?>
 
 </html>

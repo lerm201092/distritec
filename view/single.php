@@ -91,7 +91,6 @@
                 $("#tr_dr").removeClass("hide"); 
         }
         tipo_producto = tipo_producto.toLowerCase();
-        $("#li_"+tipo_producto).css("background", "#e60000");
     </script>
 
     <script src="../controller/producto/detalleProducto.js"></script>

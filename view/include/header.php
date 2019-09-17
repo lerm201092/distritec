@@ -11,7 +11,7 @@
 					<ul>
 						<li><a href="./somos.php" class="menu_l"><b>Nuestra Empresa</b></a></li> 
 						<li><a href="./contatenos.php" class="menu_l"><b>Contáctenos</b></a></li> 
-						<li><a href="https://web.whatsapp.com/" target="_blank"><img src="./src/images/social/what.png" alt="" class="social_t"></a></li> 
+						<li><a href="#"><img src="./src/images/social/what.png" alt="" class="social_t"></a></li> 
 						<li><a href="https://www.facebook.com/Distritec-Colombia-101730204507604/?modal=admin_todo_tour" target="_blank"><img class="social_t" src="./src/images/social/face.png" alt="Facebook"></a></li> 
 						<li><a h ref="https://www.instagram.com/distritec_colombia/?hl=es-la" target="_blank"><img class="social_t" src="./src/images/social/inst.png" alt="instagram"></a></li> 
 					</ul>
@@ -38,7 +38,7 @@
 				<ul>
 					<li><a href="./somos.php" class="menu_l"><b>Nuestra Empresa</b></a></li> 
 					<li><a href="./contatenos.php" class="menu_l"><b>Contáctenos</b></a></li> 
-					<li><a href="https://web.whatsapp.com/" target="_blank"><img src="./src/images/social/what.png" alt="" class="social_t"></a></li> 
+					<li><a href="#"><img src="./src/images/social/what.png" alt="" class="social_t"></a></li> 
 					<li><a href="https://www.facebook.com/Distritec-Colombia-101730204507604/?modal=admin_todo_tour" target="_blank"><img class="social_t" src="./src/images/social/face.png" alt="Facebook"></a></li> 
 					<li><a h ref="https://www.instagram.com/distritec_colombia/?hl=es-la" target="_blank"><img class="social_t" src="./src/images/social/inst.png" alt="instagram"></a></li> 
 				</ul>
@@ -51,38 +51,38 @@
 <div class="row" id="menu_movil">
 	<div class="container"  id="sub_menu_principal">
 		<li >
-			<a href="#" class="a_menu">
+			<a href="./productos.php?tipo=envases&?linea=''" class="a_menu">
 				<p><img src="./src/images/menu/l.png" class="img_menu_movil">Envases y Tapas <span onclick="$('#ul_sub_menu').slideToggle()" class="pull-right" style="border:2px solid #ccc; margin-right:10px; padding: 0px 5px; font-weight:bold;">+</span></p>	
 			</a>
 		</li>
 		<ul id="ul_sub_menu" style="display:none;">
 			<li style="border-left: 5px solid #001285; padding-left: 25px; background: #eaeaea;">
-				<a href="./productos.php?tipo=envase" class="a_menu">
+				<a href="./productos.php?tipo=envases&?linea='F'" class="a_menu">
 					<p>Farmacéuticos</p>	
 				</a>
 			</li>
 			<li style="border-left: 5px solid #001285; padding-left: 25px; background: #eaeaea;">
-				<a href="./productos.php?tipo=envase" class="a_menu">
+				<a href="./productos.php?tipo=envases&?linea='A'" class="a_menu">
 					<p>Alimentos</p>	
 				</a>
 			</li>
 			<li style="border-left: 5px solid #001285; padding-left: 25px; background: #eaeaea;">
-				<a href="./productos.php?tipo=envase" class="a_menu">
+				<a href="./productos.php?tipo=envases&?linea='C'" class="a_menu">
 					<p>Cosméticos</p>	
 				</a>
 			</li>
 			<li style="border-left: 5px solid #001285; padding-left: 25px; background: #eaeaea;">
-				<a href="./productos.php?tipo=envase" class="a_menu">
+				<a href="./productos.php?tipo=envases&?linea='Q'" class="a_menu">
 					<p>Químicos</p>	
 				</a>
 			</li>
 			<li style="border-left: 5px solid #001285; padding-left: 25px; background: #eaeaea;">
-				<a href="./productos.php?tipo=envase" class="a_menu">
+				<a href="./productos.php?tipo=envases&?linea='V'" class="a_menu">
 					<p>Variedades</p>	
 				</a>
 			</li>
 			<li style="border-left: 5px solid #001285; padding-left: 25px; background: #eaeaea;">
-				<a href="./productos.php?tipo=envase" class="a_menu">
+				<a href="./productos.php?tipo=envases&?linea='T'" class="a_menu">
 					<p>Tapas y Tapones</p>	
 				</a>
 			</li>
@@ -120,7 +120,7 @@
 <div class="row" id="menu_principal">
 	<div class="container" id="menu_principal_cont" style="padding:0">
 		<li  class="item_menu" id="li_envases" style="width:16%">
-			<a href="./productos.php?tipo=envase" class="a_menu">
+			<a href="./productos.php?tipo=envases&linea=0" class="a_menu">
 				<p><img src="./src/images/menu/l.png" class="img_menu"></p>		
 				<p class="a_p_menu">Envases y Tapas</p>
 			</a>
@@ -128,18 +128,18 @@
 			<!-- <ul  id="submenu_envases"> -->
 				<ul  id="submenu_envases" style="display:none">
 					<li id="top_li"></li>
-					<li><a href="#">Farmacéuticos</a></li>
-					<li><a href="#">Alimentos</a></li>
-					<li><a href="#">Cosméticos</a></li>		
-					<li><a href="#">Químicos</a></li>
-					<li><a href="#">Variedades</a></li>	
-					<li><a href="#">Tapas y Tapones</a></li>		
+					<li><a href="./productos.php?tipo=envases&linea=F">Farmacéuticos</a></li>
+					<li><a href="./productos.php?tipo=envases&linea=A">Alimentos</a></li>
+					<li><a href="./productos.php?tipo=envases&linea=C">Cosméticos</a></li>		
+					<li><a href="./productos.php?tipo=envases&linea=Q">Químicos</a></li>
+					<li><a href="./productos.php?tipo=envases&linea=V">Variedades</a></li>	
+					<li><a href="./productos.php?tipo=envases&linea=T">Tapas y Tapones</a></li>		
 				</ul>			
 			</div>
 
 		</li>
 		<li class="item_menu"  style="width:16%">
-			<a href="./productos.php?tipo=atomizadores" class="a_menu">
+			<a href="./productos.php?tipo=atomizadores&linea=0" class="a_menu">
 				<p><img src="./src/images/menu/a.png" class="img_menu"></p>		
 				<p class="a_p_menu">Atomizadores</p>
 			</a>
