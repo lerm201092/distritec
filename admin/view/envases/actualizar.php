@@ -143,6 +143,10 @@
 												<input type="text" class="form-control form-control-sm" name='largo_mm'  />
 											</div>
 											<div class="col-md-4 form-group">
+												<label for="">Altura (mm):</label>
+												<input type="text" class="form-control form-control-sm" name='altura_mm'  />
+											</div>
+											<div class="col-md-4 form-group">
 												<label for="">Ancho (mm):</label>
 												<input type="text" class="form-control form-control-sm" name='ancho_mm' />
 											</div>

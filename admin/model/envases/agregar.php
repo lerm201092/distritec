@@ -47,7 +47,8 @@ if($cantRegistros > 0){
                                                 .$array["contenido_pack"]."','"
                                                 .$array["precio_pack"]."','"
                                                 .$array["cod_forma"]."','"
-                                                .$array["cod_linea"]."'"
+                                                .$array["cod_linea"]."','"
+                                                .$array["altura_mm"]."'"
                                                 .")";
 
     if ($conexion->query($consulta) === TRUE) {

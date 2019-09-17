@@ -36,8 +36,8 @@
     $contenido_pack = "contenido_pack = '".$_POST['contenido_pack']."', ";
     $precio_pack = "precio_pack = '".$_POST['precio_pack']."', ";
     $cod_forma = "cod_forma = '".$_POST['cod_forma']."', ";
-    $cod_linea = "cod_linea = '".$_POST['cod_linea']."' ";
-
+    $cod_linea = "cod_linea = '".$_POST['cod_linea']."', ";
+    $altura_mm = "altura_mm = '".$_POST['altura_mm']."' ";
     $where = "WHERE referencia = ".$referencia;
 
     $consulta = "UPDATE ".$tabla." SET ".$descripcion. 
@@ -58,6 +58,7 @@
                                      $precio_pack.
                                      $cod_forma.
                                      $cod_linea.
+                                     $altura_mm.
                                      $where;
 
 
