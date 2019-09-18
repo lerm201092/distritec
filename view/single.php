@@ -86,11 +86,11 @@
 
     <script>
         var referencia = <?php $x = $_GET["ref"]; echo $x; ?>;
-        var tipo_producto = "<?php $x = $_GET["tipo"]; echo $x; ?>";
-        if(tipo_producto == "ENVASE"){
+        var TABLA = "<?php $x = $_GET["tipo"]; echo $x; ?>";
+        if(TABLA == "ENVASE"){
                 $("#tr_dr").removeClass("hide"); 
         }
-        tipo_producto = tipo_producto.toLowerCase();
+        TABLA = TABLA.toLowerCase();
     </script>
 
     <script src="../controller/producto/detalleProducto.js"></script>

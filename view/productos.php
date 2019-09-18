@@ -72,7 +72,7 @@
         var linea_producto = "<?php $x=$_GET["linea"]; echo $x; ?>"; 
 
         tipo_producto_inicial = tipo_producto_inicial.toUpperCase();
-        if(tipo_producto_inicial == "ENVASE" || tipo_producto_inicial == "DESECHABLE"){
+        if(tipo_producto_inicial == "ENVASES" || tipo_producto_inicial == "DESECHABLES"){
             $("h4[tipo=filtro_forma]").removeClass("hide");
             $("div[tipo=filtro_forma]").removeClass("hide");
         }
