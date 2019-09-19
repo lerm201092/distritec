@@ -2,7 +2,7 @@
 
     $datos = array();
     $datos = null;
-    $tabla = $_POST["tabla"];
+    $tabla = strtoupper( $_POST["tabla"] );
     $referencia = $_POST["referencia"];
 
     $cantRegistros = 0;

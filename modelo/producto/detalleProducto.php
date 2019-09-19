@@ -3,7 +3,7 @@
   $conexion = conexion(); // CREA LA CONEXION
 
 
-  $tabla = $_POST["tabla"];
+  $tabla = strtoupper( $_POST["tabla"] );
   $id = $_POST["ref"];
     // RECORRE EL RESULTADO Y LO GUARDA EN UN ARRAY
     $datos = array();

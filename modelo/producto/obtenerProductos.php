@@ -2,7 +2,7 @@
   require("../sesion/conexion.php"); // IMPORTA EL ARCHIVO CON LA CONEXION A LA DB
 
   $conexion = conexion(); // CREA LA CONEXION
-  $tabla = $_POST["tabla"];
+  $tabla = strtoupper( $_POST["tabla"] );
   $where = $_POST["linea"];
   if($where != "0"){
     $where = " WHERE COD_LINEA = '$where'";

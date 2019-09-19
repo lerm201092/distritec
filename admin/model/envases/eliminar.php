@@ -1,7 +1,7 @@
 <?php
     $datos = array();
     $datos = null;
-    $tabla = $_POST["tabla"];
+    $tabla = strtoupper( $_POST["tabla"] );
     $ref   = $_POST["referencia"];
 
     require "../../../modelo/sesion/conexion.php";

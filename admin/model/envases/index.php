@@ -2,7 +2,7 @@
 
     $datos = array();
     $datos = null;
-    $tabla = $_POST["tabla"];
+    $tabla = strtoupper( $_POST["tabla"] );
 
     $btn1 = "<a href='#' class='btn btn-sm btn-primary'><i class='fa fa-home'></i></a>";
     $btn2 = "<a href='#' class='btn btn-sm btn-danger'><i class='fa fa-trash'></i></a>";
