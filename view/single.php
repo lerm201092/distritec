@@ -60,7 +60,7 @@
                         </tr>
                         <tr>
                             <td>Altura</td>
-                            <td id="td_altura" style="font-weight:600"></td>
+                            <td id="td_altura_mm" style="font-weight:600"></td>
                         </tr>
                         <tr>
                             <td>Diametro de rosca</td>
