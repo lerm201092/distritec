@@ -4,7 +4,7 @@
 	<title>Distritec</title>
     <?php include "./include/head.php"; ?>
     <!-- Estilos Propios -->
-    <link rel="stylesheet" href="./src/css/my_css/somos.css">
+    <link rel="stylesheet" href="./src/css/somos.css">
 </head>
 <body>
 

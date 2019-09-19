@@ -57,12 +57,11 @@
         line-height: 1.5;
         color: #495057;
         content :""!important;
-        background-image : url("../../../view/vendor/src/img/cam.png")!important;
+        background-image : url("./cam.png")!important;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 20px 20px;min-width: 40px
-        /* position: relative; */
-    
+        background-size: 20px 20px;
+        min-width: 40px;
       }
 
 

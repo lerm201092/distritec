@@ -11,7 +11,7 @@ function detalleProducto() {
                 var json         = eval("(" + resp + ")");
                 console.log(json);
                 if(json){
-                    $("#img_producto").attr("src", "../admin/view/productos/"+json[0][0]+".png");
+                    $("#img_producto").attr("src", "../../../distritec_img/img_productos/"+json[0][0]+".png");
                     $("#descripcion_producto").text(json[0][1]);
                     
                     $("#td_referencia").text(json[0][0]);

@@ -1,4 +1,4 @@
-<script type="text/javascript" src="./src/js/jquery.min.js"></script>
+<script type="text/javascript" src="../../../distritec_vendor/page/js/jquery.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
         $(".dropdown img.flag").addClass("flagvisibility");
@@ -30,10 +30,10 @@
         });
     });
 </script>
-<script type="text/javascript" src="./src/js/megamenu.js"></script>
+<script type="text/javascript" src="../../../distritec_vendor/page/js/megamenu.js"></script>
 <script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
-<script type="text/javascript" src="./src/js/move-top.js"></script>
-<script type="text/javascript" src="./src/js/easing.js"></script>
+<script type="text/javascript" src="../../../distritec_vendor/page/js/move-top.js"></script>
+<script type="text/javascript" src="../../../distritec_vendor/page/js/easing.js"></script>
 <script type="text/javascript">
     jQuery(document).ready(function($) {
         $(".scroll").click(function(event){		
@@ -42,7 +42,7 @@
         });
     });
 </script>
-<script src="./src/js/jquery.wmuSlider.js"></script> 
+<script src="../../../distritec_vendor/page/js/jquery.wmuSlider.js"></script> 
 <script>
         $('.example1').wmuSlider();         
 </script>

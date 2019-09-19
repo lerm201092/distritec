@@ -1,7 +1,7 @@
 <div id="divMsj">
   <div id="msjDivMsj">
         <p id="tituloMensaje" style="font-weight: bold; font-size:16px;">Cargando Información</p>
-        <p><img id="imgMensaje" src="../vendor/src/img/cargando.gif" alt="" style="max-width: 50px;"></p>
+        <p><img id="imgMensaje" src="../../../../distritec_img/img_crud/cargando.gif" alt="" style="max-width: 50px;"></p>
         <p id="textoMensaje">Espere un momento</p>
         <br>
 

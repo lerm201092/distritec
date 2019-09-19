@@ -133,7 +133,7 @@ function Mensaje(sw, titulo, imagen, texto){
         }
         $("#tituloMensaje").html(titulo) ;
         $("#textoMensaje").html(texto) ;
-        $("#imgMensaje").attr("src", "../vendor/src/img/"+imagen);
+        $("#imgMensaje").attr("src", "../../../../distritec_img/img_crud/"+imagen);
         $("#divMsj").removeClass("d-none");
     }
 }

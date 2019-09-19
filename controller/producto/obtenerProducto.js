@@ -92,7 +92,7 @@ function objeto(array){
 
                 <div class='grid_img'>
 
-                    <div class='css3'><img src='../admin/view/productos/`+array[0]+`.png' alt='' style='width:200px;height:200px;' /></div>
+                    <div class='css3'><img src='../../../distritec_img/img_productos/`+array[0]+`.png' alt='' style='width:200px;height:200px;' /></div>
 
                 </div>
 

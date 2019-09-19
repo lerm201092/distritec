@@ -19,7 +19,7 @@
             <div class="row">
                 <div class="col-md-5" style="line-height: 400px; text-align:center">
                     <div id="div_img">
-                        <img src="./src/images/productos/1111.png" id="img_producto" sytle="max-height: 380px; width : auto;">
+                        <img src="#" id="img_producto" sytle="max-height: 380px; width : auto;" title="Imagen del Producto" />
                     </div>
                 </div>
                 <div class="col-md-5">

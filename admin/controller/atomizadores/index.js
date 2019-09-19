@@ -19,7 +19,7 @@ function Mensaje(sw, titulo, imagen, texto){
         }
         $("#tituloMensaje").html(titulo) ;
         $("#textoMensaje").html(texto) ;
-        $("#imgMensaje").attr("src", "../vendor/src/img/"+imagen);
+        $("#imgMensaje").attr("src", "../../../../distritec_img/img_crud/"+imagen);
         $("#divMsj").removeClass("d-none");
     }
 }
@@ -44,7 +44,7 @@ function CargarTabla() {
 function ListarTabla(json) {
     var table = $('#tblEnvases').DataTable({
         data: json,
-        "language": { "url": "../vendor/datatable/spanish.json" },
+        "language": { "url": "../../../../distritec_vendor/crud/datatable/spanish.json" },
         "destroy": true,
         "columns": [
             { data: 'refe' },

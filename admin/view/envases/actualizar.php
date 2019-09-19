@@ -3,20 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Plantilla HTML LR</title>
-<!-- Styles -->
-<meta name="viewport" content="width=device-width, initial-scale=1"         />
-<link rel="stylesheet" href="../vendor/fontawesome/font-awesome.min.css"          />
-<link rel="stylesheet" href="../vendor/src/css/adminlte.min.css"             />
-<link rel="stylesheet" href="../vendor/src/css/fonts.css"                    />
-<link rel="stylesheet" href="../vendor/bootstrap/dist/css/bootstrap.min.css" />
-<link rel="stylesheet" href="//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
-<!-- Scripts -->
-<script src="../vendor/jquery/dist/jquery.min.js"></script>
-<script src="../vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="../vendor/popper.js/dist/umd/popper.min.js"></script>
-<script src="../vendor/src/js/adminlte.min.js"></script>
-<script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<title>Admin. Distritec</title>
+		<!-- Styles -->
+		<meta name="viewport" content="width=device-width, initial-scale=1"         />
+		<link rel="stylesheet" href="../../../../distritec_vendor/crud/fontawesome/font-awesome.min.css"          />
+		<link rel="stylesheet" href="../../../../distritec_vendor/crud/src/css/adminlte.min.css"             />
+		<link rel="stylesheet" href="../../../../distritec_vendor/crud/src/css/fonts.css"                    />
+		<link rel="stylesheet" href="../../../../distritec_vendor/crud/bootstrap/dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../../../distritec_vendor/crud/datatable/datatables.css" />
+		<!-- Scripts -->
+		<script src="../../../../distritec_vendor/crud/jquery/dist/jquery.min.js"></script>
+		<script src="../../../../distritec_vendor/crud/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="../../../../distritec_vendor/crud/popper.js/dist/umd/popper.min.js"></script>
+		<script src="../../../../distritec_vendor/crud/src/js/adminlte.min.js"></script>
+		<script src="../../../../distritec_vendor/crud/datatable/datatables.js"></script>
 
 <!-- Propios  -->
 <link rel="stylesheet" href="./css/style.css" />
@@ -70,7 +70,7 @@
 										<div class="col-md-4">
 											<div class="col-12 form-group form-group-sm">
 												<div style="width: 100%; border:1px solid #ccc;text-align: center; min-height: 150px;">
-													<img title="Imagen del producto" id="imgProducto" src="../productos/<?php echo $_GET["id"]; ?>.png" alt="" style="width: auto; max-width:100%; max-height: 180px;">	
+													<img title="Imagen del producto" id="imgProducto" src="../../../../distritec_img/img_productos/<?php echo $_GET["id"]; ?>.png" alt="" style="width: auto; max-width:100%; max-height: 180px;">	
 												</div>																	
 												<div class="custom-file">
 													<input  name="file" type="file" class="custom-file-input form-control form-control-sm"  id="file" />
@@ -193,7 +193,7 @@
 
 											<div class="col-12 text-right" style="padding-top: 20px;">
 												<input type='hidden' name='tabla' value='ENVASES'>
-												<a class="btn btn-primary" type="submit" id="btnEnviar" name="btnEnviar" value="Registrar Producto">Guardar</a>
+												<a class="btn btn-primary" id="btnEnviar" style="color:white;  font-weight:500; padding: 5px 20px;">Guardar</a>
 											</div>
 									</div>
 								</div>

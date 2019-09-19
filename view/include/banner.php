@@ -5,7 +5,7 @@
 			<article style="position: absolute; width: 100%; opacity: 0;">
 				<div class="banner-wrap">
 					<div class="slider-left">
-						<img src="./src/images/banner/banner_embase_2.jpg" alt=""/> 
+						<img src="../../../distritec_img/img_app/banner/banner_embase_2.jpg" alt=""/> 
 					</div>
 					<div class="clear"></div>
 				</div>
@@ -13,7 +13,7 @@
 			<article style="position: absolute; width: 100%; opacity: 0;">
 				<div class="banner-wrap">
 					<div class="slider-left">
-						<img src="./src/images/banner/banner_embase_3.jpg" alt=""/> 
+						<img src="../../../distritec_img/img_app/banner/banner_embase_3.jpg" alt=""/> 
 					</div>
 					<div class="clear"></div>
 				</div>
@@ -21,7 +21,7 @@
 			<article style="position: absolute; width: 100%; opacity: 0;">
 				<div class="banner-wrap">
 					<div class="slider-left">
-						<img src="./src/images/banner/banner_embase_4.jpg" alt=""/> 
+						<img src="../../../distritec_img/img_app/banner/banner_embase_4.jpg" alt=""/> 
 					</div>
 					<div class="clear"></div>
 				</div>
@@ -29,7 +29,7 @@
 			<article style="position: absolute; width: 100%; opacity: 0;"> 
 				<div class="banner-wrap">
 					<div class="slider-left">
-						<img src="./src/images/banner/banner_embase_5.jpg" alt=""/> 
+						<img src="../../../distritec_img/img_app/banner/banner_embase_5.jpg" alt=""/> 
 					</div>
 					<div class="clear"></div>
 				</div>
@@ -37,7 +37,7 @@
 			<article style="position: absolute; width: 100%; opacity: 0;"> 
 				<div class="banner-wrap">
 					<div class="slider-left">
-						<img src="./src/images/banner/banner_embase_6.jpg" alt=""/> 
+						<img src="../../../distritec_img/img_app/banner/banner_embase_6.jpg" alt=""/> 
 					</div>
 					<div class="clear"></div>
 				</div>
@@ -45,7 +45,7 @@
 			<article style="position: absolute; width: 100%; opacity: 0;"> 
 				<div class="banner-wrap">
 					<div class="slider-left">
-						<img src="./src/images/banner/banner_embase_7.jpg" alt=""/> 
+						<img src="../../../distritec_img/img_app/banner/banner_embase_7.jpg" alt=""/> 
 					</div>
 					<div class="clear"></div>
 				</div>
@@ -53,7 +53,7 @@
 			<article style="position: absolute; width: 100%; opacity: 0;"> 
 				<div class="banner-wrap">
 					<div class="slider-left">
-						<img src="./src/images/banner/banner_embase_8.jpg" alt=""/> 
+						<img src="../../../distritec_img/img_app/banner/banner_embase_8.jpg" alt=""/> 
 					</div>
 					<div class="clear"></div>
 				</div>
@@ -61,7 +61,7 @@
 			<article style="position: absolute; width: 100%; opacity: 0;"> 
 				<div class="banner-wrap">
 					<div class="slider-left">
-						<img src="./src/images/banner/banner_embase_9.jpg" alt=""/> 
+						<img src="../../../distritec_img/img_app/banner/banner_embase_9.jpg" alt=""/> 
 					</div>
 					<div class="clear"></div>
 				</div>

@@ -3,20 +3,20 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>Plantilla HTML LR</title>
+		<title>Admin. Distritec</title>
 		<!-- Styles -->
 		<meta name="viewport" content="width=device-width, initial-scale=1"         />
-		<link rel="stylesheet" href="../vendor/fontawesome/font-awesome.min.css"          />
-		<link rel="stylesheet" href="../vendor/src/css/adminlte.min.css"             />
-		<link rel="stylesheet" href="../vendor/src/css/fonts.css"                    />
-		<link rel="stylesheet" href="../vendor/bootstrap/dist/css/bootstrap.min.css" />
-		<link rel="stylesheet" href="../vendor/datatable/datatables.css" />
+		<link rel="stylesheet" href="../../../../distritec_vendor/crud/fontawesome/font-awesome.min.css"          />
+		<link rel="stylesheet" href="../../../../distritec_vendor/crud/src/css/adminlte.min.css"             />
+		<link rel="stylesheet" href="../../../../distritec_vendor/crud/src/css/fonts.css"                    />
+		<link rel="stylesheet" href="../../../../distritec_vendor/crud/bootstrap/dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../../../distritec_vendor/crud/datatable/datatables.css" />
 		<!-- Scripts -->
-		<script src="../vendor/jquery/dist/jquery.min.js"></script>
-		<script src="../vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-		<script src="../vendor/popper.js/dist/umd/popper.min.js"></script>
-		<script src="../vendor/src/js/adminlte.min.js"></script>
-		<script src="../vendor/datatable/datatables.js"></script>
+		<script src="../../../../distritec_vendor/crud/jquery/dist/jquery.min.js"></script>
+		<script src="../../../../distritec_vendor/crud/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="../../../../distritec_vendor/crud/popper.js/dist/umd/popper.min.js"></script>
+		<script src="../../../../distritec_vendor/crud/src/js/adminlte.min.js"></script>
+		<script src="../../../../distritec_vendor/crud/datatable/datatables.js"></script>
 
 		<link rel="stylesheet" href="./css/index.css">
 		<script src="../../controller/envases/index.js"></script>

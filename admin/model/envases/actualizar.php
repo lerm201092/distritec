@@ -12,7 +12,7 @@
 
     // Asignacion de rutas
     $ruta_provisional = null;
-    $ruta_nueva = "../../view/productos/".$referencia.".png";
+    $ruta_nueva = "../../../../distritec_img/img_productos/".$referencia.".png";
 
     //obteniendo file
     $file = $_FILES["file"];
