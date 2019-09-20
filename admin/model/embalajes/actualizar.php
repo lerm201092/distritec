@@ -46,19 +46,19 @@
                                      $cod_unidad.
                                      $capacidad_ml.
                                      $peso_g.
-                                     $diametro_mm.
+                                     $esperor_mm.
                                      $largo_mm.
                                      $ancho_mm.
-                                     $diametro_r.
-                                     $altura_r.
+                                    //  $diametro_r.
+                                    //  $altura_r.
                                      $color.
                                      $material.
                                      $precio_und.
                                      $contenido_pack.
                                      $precio_pack.
-                                     $cod_forma.
+                                    //  $cod_forma.
                                      $cod_linea.
-                                     $altura_mm.
+                                    //  $altura_mm.
                                      $where;
 
 

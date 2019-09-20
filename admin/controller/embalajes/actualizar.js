@@ -1,4 +1,4 @@
-var TABLA_PAGINA = "ENVASES";
+var TABLA_PAGINA = "EMBALAJES";
 
 $(document).ready(function(){
     $("#mensajeAlerta").hide();
