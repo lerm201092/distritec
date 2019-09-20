@@ -60,6 +60,14 @@
                         </p>
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a href="../estibas/" class="nav-link">
+                        <i class="nav-icon fa fa-gear"></i>
+                        <p>
+                            Estibas y Pisos
+                        </p>
+                        </a>
+                    </li>
                 </li>
             </ul>
         </nav>
