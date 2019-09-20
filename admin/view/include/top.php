@@ -68,6 +68,14 @@
                         </p>
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a href="../zootecnia/" class="nav-link">
+                        <i class="nav-icon fa fa-gear"></i>
+                        <p>
+                            Zootecnia
+                        </p>
+                        </a>
+                    </li>
                 </li>
             </ul>
         </nav>
