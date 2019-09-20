@@ -40,15 +40,23 @@
                 <li class="nav-header">PRODUCTOS</li>
                     <li class="nav-item">
                         <a href="../envases/" class="nav-link">
-                            <i class="nav-icon fa fa-bitbucket"></i>
+                            <i class="nav-icon fa fa-gear"></i>
                             <p>Envases</p>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="../atomizadores/" class="nav-link">
-                        <i class="nav-icon fa fa-bitbucket"></i>
+                        <i class="nav-icon fa fa-gear"></i>
                         <p>
                             Atomizadores
+                        </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../desechables/" class="nav-link">
+                        <i class="nav-icon fa fa-gear"></i>
+                        <p>
+                            Desechables
                         </p>
                         </a>
                     </li>

@@ -50,6 +50,9 @@ if($cantRegistros > 0){
                                                 .$array["altura_mm"]."'"
                                                 .")";
 
+
+                        
+
     if ($conexion->query($consulta) === TRUE) {
         $datos["OK"] = "OK";
         if($ruta_provisional != null){

@@ -1,7 +1,7 @@
-var TABLA_PAGINA = "ENVASES";
+var TABLA_PAGINA = "DESECHABLES";
 
 $(document).ready(function(){
-    $("#menu-derecha").html(`<li class="nav-item"><a href="../envases/agregar.php" class="nav-link"><i class="nav-icon fa fa-plus" style="padding-right:15px;"></i><b>Registrar Prodcuto</b></a></li>`)
+    $("#menu-derecha").html(`<li class="nav-item"><a href="../desechables/agregar.php" class="nav-link"><i class="nav-icon fa fa-plus" style="padding-right:15px;"></i><b>Registrar Prodcuto</b></a></li>`)
     CargarTabla();
 });
 
