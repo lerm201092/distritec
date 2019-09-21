@@ -41,7 +41,7 @@ CREATE TABLE `atomizadores` (
 
 DROP TABLE IF EXISTS `desechables`;
 
-CREATE TABLE `desechables` (
+CREATE TABLE `DESECHABLES` (
   `referencia` int(11) NOT NULL,
   `descripcion` varchar(100) NOT NULL,
   `accesorios` varchar(100) DEFAULT NULL,
@@ -93,9 +93,9 @@ CREATE TABLE `envases` (
 
 /*Table structure for table `estibas` */
 
-DROP TABLE IF EXISTS `estibas`;
+DROP TABLE IF EXISTS `ESTIBAS`;
 
-CREATE TABLE `estibas` (
+CREATE TABLE `ESTIBAS` (
   `referencia` int(11) NOT NULL,
   `descripcion` varchar(100) NOT NULL,
   `accesorios` varchar(100) DEFAULT NULL,
@@ -127,9 +127,9 @@ CREATE TABLE `usuarios` (
 
 /*Table structure for table `zootecnia` */
 
-DROP TABLE IF EXISTS `zootecnia`;
+DROP TABLE IF EXISTS `zootecnia ZOOTECNIA`;
 
-CREATE TABLE `zootecnia` (
+CREATE TABLE `ZOOTECNIA` (
   `referencia` int(11) NOT NULL,
   `descripcion` varchar(100) NOT NULL,
   `cod_unidad` varchar(100) NOT NULL,

@@ -13,7 +13,7 @@
 						<li><a href="./contatenos.php" class="menu_l"><b>Contáctenos</b></a></li> 
 						<li><a href="https://web.whatsapp.com/" target="_blank"><img src="../../../distritec_img/img_app/social/what.png" alt="" class="social_t"></a></li> 
 						<li><a href="https://www.facebook.com/Distritec-Colombia-101730204507604/?modal=admin_todo_tour" target="_blank"><img class="social_t" src="../../../distritec_img/img_app/social/face.png" alt="Facebook"></a></li> 
-						<li><a h ref="https://www.instagram.com/distritec_colombia/?hl=es-la" target="_blank"><img class="social_t" src="../../../distritec_img/img_app/social/inst.png" alt="instagram"></a></li> 
+						<li><a href="https://www.instagram.com/distritec_col/" target="_blank"><img class="social_t" src="../../../distritec_img/img_app/social/inst.png" alt="instagram"></a></li> 
 					</ul>
 				</div>
 			</div>
@@ -29,7 +29,7 @@
 	<div class="col-xs-12">
 		<p style="padding: 0px 20px; text-align:center">
 			<img id="img_menu_movil" onclick="menu();" src="../../../distritec_img/img_app/menu/menu.png" style="float:left; height:30px; margin-top: 5px; cursor:pointer;" />
-			<img src="../../../distritec_img/img_app/logo.jpg" style="height:40px; cursor:pointer;"/>			
+			<a href="index.php"><img src="../../../distritec_img/img_app/logo.jpg" style="height:40px; cursor:pointer;"/></a>			
 		</p>
 	</div>
 	<div class="col-xs-12" style="text-align: center;">
@@ -40,7 +40,7 @@
 					<li><a href="./contatenos.php" class="menu_l"><b>Contáctenos</b></a></li> 
 					<li><a href="https://web.whatsapp.com/" target="_blank"><img src="../../../distritec_img/img_app/social/what.png" alt="" class="social_t"></a></li> 
 					<li><a href="https://www.facebook.com/Distritec-Colombia-101730204507604/?modal=admin_todo_tour" target="_blank"><img class="social_t" src="../../../distritec_img/img_app/social/face.png" alt="Facebook"></a></li> 
-					<li><a h ref="https://www.instagram.com/distritec_colombia/?hl=es-la" target="_blank"><img class="social_t" src="../../../distritec_img/img_app/social/inst.png" alt="instagram"></a></li> 
+					<li><a href="https://www.instagram.com/distritec_col/" target="_blank"><img class="social_t" src="../../../distritec_img/img_app/social/inst.png" alt="instagram"></a></li> 
 				</ul>
 			</div>
 		</p>
