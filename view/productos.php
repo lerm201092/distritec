@@ -3,6 +3,60 @@
 <head>
     <title>Distritec</title>
     <?php include "./include/headShop.php"; ?> 
+
+    <style>
+
+    #cajaPrincipal{
+        padding-bottom: 150px;
+    }
+    .contenedorCaja{
+        border: .5px solid #9990; width: 100%; height: 300px;
+        margin:0; padding: 0;
+    } 
+
+    .cajaElemento{ 
+        position: absolute;
+        width:100%;
+        height:100%;
+        padding: 0;
+        margin:0;
+        border: 1px solid #e3e3e3;
+    }
+
+    .cajaElemento a{
+        position: absolute;
+        width:100%;
+        margin:0;
+        padding:15px;
+        height: 100%;
+
+    }
+
+    .detalleProducto{
+        position: absolute;
+        bottom:0;
+        width:100%;
+    }
+
+    .contenedorCaja:hover {
+        transform: scale(0.97); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        -webkit-box-shadow: 1px 0px 11px -2px rgba(152,156,240,1);
+-moz-box-shadow: 1px 0px 11px -2px rgba(152,156,240,1);
+box-shadow: 1px 0px 11px -2px rgba(152,156,240,1);
+    }
+
+/*
+
+
+
+    .cajaElemento a.detalleProducto{
+        position: relative;
+        bottom:0;
+        width:100%;
+    }
+
+
+    </style>
 </head>
 <body>
     <?php include "./include/header.php"; ?>
@@ -48,8 +102,11 @@
                     </div>
                     <!-- Fin filtro capacidad -->
 			</div>
-            <div id="cajaPrincipal" class="cont span_2_of_3 hide">
-
+            <div  class="cont span_2_of_3">
+                <div class="row" id="cajaPrincipal"> 
+                
+                
+                </div>
             </div>
             <div id="cajaEspera" class="cont span_2_of_3">
                 <div style="width: 100%; text-align: center; padding-top: 20px;margin-bottom: 50px;">

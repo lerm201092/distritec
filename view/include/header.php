@@ -51,64 +51,69 @@
 <div class="row" id="menu_movil">
 	<div class="container"  id="sub_menu_principal">
 		<li >
-			<a href="./productos.php?tipo=envases&?linea=''" class="a_menu">
+			<a href="#" class="a_menu">
 				<p><img src="../../../distritec_img/img_app/menu/l.png" class="img_menu_movil">Envases y Tapas <span onclick="$('#ul_sub_menu').slideToggle()" class="pull-right" style="border:2px solid #ccc; margin-right:10px; padding: 0px 5px; font-weight:bold;">+</span></p>	
 			</a>
 		</li>
 		<ul id="ul_sub_menu" style="display:none;">
 			<li style="border-left: 5px solid #001285; padding-left: 25px; background: #eaeaea;">
-				<a href="./productos.php?tipo=envases&?linea='F'" class="a_menu">
+				<a href="./productos.php?tipo=envases&linea=F" class="a_menu">
 					<p>Farmacéuticos</p>	
 				</a>
 			</li>
 			<li style="border-left: 5px solid #001285; padding-left: 25px; background: #eaeaea;">
-				<a href="./productos.php?tipo=envases&?linea='A'" class="a_menu">
+				<a href="./productos.php?tipo=envases&linea=A" class="a_menu">
 					<p>Alimentos</p>	
 				</a>
 			</li>
 			<li style="border-left: 5px solid #001285; padding-left: 25px; background: #eaeaea;">
-				<a href="./productos.php?tipo=envases&?linea='C'" class="a_menu">
+				<a href="./productos.php?tipo=envases&linea=C" class="a_menu">
 					<p>Cosméticos</p>	
 				</a>
 			</li>
 			<li style="border-left: 5px solid #001285; padding-left: 25px; background: #eaeaea;">
-				<a href="./productos.php?tipo=envases&?linea='Q'" class="a_menu">
+				<a href="./productos.php?tipo=envases&linea=Q" class="a_menu">
 					<p>Químicos</p>	
 				</a>
 			</li>
 			<li style="border-left: 5px solid #001285; padding-left: 25px; background: #eaeaea;">
-				<a href="./productos.php?tipo=envases&?linea='V'" class="a_menu">
+				<a href="./productos.php?tipo=envases&linea=V" class="a_menu">
 					<p>Variedades</p>	
 				</a>
 			</li>
 			<li style="border-left: 5px solid #001285; padding-left: 25px; background: #eaeaea;">
-				<a href="./productos.php?tipo=envases&?linea='T'" class="a_menu">
+				<a href="./productos.php?tipo=envases&linea=T" class="a_menu">
 					<p>Tapas y Tapones</p>	
+				</a>
+			</li>
+			<li style="border-left: 5px solid #001285; padding-left: 25px; background: #eaeaea;">
+				<a href="./productos.php?tipo=envases&linea=0" class="a_menu">
+					<p>Todos</p>	
 				</a>
 			</li>
 		</ul>
 		<li>
-			<a href="./productos.php?tipo=atomizadores" class="a_menu">
+			<a href="./productos.php?tipo=atomizadores&linea=0" class="a_menu">
 				<p><img src="../../../distritec_img/img_app/menu/a.png" class="img_menu_movil">Atomizadores</p>
 			</a>
 		</li>
 		<li>
-			<a href="./productos.php?tipo=desechable" class="a_menu">
+			<a href="./productos.php?tipo=desechables&linea=0" class="a_menu">
 				<p><img src="../../../distritec_img/img_app/menu/d.jpg" class="img_menu_movil">Desechables</p>	
 			</a>
 		</li>
 		<li>
-			<a href="./pisos.php" class="a_menu">
+			<a href="./productos.php?tipo=estibas&linea=0" class="a_menu">
 				<p><img src="../../../distritec_img/img_app/menu/p.png" class="img_menu_movil">Estibas y Pisos</p>		
 			</a>
 		</li>
 		<li>
-			<a  href="./productos.php?tipo=zootecnia" class="a_menu">
+			<a  href="./productos.php?tipo=zootecnia&linea=0" class="a_menu">
 				<p><img src="../../../distritec_img/img_app/menu/c.png" class="img_menu_movil">Zootecnia</p>
 			</a>
 		</li>
 		<li>
-			<a href="./embalaje.php" class="a_menu">
+			<a href="./productos.php?tipo=embalajes&linea=0" class="a_menu">
 				<p style="vertical-align: middle"><img src="../../../distritec_img/img_app/menu/e.png" class="img_menu_movil">Embalaje y Otros</p>
 			</a>
 		</li>

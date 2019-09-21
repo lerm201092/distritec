@@ -21,7 +21,7 @@
   while ($r = mysqli_fetch_array($registros))  
   {
     $nombre_fichero = "../../../distritec_img/img_productos/".$r[0].".png";
-    if (file_exists($nombre_fichero)) {
+    // if (file_exists($nombre_fichero)) {
       $datos[] = array(
         0 => $r[0],
         1 => ($r[1]),
@@ -29,7 +29,7 @@
         3 => $r[3],
         4 => $r[4]
       );
-    }
+    // }
   } 
 
   if($datos == null){
