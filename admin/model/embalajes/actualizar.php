@@ -20,45 +20,38 @@
 
 
     $descripcion = "descripcion = '".$_POST['descripcion']."', ";
-    $accesorios = "accesorios = '".$_POST['accesorios']."', ";
+    // $accesorios = "accesorios = '".$_POST['accesorios']."', ";
     $usos = "usos = '".$_POST['usos']."', ";
     $cod_unidad = "cod_unidad = '".$_POST['cod_unidad']."', ";
-    $capacidad_ml = "capacidad_ml = '".$_POST['capacidad_ml']."', ";
+    $espesor_mm = "espesor_mm = '".$_POST['espesor_mm']."', ";
     $peso_g = "peso_g = '".$_POST['peso_g']."', ";
-    $diametro_mm = "diametro_mm = '".$_POST['diametro_mm']."', ";
+    // $diametro_mm = "diametro_mm = '".$_POST['diametro_mm']."', ";
     $largo_mm = "largo_mm = '".$_POST['largo_mm']."', ";
     $ancho_mm = "ancho_mm = '".$_POST['ancho_mm']."', ";
-    $diametro_r = "diametro_r = '".$_POST['diametro_r']."', ";
-    $altura_r = "altura_r = '".$_POST['altura_r']."', ";
+    // $diametro_r = "diametro_r = '".$_POST['diametro_r']."', ";
+    // $altura_r = "altura_r = '".$_POST['altura_r']."', ";
     $color = "color = '".$_POST['color']."', ";
     $material = "material = '".$_POST['material']."', ";
     $precio_und = "precio_und = '".$_POST['precio_und']."', ";
     $contenido_pack = "contenido_pack = '".$_POST['contenido_pack']."', ";
     $precio_pack = "precio_pack = '".$_POST['precio_pack']."', ";
-    $cod_forma = "cod_forma = '".$_POST['cod_forma']."', ";
-    $cod_linea = "cod_linea = '".$_POST['cod_linea']."', ";
-    $altura_mm = "altura_mm = '".$_POST['altura_mm']."' ";
+    // $cod_forma = "cod_forma = '".$_POST['cod_forma']."', ";
+    $cod_linea = "cod_linea = '".$_POST['cod_linea']."' ";
+    // $altura_mm = "altura_mm = '".$_POST['altura_mm']."' ";
     $where = "WHERE referencia = ".$referencia;
 
     $consulta = "UPDATE ".$tabla." SET ".$descripcion. 
-                                     $accesorios.
                                      $usos.
                                      $cod_unidad.
-                                     $capacidad_ml.
                                      $peso_g.
-                                     $esperor_mm.
+                                     $espesor_mm.
                                      $largo_mm.
                                      $ancho_mm.
-                                    //  $diametro_r.
-                                    //  $altura_r.
                                      $color.
                                      $material.
                                      $precio_und.
                                      $contenido_pack.
-                                     $precio_pack.
-                                    //  $cod_forma.
                                      $cod_linea.
-                                    //  $altura_mm.
                                      $where;
 
 

@@ -103,6 +103,7 @@ function buscarProducto() {
             if(data[0]["capacidad_ml"]){ $("input[name=capacidad_ml]").val(data[0]["capacidad_ml"]); }
             if(data[0]["peso_g"]){ $("input[name=peso_g]").val(data[0]["peso_g"]); }            
             if(data[0]["diametro_mm"]){ $("input[name=diametro_mm]").val(data[0]["diametro_mm"]); }
+            if(data[0]["espesor_mm"]){ $("input[name=espesor_mm]").val(data[0]["espesor_mm"]); }
             if(data[0]["largo_mm"]){ $("input[name=largo_mm]").val(data[0]["largo_mm"]); }
             if(data[0]["altura_mm"]){ $("input[name=altura_mm]").val(data[0]["altura_mm"]); }
             if(data[0]["ancho_mm"]){ $("input[name=ancho_mm]").val(data[0]["ancho_mm"]); }

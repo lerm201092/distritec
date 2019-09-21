@@ -76,6 +76,14 @@
                         </p>
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a href="../embalajes/" class="nav-link">
+                        <i class="nav-icon fa fa-gear"></i>
+                        <p>
+                            Embalajes
+                        </p>
+                        </a>
+                    </li>
                 </li>
             </ul>
         </nav>

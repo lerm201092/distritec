@@ -1,0 +1,75 @@
+.content-wrapper {
+    background: #f7f7f7;
+}
+
+#divMsj{
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    background: #000000ad;
+}
+
+#msjDivMsj{
+    width: 350px;
+    /* max-height: 210px; */
+    margin-top: 50px;
+    margin: 0 auto;
+    margin-top: 80px;
+    font-size: 14px;
+    text-align: center;
+    padding: 20px 20px 10px;
+    background: white;
+    border-radius: 5px;;
+}
+
+#btnMensaje, #btnQuestion{
+    margin-bottom:0!important;
+}
+
+a.btn-sm {
+    height: 27px;
+    min-width: 27px;
+    padding: 0px 1px;
+    line-height: 24px;
+    font-size: 13px;
+}
+
+.btn-edit{
+    background : #fd7e14 ;
+    border-color: #fd7e14 ;
+    color: white;
+}
+
+.btn-danger{
+    background : #da3c30  ;
+    border-color: #da3c30  ;
+}
+
+.btn-primary{
+    background : #03a9f4 ;
+    border-color: #03a9f4 ;
+}
+
+#btnNew{
+    position: relative;
+    margin-top:-130px;
+    margin-right: 40px;
+    border-radius: 50%;				
+}
+
+table{
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .td-oculta-sm{
+        display:none;
+    }
+} 
+
+.row{
+    margin: 0;
+    margin-bottom: 15px;
+}

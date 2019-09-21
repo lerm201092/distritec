@@ -2,7 +2,8 @@
 SQLyog Ultimate v11.11 (64 bit)
 MySQL - 5.5.5-10.4.6-MariaDB : Database - distritec
 *********************************************************************
-*/
+*/
+
 
 /*!40101 SET NAMES utf8 */;
 
@@ -138,6 +139,27 @@ CREATE TABLE `zootecnia` (
   `peso_g` int(11) DEFAULT NULL,
   `color` varchar(100) DEFAULT NULL,
   `precio_und` int(11) DEFAULT NULL,
+  `cod_linea` varchar(10) NOT NULL,
+  PRIMARY KEY (`referencia`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+DROP TABLE IF EXISTS `embalajes`;
+
+CREATE TABLE `embalajes` (
+  `referencia` int(11) NOT NULL,
+  `descripcion` varchar(100) NOT NULL,
+  `cod_unidad` varchar(100) NOT NULL,
+  `usos` varchar(100) DEFAULT NULL,
+  `peso_g` int(11) DEFAULT NULL,
+  `espesor_mm` int(11) DEFAULT NULL,
+  `largo_mm` int(11) DEFAULT NULL,
+  `ancho_mm` int(11) DEFAULT NULL,
+  `color` varchar(100) DEFAULT NULL,
+  `material` varchar(100) DEFAULT NULL,
+  `precio_und` int(11) DEFAULT NULL,
+  `contenido_pack` int(11) DEFAULT NULL,
+  `precio_pack` int(11) DEFAULT NULL,
   `cod_linea` varchar(10) NOT NULL,
   PRIMARY KEY (`referencia`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
