@@ -123,7 +123,7 @@
 												<input type="text" class="form-control form-control-sm" name='color'  />
 											</div>
 											<div class="col-md-4 form-group">
-												<label for="">Peso (gr):</label>
+												<label for="">Peso (Kg):</label>
 												<input type="text" class="form-control form-control-sm" name='peso_g'  />
 											</div>
 											<div class="col-md-4 form-group">
