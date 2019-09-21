@@ -127,7 +127,7 @@
 												<input type="text" class="form-control form-control-sm" name='material'  />
 											</div>
 											<div class="col-md-4 form-group">
-												<label for="">Capacidad (ml):</label>
+												<label for="">Capacidad (Fl.Oz):</label>
 												<input type="text" class="form-control form-control-sm" name='capacidad_ml' />
 											</div>
 											<div class="col-md-4 form-group">
@@ -152,7 +152,7 @@
 											</div>
 											<div class="col-md-4 form-group">
 												<label for="">Forma:</label>
-												<select class="form-control form-control-sm" name='cod_forma' requerido="SI">
+												<select class="form-control form-control-sm" name='cod_forma' >
 													<option value="">Esconja una opcion</option>
 													<option value="R">Rectangular</option>
 													<option value="C">Cilindrica</option>
@@ -160,7 +160,7 @@
 											</div>
 											<div class="col-md-4 form-group">
 												<label for="">Linea de producto</label>
-												<select class="form-control form-control-sm" name='cod_linea' requerido="SI">
+												<select class="form-control form-control-sm" name='cod_linea'>
 													<option value="">Esconja una opcion</option>
 													<option value="F">Farmaceuticos</option>
 													<option value="A">Alimentos</option>
