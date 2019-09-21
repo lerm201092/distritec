@@ -145,25 +145,25 @@
 			</a>
 		</li>
 		<li class="item_menu"  style="width:16%">
-			<a href="./productos.php?tipo=desechable" class="a_menu">
+			<a href="./productos.php?tipo=desechables&linea=0" class="a_menu">
 				<p><img src="../../../distritec_img/img_app/menu/d.jpg" class="img_menu"></p>		
 				<p class="a_p_menu">Desechables</p>
 			</a>
 		</li>
 		<li class="item_menu"  style="width:16%">
-			<a href="./pisos.php" class="a_menu">
+			<a href="./productos.php?tipo=estibas&linea=0" class="a_menu">
 				<p><img src="../../../distritec_img/img_app/menu/p.png" class="img_menu"></p>		
 				<p class="a_p_menu">Estibas y Pisos</p>
 			</a>
 		</li>
 		<li class="item_menu"  style="width:16%">
-			<a  href="./productos.php?tipo=zootecnia" class="a_menu">
+			<a  href="./productos.php?tipo=zootecnia&linea=0" class="a_menu">
 				<p><img src="../../../distritec_img/img_app/menu/c.png" class="img_menu"></p>		
 				<p class="a_p_menu">Zootecnia</p>
 			</a>
 		</li>
 		<li class="item_menu"  style="width:16%">
-			<a href="./embalaje.php" class="a_menu">
+			<a href="./productos.php?tipo=embalajes&linea=0"class="a_menu">
 				<p><img src="../../../distritec_img/img_app/menu/e.png" class="img_menu"></p>		
 				<p class="a_p_menu">Embalaje y Otros</p>
 			</a>
