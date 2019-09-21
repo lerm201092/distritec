@@ -40,8 +40,7 @@
     // $altura_mm = "altura_mm = '".$_POST['altura_mm']."' ";
     $where = "WHERE referencia = ".$referencia;
 
-    $consulta = "UPDATE ".$tabla." SET ".$descripcion. 
-                                     $accesorios.
+    $consulta = "UPDATE ".$tabla." SET ".$descripcion.
                                      $usos.
                                      $cod_unidad.
                                      $beneficios.

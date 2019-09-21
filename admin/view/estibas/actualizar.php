@@ -149,7 +149,7 @@
 											</div>
 											<div class="col-md-4 form-group">
 												<label for="">Linea de producto</label>
-												<select class="form-control form-control-sm" name='cod_linea' requerido="SI">
+												<select class="form-control form-control-sm" name='cod_linea'>
 													<option value="">Esconja una opcion</option>
 													<option value="E">Estibas</option>
 													<option value="P">Pisos</option>
