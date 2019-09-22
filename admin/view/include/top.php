@@ -85,6 +85,13 @@
                         </a>
                     </li>
                 </li>
+                <li class="nav-header">OPCIONES</li>
+                    <li class="nav-item">
+                        <a href="../../../modelo/sesion/logout.php" class="nav-link">
+                            <i class="nav-icon 	fa fa-power-off"></i>
+                            <p>Cerrar Sesión</p>
+                        </a>
+                    </li>
             </ul>
         </nav>
         <!-- /.sidebar-menu -->

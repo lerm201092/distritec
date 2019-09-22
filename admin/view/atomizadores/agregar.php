@@ -1,3 +1,4 @@
+<?php include "../../../modelo/sesion/seguridad.php"; ?>
 <!DOCTYPE html>
 <html>
 <head>

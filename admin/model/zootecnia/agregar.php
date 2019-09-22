@@ -43,7 +43,7 @@ if($cantRegistros > 0){
 
 
 
-    echo "<br>$consulta<br>";
+
 
     if ($conexion->query($consulta) === TRUE) {
         $datos["OK"] = "OK";

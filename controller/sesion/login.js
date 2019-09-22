@@ -11,7 +11,7 @@ function login() {
             try {
                 var json         = eval("(" + resp + ")");
                 if(json){
-                    console.log("Acceso permitido");
+                    location.href="../admin/view/envases/index.php";
                 }else{
                     console.log("Acceso denegado");
                 }

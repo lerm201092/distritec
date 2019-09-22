@@ -1,3 +1,5 @@
+<?php include "../modelo/sesion/seguridadLogin.php"; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,7 +30,7 @@
 }
     </style>
 </head>
-<body>
+<body style="background: #404040">
 
     <div class="container">
         <div class="row">
@@ -37,26 +39,26 @@
                     <div class="card-body">
                         <div class="width:100%;">
                             <div style="text-align: center">
-                            <img id="img_login" src="./src/images/logo.jpg">
-                            </div>
-                            
+                            <img id="img_login" src="../../distritec_img/img_app/logo.jpg">
+                            </div>                            
                         </div>
-                        
+                       <p style="font-size: 16px;  color: #021084; width: 100%; font-weight: 700; text-align: center;"><u>Acceso al sistema</u></p><br><br>
                         <form action="/action_page.php">
                             <div class="form-group">
-                                <label for="email">Ususario</label>
+                                <label for="email" style="font-size: 14px; font-weight: 600">Usuario:</label>
                                 <input type="text" class="form-control" id="txt_user">
                             </div>
                             <div class="form-group">
-                                <label for="pwd">Contraseña</label>
+                                <label for="pwd" style="font-size: 14px; font-weight: 600">Contraseña:</label>
                                 <input type="password" class="form-control" id="txt_pass">
                             </div>
                             <div class="form-group form-check text-right">
-                                <a href="#">He olvidado mi contraseña.</a>
+                                <a href="#" style="font-size: 13px; font-weight: 600">He olvidado mi contraseña.</a>
                             </div>
                             <div class="form-group form-check text-center">
-                                <a type="button" href="#" onclick="login()" class="btn btn-primary">Iniciar</a>
-                            </div>
+                                <a type="button" href="#" onclick="login()" class="btn btn-primary col-md-12">Iniciar Sesión</a>
+                                <br><br>
+                            </div>                            
                         </form>
                     </div>
                 </div>            
