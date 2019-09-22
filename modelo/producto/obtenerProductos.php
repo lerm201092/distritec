@@ -10,13 +10,27 @@
     $where = "";
   }
 
-
-  // REALIZA LA QUERY A LA DB
-  $registros = mysqli_query($conexion, 'SELECT * FROM '.$tabla.$where);
-  
+    
   // RECORRE EL RESULTADO Y LO GUARDA EN UN ARRAY
   $datos = array();
   $datos = null;
+
+  if($tabla == "ENVASES"){
+    $divisor = 0;
+    // REALIZA LA QUERY A LA DB
+    $registros = mysqli_query($conexion, 'SELECT MAX(capacidad_ml)/5 AS CANT FROM ENVASES');
+    if ($r = mysqli_fetch_array($registros)) { $divisor = $r["CANT"]; }
+
+    $datos["divisor"] = $divisor;
+
+  }
+
+  if( tabla_forma($tabla) == true ){ $datos["forma"] = true; } 
+
+
+  // REALIZA LA QUERY A LA DB
+  $registros = mysqli_query($conexion, 'SELECT * FROM '.$tabla.$where);
+
   
   while ($r = mysqli_fetch_array($registros))  
   {
@@ -24,9 +38,12 @@
     if (file_exists($nombre_fichero)) {
       $filtro_capacidad = 0;
       $filtro_forma = 0;
-      if($r["capacidad_ml"]){$filtro_capacidad=$r["capacidad_ml"];}
-      if($r["cod_forma"]){$filtro_forma=$r["cod_forma"];}
-      $datos[] = array(
+      
+      if( tabla_capacidad($tabla) == true ){ if($r["capacidad_ml"]){$filtro_capacidad=$r["capacidad_ml"];} }
+      if( tabla_forma($tabla) == true ){ if($r["cod_forma"]){$filtro_forma=$r["cod_forma"];} }
+
+
+      $datos["data"][] = array(
         0 => $r["referencia"],
         1 => $r["descripcion"],
         2 => $filtro_capacidad,
@@ -41,4 +58,34 @@
   
   $json = json_encode( $datos, JSON_UNESCAPED_UNICODE); // GENERA EL JSON CON LOS DATOS OBTENIDOS  
   echo  $json; 
+
+
+
+  function tabla_capacidad($tabla){
+    $array = array("ENVASES");
+    $longitud = count($array);
+ 
+    //Recorro todos los elementos
+    for($i=0; $i<$longitud; $i++)
+    {
+      if($array[$i] == $tabla){
+        return true;
+      }
+    }
+    return false;
+  }
+
+  function tabla_forma($tabla){
+    $array = array("ENVASES");
+    $longitud = count($array);
+ 
+    //Recorro todos los elementos
+    for($i=0; $i<$longitud; $i++)
+    {
+      if($array[$i] == $tabla){
+        return true;
+      }
+    }
+    return false;
+  }
 ?>

@@ -12,23 +12,48 @@ function obtenerProductos() {
         data: parametros,
         success: function(resp){
             try {
-                console.log(resp);
                 var json         = eval("(" + resp + ")");    
                 if(json["error"]){ 
                     Json_Vacio(); 
+                    $("#FILTRO_CAP").html("<p style='font-size: 12px; font-weight: 600; width:100%;'>No disponible.</p>")
+                    $("#FILTRO_FOR").html("<p style='font-size: 12px; font-weight: 600; width:100%;'>No disponible.</p>")
+                
+                    console.log("No se encontraron datos.")
                 }else{
-                    for(var i=0; i<json.length; i++){
-                        var filtro = Filtro_Capacidad(json[i]);
-                        var forma = Filtro_Forma(json[i]);
-                        console.log(filtro+""+forma);
-                        Crear_Caja(i, filtro,forma, json[i]);
+
+                    if(!json["forma"]){ 
+                        $("#FILTRO_FOR").html("<p style='font-size: 12px; font-weight: 600; width:100%;'>No disponible.</p>")
+                     }
+                    
+
+                    if(tipo_producto_inicial.toUpperCase() != "ENVASES"){
+                        $("#FILTRO_CAP").html("<p style='font-size: 12px; font-weight: 600; width:100%;'>No disponible.</p>")
+                    }
+
+                    if(json["divisor"]){
+                        var divisor = parseInt(json["divisor"]), cont = 5;
+                        $("label[tipo=lbl_capacidad]").each(function () {
+                            if(cont == 5){
+                                $(this).append("<span>"+divisor*4+"&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;Superior</span> ")
+                            }else{
+                                $(this).append("<span>"+(divisor*(cont-1))+"&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;"+((divisor*cont)-1)+"</span> ")
+                            }
+                            cont--;
+                        });
+                    }
+
+                    // console.log(json);
+                    for(var i=0; i<json["data"].length; i++){
+                        var filtro = Filtro_Capacidad(json["data"][i], json["divisor"]);
+                        var forma = Filtro_Forma(json["data"][i]);
+                        Crear_Caja(i, filtro,forma, json["data"][i]);
                     }
                     setTimeout(() => { 
                         $("#cajaEspera").addClass("hide");               
                         $("#cajaPrincipal").removeClass("hide");
                     }, 400);
                 }
-            } catch (error) {
+            } catch ( error ) {
                 alert("Error al cargar pagina");
                 console.error(error);
                 console.error(resp);
@@ -40,42 +65,45 @@ function obtenerProductos() {
 }
 
 
-function Filtro_Capacidad(array){
+function Filtro_Capacidad(array, divisor){
+    var divisor = parseInt(divisor);
+    var capacidad = array[2];
     var filtro_capacidad = 0;
-    if(array["capacidad_ml"]){
-        var capacidad = array[4];
-        if(capacidad <= 1000 ){ filtro_capacidad = 0; }
-        if(capacidad > 1000 && capacidad <= 2000 ){  filtro_capacidad = 1;  }    
-        if(capacidad > 2000 && capacidad <= 5000 ){ filtro_capacidad = 2;   }    
-        if(capacidad > 5000 && capacidad <= 7000 ){ filtro_capacidad = 3;   }   
-        if(capacidad > 7000){ filtro_capacidad = 4; }
+    if(capacidad>0){
+        var capacidad = array[2];
+        if(capacidad <= divisor ){ filtro_capacidad = 0; }
+        if(capacidad > divisor && capacidad <= (divisor*2) ){  filtro_capacidad = 1;  }    
+        if(capacidad > (divisor*2) && capacidad <= (divisor*3) ){ filtro_capacidad = 2;   }    
+        if(capacidad > (divisor*3) && capacidad <= (divisor*4) ){ filtro_capacidad = 3;   }   
+        if(capacidad > (divisor*4)){ filtro_capacidad = 4; }
     }
     return filtro_capacidad;
 }
 
 function Filtro_Forma(array) {
     var filtro_forma = 0;
-    if(array["cod_forma"]){
-       filtro_forma = array["cod_forma"]
+    if(array[3]){
+       filtro_forma = array[3]
     }
     return filtro_forma;
 }
 
 
 function Json_Vacio (){
-        setTimeout(() => { 
-            $("#cajaEspera").addClass("hide");    
-            $("#pronohay").text("Te invitamos a seguir navegando en el sitio, hay una gran variedad de productos para vos!") ;             
-            $("#cajaNohay").removeClass("hide");
-        }, 400);
+    setTimeout(() => { 
+        $("#cajaPrincipal").addClass("hide");   
+        $("#cajaEspera").addClass("hide");    
+        $("#pronohay").text("Te invitamos a seguir navegando en el sitio, hay una gran variedad de productos para vos!") ;             
+        $("#cajaNohay").removeClass("hide");
+    }, 400);
 }
 
 
 function Crear_Caja(x, filtro_capacidad, filtro_forma, Obj){
 
     var html = `<!-- inicio de fila  `+x+` -->
-                <div id='caja`+x+`' class='col-xs-12 col-sm-6 col-md-4 contenedorCaja' filtro_capacidad='`+filtro_capacidad+`'  filtro_forma='`+filtro_forma+`'>	
-                    <div class="cajaElemento" tipo='cajaElemento' class='col-md-12'>		
+                <div tipo='cajaElemento' id='caja`+x+`' class='col-xs-12 col-sm-6 col-md-4 contenedorCaja' filtro_capacidad='`+filtro_capacidad+`'  filtro_forma='`+filtro_forma+`'>	
+                    <div class="cajaElemento"  class='col-md-12'>		
                         <a href='./single.php?ref=`+Obj[0]+`&tipo=`+tipo_producto_inicial+`'>
                             <div class='grid_img'>
                                         <div class='css3'><img src='../../../distritec_img/img_productos/`+Obj[0]+`.png' alt='' style='max-width: 100%; max-height: 200px;' /></div>

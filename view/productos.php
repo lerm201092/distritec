@@ -6,7 +6,7 @@
 
     <style>
 
-    #cajaPrincipal{
+    #cont_cajaPrincipal{
         padding-bottom: 150px;
     }
     .contenedorCaja{
@@ -45,7 +45,7 @@
 box-shadow: 1px 0px 11px -2px rgba(152,156,240,1);
     }
 
-/*
+
 
 
 
@@ -55,54 +55,72 @@ box-shadow: 1px 0px 11px -2px rgba(152,156,240,1);
         width:100%;
     }
 
+    #FILTRO_CAP, #FILTRO_FOR{
+        padding: 5px 15px 10px;
+        border: 1px solid #e6e6e6;
+    }
+
+    #FILTRO_FOR div{
+        padding-left:0px;
+    }
+    
+    #pf {
+    font-size: 13px;
+    font-weight: 600;
+    color: #002192;
+    margin-bottom: 10px;
+    text-align: center;
+    letter-spacing: -.5px;
+}
 
     </style>
 </head>
 <body>
     <?php include "./include/header.php"; ?>
     <div class="login" id="contenedor_principal" style="position : absolute ; width:100%;">
-        <div class="wrap">
+        <div class="wrap" id="cont_cajaPrincipal" >
             <div class="rsidebar span_1_of_left">
+                <p id="pf">- FILTROS DINAMICOS -</p>
                 <section class="sky-form">
                     
                     <!-- Filtro Forma -->
                     <h4>Capacidad</h4>
-                    <div class="row row1 scroll-pane">
-                        <div class="col col-12">
-                            <label class="checkbox">
-                                <input type="checkbox" onclick="filtro();" name="chk_capacidad" num_filtro="4" ><i></i>7001 - Superior
+                    <div class="row row1 scroll-pane" style="padding: 0">
+                        <div class="col col-12" id="FILTRO_CAP" >
+                            <label class="checkbox" tipo="lbl_capacidad">
+                                <input type="checkbox" onclick="filtro();" name="chk_capacidad" num_filtro="4" /><i></i>
                             </label>
-                            <label class="checkbox">
-                                <input type="checkbox" onclick="filtro();" name="chk_capacidad" num_filtro="3" ><i></i>5001 - 7000
+                            <label class="checkbox" tipo="lbl_capacidad">
+                                <input type="checkbox" onclick="filtro();" name="chk_capacidad" num_filtro="3" /><i></i>
                             </label>
-                            <label class="checkbox">
-                                <input type="checkbox" onclick="filtro();" name="chk_capacidad" num_filtro="2" ><i></i>2001 - 5000
+                            <label class="checkbox" tipo="lbl_capacidad">
+                                <input type="checkbox" onclick="filtro();" name="chk_capacidad" num_filtro="2" /><i></i>
                             </label>
-                            <label class="checkbox">
-                                <input type="checkbox" onclick="filtro();" name="chk_capacidad" num_filtro="1" ><i></i>1001 - 2000
+                            <label class="checkbox" tipo="lbl_capacidad">
+                                <input type="checkbox" onclick="filtro();" name="chk_capacidad" num_filtro="1" /><i></i>
                             </label>
-                            <label class="checkbox">
-                                <input type="checkbox" onclick="filtro();" name="chk_capacidad" num_filtro="0" ><i></i>0 - 1000
+                            <label class="checkbox" tipo="lbl_capacidad">
+                                <input type="checkbox" onclick="filtro();" name="chk_capacidad" num_filtro="0" /><i></i>
                             </label>
                         </div>
                     </div>
                     <!-- Fin filtro capacidad -->
 
                     <!-- Filtro Forma -->
-                    <h4 class="hide" tipo="filtro_forma">Forma</h4>
-                    <div class="hide" tipo="filtro_forma" class="row row1 scroll-pane">
+                    <h4  tipo="filtro_forma">Forma</h4>
+                    <div id="FILTRO_FOR"  tipo="filtro_forma" class="row row1 scroll-pane">
                         <div class="col col-12">
                             <label class="checkbox">
-                                <input type="checkbox" onclick="filtro2($(this));" name="chk_forma" forma="cil"  disabled><i></i>Cilíndrica
+                                <input type="checkbox" onclick="filtro2($(this));" name="chk_forma" forma="C"  ><i></i>Cilíndrica
                             </label>
                             <label class="checkbox">
-                                <input type="checkbox" onclick="filtro2($(this));" name="chk_forma" forma="rec"  disabled><i></i>Rectangular
+                                <input type="checkbox" onclick="filtro2($(this));" name="chk_forma" forma="R"  ><i></i>Rectangular
                             </label>
                         </div>
                     </div>
                     <!-- Fin filtro capacidad -->
 			</div>
-            <div  class="cont span_2_of_3">
+            <div  class="cont span_2_of_3" >
                 <div class="row" id="cajaPrincipal"> 
                 
                 
@@ -115,8 +133,8 @@ box-shadow: 1px 0px 11px -2px rgba(152,156,240,1);
             </div>
             <div id="cajaNohay" class="cont span_2_of_3 hide">
                 <div style="width: 100%; text-align: center; padding-top: 20px;margin-bottom: 50px;">
-                    <img src="../../../distritec_img/img_app/opps.png" alt="" style="width:200px;height:auto">                    
-                    <h1 style="font-size:24px; color: #002183; font-weight:bold; margin-top: 20px;">PRODUCTOS NO DISPONIBLES</h1>
+                    <img src="../../../distritec_img/img_app/opps.png" alt="" style="width:150px;height:auto">                    
+                    <h3 style="font-size:20px; color: #002183; font-weight:bold; margin-top: 20px;">PRODUCTOS NO DISPONIBLES</h3>
                     <p style="font-weight:bold;margin-top:15px" id="pronohay">Te invitamos a seguir navegando en el sitio, hay una gran variedad de productos para vos!</p>
                 </div>                
             </div>
@@ -127,12 +145,6 @@ box-shadow: 1px 0px 11px -2px rgba(152,156,240,1);
     <script>
         var tipo_producto_inicial = "<?php $x=$_GET["tipo"]; echo $x; ?>"; 
         var linea_producto = "<?php $x=$_GET["linea"]; echo $x; ?>"; 
-
-        tipo_producto_inicial = tipo_producto_inicial.toUpperCase();
-        if(tipo_producto_inicial == "ENVASES" || tipo_producto_inicial == "DESECHABLES"){
-            $("h4[tipo=filtro_forma]").removeClass("hide");
-            $("div[tipo=filtro_forma]").removeClass("hide");
-        }
     </script>
     <script src="../controller/producto/obtenerProducto.js"></script>
     <script src="../controller/producto/filtro.js"></script>
