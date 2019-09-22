@@ -18,8 +18,10 @@ function obtenerProductos() {
                     Json_Vacio(); 
                 }else{
                     for(var i=0; i<json.length; i++){
-                        var filtro = Filtro(json[i]);
-                        Crear_Caja(i, filtro, json[i]);
+                        var filtro = Filtro_Capacidad(json[i]);
+                        var forma = Filtro_Forma(json[i]);
+                        console.log(filtro+""+forma);
+                        Crear_Caja(i, filtro,forma, json[i]);
                     }
                     setTimeout(() => { 
                         $("#cajaEspera").addClass("hide");               
@@ -38,7 +40,7 @@ function obtenerProductos() {
 }
 
 
-function Filtro(array){
+function Filtro_Capacidad(array){
     var filtro_capacidad = 0;
     if(array["capacidad_ml"]){
         var capacidad = array[4];
@@ -51,6 +53,14 @@ function Filtro(array){
     return filtro_capacidad;
 }
 
+function Filtro_Forma(array) {
+    var filtro_forma = 0;
+    if(array["cod_forma"]){
+       filtro_forma = array["cod_forma"]
+    }
+    return filtro_forma;
+}
+
 
 function Json_Vacio (){
         setTimeout(() => { 
@@ -61,11 +71,11 @@ function Json_Vacio (){
 }
 
 
-function Crear_Caja(x, filtro_capacidad, Obj){
+function Crear_Caja(x, filtro_capacidad, filtro_forma, Obj){
 
     var html = `<!-- inicio de fila  `+x+` -->
-                <div id='caja`+x+`' class='col-xs-12 col-sm-6 col-md-4 contenedorCaja'>	
-                    <div class="cajaElemento" tipo='cajaElemento' filtro_capacidad='`+filtro_capacidad+`' class='col-md-12'>		
+                <div id='caja`+x+`' class='col-xs-12 col-sm-6 col-md-4 contenedorCaja' filtro_capacidad='`+filtro_capacidad+`'  filtro_forma='`+filtro_forma+`'>	
+                    <div class="cajaElemento" tipo='cajaElemento' class='col-md-12'>		
                         <a href='./single.php?ref=`+Obj[0]+`&tipo=`+tipo_producto_inicial+`'>
                             <div class='grid_img'>
                                         <div class='css3'><img src='../../../distritec_img/img_productos/`+Obj[0]+`.png' alt='' style='max-width: 100%; max-height: 200px;' /></div>
