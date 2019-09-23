@@ -40,10 +40,10 @@
 
     .contenedorCaja:hover {
         transform: scale(0.97); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-        -webkit-box-shadow: 1px 0px 11px -2px rgba(152,156,240,1);
--moz-box-shadow: 1px 0px 11px -2px rgba(152,156,240,1);
-box-shadow: 1px 0px 11px -2px rgba(152,156,240,1);
-    }
+    -webkit-box-shadow: 1px 0px 11px -2px rgb(195, 195, 195);
+    -moz-box-shadow: 1px 0px 11px -2px rgba(152,156,240,1);
+    box-shadow: 1px 0px 11px -2px rgb(212, 212, 212);
+}
 
     .cajaElemento a.detalleProducto{
         position: relative;
