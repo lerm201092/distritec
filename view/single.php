@@ -10,6 +10,7 @@
 
 <body>
 
+    <?php include "./include/medidas.php"; ?>
     <?php include "./include/header.php"; ?>
 
 
@@ -43,7 +44,7 @@
                             <td id="td_accesorios" style="font-weight:600"></td>
                         </tr>
                         <tr>
-                            <td>Peso</td>
+                            <td>Peso <?php echo peso($_GET["tipo"]) ?></td>
                             <td id="td_peso" style="font-weight:600"></td>
                         </tr>
                         <tr>
@@ -55,19 +56,19 @@
                             <td id="td_material" style="font-weight:600"></td>
                         </tr>
                         <tr>
-                            <td>Diametro</td>
+                            <td>Diametro <?php echo medida($_GET["tipo"]) ?></td>
                             <td id="td_diametro" style="font-weight:600"></td>
                         </tr>
                         <tr>
-                            <td>Altura</td>
+                            <td>Altura <?php echo medida($_GET["tipo"]) ?></td>
                             <td id="td_altura_mm" style="font-weight:600"></td>
                         </tr>
                         <tr>
-                            <td>Diametro de rosca</td>
+                            <td>Diametro de rosca <?php echo medida($_GET["tipo"]) ?></td>
                             <td id="td_diametro_r" style="font-weight:600"></td>
                         </tr>
                         <tr>
-                            <td>Altura de rosca</td>
+                            <td>Altura de rosca <?php echo medida($_GET["tipo"]) ?></td>
                             <td id="td_altura_r" style="font-weight:600"></td>
                         </tr>
                     </table>

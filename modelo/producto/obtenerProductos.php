@@ -14,24 +14,17 @@
   // RECORRE EL RESULTADO Y LO GUARDA EN UN ARRAY
   $datos = array();
   $datos = null;
+  $divisor = 0;
+  $cont = 0;
 
-  if($tabla == "ENVASES"){
-    $divisor = 0;
-    // REALIZA LA QUERY A LA DB
-    $registros = mysqli_query($conexion, 'SELECT MAX(capacidad_ml)/5 AS CANT FROM ENVASES');
+  if($tabla == "ENVASES" || $tabla == "DESECHABLES" ){
+    $registros = mysqli_query($conexion, 'SELECT MAX(capacidad_ml)/5 AS CANT FROM '.$tabla);
     if ($r = mysqli_fetch_array($registros)) { $divisor = $r["CANT"]; }
-
     $datos["divisor"] = $divisor;
-
   }
-
-  if( tabla_forma($tabla) == true ){ $datos["forma"] = true; } 
-
 
   // REALIZA LA QUERY A LA DB
   $registros = mysqli_query($conexion, 'SELECT * FROM '.$tabla.$where);
-
-  
   while ($r = mysqli_fetch_array($registros))  
   {
     $nombre_fichero = "../../../distritec_img/img_productos/".$r[0].".png";
@@ -50,9 +43,11 @@
         3 => $filtro_forma
       );
     }
+
+    $cont++;
   } 
 
-  if($datos == null){
+  if($cont == 0){
     $datos["error"] = "error";
   }
   

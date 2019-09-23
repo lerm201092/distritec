@@ -15,19 +15,15 @@ function obtenerProductos() {
                 var json         = eval("(" + resp + ")");    
                 if(json["error"]){ 
                     Json_Vacio(); 
+                    console.log("1");
                     $("#FILTRO_CAP").html("<p style='font-size: 12px; font-weight: 600; width:100%;'>No disponible.</p>")
                     $("#FILTRO_FOR").html("<p style='font-size: 12px; font-weight: 600; width:100%;'>No disponible.</p>")
-                
-                    console.log("No se encontraron datos.")
-                }else{
+                }else{                   
 
-                    if(!json["forma"]){ 
-                        $("#FILTRO_FOR").html("<p style='font-size: 12px; font-weight: 600; width:100%;'>No disponible.</p>")
-                     }
-                    
-
-                    if(tipo_producto_inicial.toUpperCase() != "ENVASES"){
+                    if(tipo_producto_inicial.toUpperCase() != "ENVASES" && tipo_producto_inicial.toUpperCase() != "DESECHABLES" ){
+                        console.log("3");
                         $("#FILTRO_CAP").html("<p style='font-size: 12px; font-weight: 600; width:100%;'>No disponible.</p>")
+                        $("#FILTRO_FOR").html("<p style='font-size: 12px; font-weight: 600; width:100%;'>No disponible.</p>")
                     }
 
                     if(json["divisor"]){
@@ -42,12 +38,15 @@ function obtenerProductos() {
                         });
                     }
 
-                    // console.log(json);
-                    for(var i=0; i<json["data"].length; i++){
-                        var filtro = Filtro_Capacidad(json["data"][i], json["divisor"]);
-                        var forma = Filtro_Forma(json["data"][i]);
-                        Crear_Caja(i, filtro,forma, json["data"][i]);
+                    console.log(json);
+                    if(json["data"]){
+                        for(var i=0; i<json["data"].length; i++){
+                            var filtro = Filtro_Capacidad(json["data"][i], json["divisor"]);
+                            var forma = Filtro_Forma(json["data"][i]);
+                            Crear_Caja(i, filtro,forma, json["data"][i], tipo_producto_inicial);
+                        }
                     }
+                    
                     setTimeout(() => { 
                         $("#cajaEspera").addClass("hide");               
                         $("#cajaPrincipal").removeClass("hide");
@@ -99,10 +98,16 @@ function Json_Vacio (){
 }
 
 
-function Crear_Caja(x, filtro_capacidad, filtro_forma, Obj){
+function Crear_Caja(x, filtro_capacidad, filtro_forma, Obj, tabla){
+
+    var columnas = "3";
+
+    if(tabla.toUpperCase() == "ENVASES" || tabla.toUpperCase() == "DESECHABLES"){
+        columnas = "4";
+    }
 
     var html = `<!-- inicio de fila  `+x+` -->
-                <div tipo='cajaElemento' id='caja`+x+`' class='col-xs-12 col-sm-6 col-md-4 contenedorCaja' filtro_capacidad='`+filtro_capacidad+`'  filtro_forma='`+filtro_forma+`'>	
+                <div tipo='cajaElemento' id='caja`+x+`' class='col-xs-12 col-sm-6 col-md-`+columnas+` contenedorCaja' filtro_capacidad='`+filtro_capacidad+`'  filtro_forma='`+filtro_forma+`'>	
                     <div class="cajaElemento"  class='col-md-12'>		
                         <a href='./single.php?ref=`+Obj[0]+`&tipo=`+tipo_producto_inicial+`'>
                             <div class='grid_img'>
@@ -112,7 +117,7 @@ function Crear_Caja(x, filtro_capacidad, filtro_forma, Obj){
                                 <div class='top_box'>                                    
                                     <div>
                                         <h3 class='m_1' style='font-size:12px; font-weight:bold; color: #002183'>`+Obj[1]+`</h3>
-                                        <p class='m_2'>`+Obj[2]+`</p>
+                                        <p class='m_2'>Ref : `+Obj[0]+`</p>
                                     </div>
                                     
                                 </div>
