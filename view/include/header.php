@@ -122,12 +122,12 @@
 
 
 
-<div class="row" id="menu_principal">
+<div class="row menu_gris" id="menu_principal">
 	<div class="container" id="menu_principal_cont" style="padding:0">
 		<li  class="item_menu" id="li_envases" style="width:16%">
 			<a href="./productos.php?tipo=envases&linea=0" class="a_menu">
 				<p><img src="../../../distritec_img/img_app/menu/l.png" class="img_menu"></p>		
-				<p class="a_p_menu">Envases y Tapas</p>
+				<p class="">Envases y Tapas</p>
 			</a>
 			<div style="padding-top: 20px;">
 			<!-- <ul  id="submenu_envases"> -->
@@ -146,31 +146,31 @@
 		<li class="item_menu"  style="width:16%">
 			<a href="./productos.php?tipo=atomizadores&linea=0" class="a_menu">
 				<p><img src="../../../distritec_img/img_app/menu/a.png" class="img_menu"></p>		
-				<p class="a_p_menu">Atomizadores</p>
+				<p class="">Atomizadores</p>
 			</a>
 		</li>
 		<li class="item_menu"  style="width:16%">
 			<a href="./productos.php?tipo=desechables&linea=0" class="a_menu">
 				<p><img src="../../../distritec_img/img_app/menu/d.jpg" class="img_menu"></p>		
-				<p class="a_p_menu">Desechables</p>
+				<p class="">Desechables</p>
 			</a>
 		</li>
 		<li class="item_menu"  style="width:16%">
 			<a href="./productos.php?tipo=estibas&linea=0" class="a_menu">
 				<p><img src="../../../distritec_img/img_app/menu/p.png" class="img_menu"></p>		
-				<p class="a_p_menu">Estibas y Pisos</p>
+				<p class="">Estibas y Pisos</p>
 			</a>
 		</li>
 		<li class="item_menu"  style="width:16%">
 			<a  href="./productos.php?tipo=zootecnia&linea=0" class="a_menu">
 				<p><img src="../../../distritec_img/img_app/menu/c.png" class="img_menu"></p>		
-				<p class="a_p_menu">Zootecnia</p>
+				<p class="">Zootecnia</p>
 			</a>
 		</li>
 		<li class="item_menu"  style="width:16%">
 			<a href="./productos.php?tipo=embalajes&linea=0"class="a_menu">
 				<p><img src="../../../distritec_img/img_app/menu/e.png" class="img_menu"></p>		
-				<p class="a_p_menu">Embalaje y Otros</p>
+				<p class="">Embalaje y Otros</p>
 			</a>
 		</li>
 	</div>
