@@ -58,4 +58,4 @@
 			});
 		});
 </script>
-
+<script  src="./src/js/slider.js" type="text/javascript"></script>
