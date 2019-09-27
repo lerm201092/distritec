@@ -133,11 +133,11 @@
 												<input type="text" class="form-control form-control-sm" name='espesor_mm' />
 											</div>
 											<div class="col-md-4 form-group">
-												<label for="">Largo (mm):</label>
+												<label for="">Largo (m):</label>
 												<input type="text" class="form-control form-control-sm" name='largo_mm'  />
 											</div>
 											<div class="col-md-4 form-group">
-												<label for="">Ancho (mm):</label>
+												<label for="">Ancho (m):</label>
 												<input type="text" class="form-control form-control-sm" name='ancho_mm' />
 											</div>
 

@@ -136,19 +136,19 @@
 												<input type="text" class="form-control form-control-sm" name='peso_g'  />
 											</div>
 											<div class="col-md-4 form-group">
-												<label for="">Diametro (mm):</label>
+												<label for="">Diametro (cm):</label>
 												<input type="text" class="form-control form-control-sm" name='diametro_mm' />
 											</div>
 											<div class="col-md-4 form-group">
-												<label for="">Largo (mm):</label>
+												<label for="">Largo (cm):</label>
 												<input type="text" class="form-control form-control-sm" name='largo_mm'  />
 											</div>
 											<div class="col-md-4 form-group">
-												<label for="">Altura (mm):</label>
+												<label for="">Altura (cm):</label>
 												<input type="text" class="form-control form-control-sm" name='altura_mm'  />
 											</div>
 											<div class="col-md-4 form-group">
-												<label for="">Ancho (mm):</label>
+												<label for="">Ancho (cm):</label>
 												<input type="text" class="form-control form-control-sm" name='ancho_mm' />
 											</div>
 											<div class="col-md-4 form-group">

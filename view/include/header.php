@@ -34,7 +34,7 @@
 	</div>
 	<div class="col-xs-12" style="text-align: center;">
 		<p style="text-align: center; width: 100%">
-			<div class="cssmenu" style="width: 100%;">
+			<div id="menu-bottom-mov" class="cssmenu" style="width: 100%;">
 				<ul>
 					<li><a href="./somos.php" class="menu_l"><b>Nuestra Empresa</b></a></li> 
 					<li><a href="./contatenos.php" class="menu_l"><b>Contáctenos</b></a></li> 
@@ -52,7 +52,7 @@
 	<div class="container"  id="sub_menu_principal">
 		<li >
 			<a href="#" class="a_menu">
-				<p><img src="../../../distritec_img/img_app/menu/l.png" class="img_menu_movil">Envases y Tapas <span onclick="$('#ul_sub_menu').slideToggle()" class="pull-right" style="border:2px solid #ccc; margin-right:10px; padding: 0px 5px; font-weight:bold;">+</span></p>	
+				<p><img src="../../../distritec_img/img_app/menu/l.png" class="img_menu_movil">Envases y Tapas <span onclick="$('#ul_sub_menu').slideToggle()" class="pull-right" style="border:2px solid #ccc; margin-right:10px; padding: 0px 5px; font-weight:bold;float: right;">+</span></p>	
 			</a>
 		</li>
 		<ul id="ul_sub_menu" style="display:none;">
