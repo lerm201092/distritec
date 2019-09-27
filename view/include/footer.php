@@ -18,27 +18,3 @@
 	<a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
 </div>
 
-<script>
-	$(window).resize(function(){
-		var ancho = $(this).width();
-		if(ancho >= 1000){
-			$("#menu_movil").hide();
-			$("#menu_movil").css({"left" : "-100%", "transition" : "0.1s"});
-		}
-	});
-	$("#li_envases").hover(function(){
-		$("#submenu_envases").show();
-		}, function(){
-			$("#submenu_envases").hide();
-		});
-
-	function menu(){
-		$("#menu_movil").show();
-		var left = $("#menu_movil").css("left");
-		if(left == "0px"){
-			$("#menu_movil").css({"left" : "-100%", "transition" : "0.1s"});
-		}else{
-			$("#menu_movil").css({"left" : "0px", "transition" : "0.1s"});
-		}		
-	}
-</script>
