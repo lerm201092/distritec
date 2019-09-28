@@ -1,0 +1,239 @@
+.img_menu {
+	height: 80px;
+	width: auto;
+}
+
+#menu_principal div li{
+	list-style: none;
+	display: inline-block; 
+	padding : 2px 25px;
+}
+
+#menu_principal div li a {
+	cursor: pointer;
+	text-align: center;
+    color: #053e9d;
+    font-size: 13px;
+    letter-spacing: 0;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.row{
+	margin : 0;
+	padding: 0;
+}
+
+#menu_movil div li {
+    padding : 10px 0px;
+    border-top:.5px solid #cccccc;
+}
+
+#menu_movil div li a {
+	font-weight: bold;
+	color: #001285;
+	font-size: 13px;
+}
+
+#menu_movil {
+     border:1px solid #cccccc;
+}
+
+#menu_movil div li:first-child {
+    border-top: none;
+}
+
+#menu_movil div li:last-child {
+    padding : 10px 0px;
+    border-top:.5px solid #cccccc;
+    border-bottom:.5px solid #cccccc;
+}
+
+#menu_movil .container{
+    margin: 0px;
+    padding: 0;
+}
+
+#p_footer{
+	text-align: right;
+	width: 100%;
+}
+
+.a_p_menu{
+	border-top: 3px solid white;
+}
+
+#top_menu_principal{
+	display: initial;
+}
+
+#top_menu_principal_2{
+	display: none;
+    padding: 15px 0px;
+}
+
+.img_menu_movil{
+    height: 20px;
+	list-style: none;
+	margin-right: 20px;
+	margin-left: 10px;
+}
+
+#menu_movil{
+    position: absolute;
+    height: 100%;
+	width: 100%;
+	background: #000000c9;
+	color:black;
+	left: -100%;
+	z-index: 999;
+}
+
+#sub_menu_principal{
+	width : 300px;
+	background: white;
+}
+
+
+body{
+    overflow-x: hidden; 
+}
+
+#menu_movil li{
+    text-decoration: none;
+    list-style: none;
+}
+
+
+li#li_envases ul {
+    position: absolute;
+    z-index: 1000;
+    border: 1px solid #001285;
+    width: 300px;
+	background: white;
+	border: 1px solid #cccccc;
+	border-radius : 6px;	
+	padding: 0px;
+	/* padding-top: 20px; */
+}
+
+li#li_envases ul li{
+	/* background: yellow; */
+	border-bottom : 1px solid #cccccc;
+	width: 85%;
+	margin: 0 auto;
+	display: table;
+	font-size: 14px;
+}
+
+li#li_envases ul li:last-child{
+	border-bottom : none;
+	padding-bottom:15px;
+}
+#top_li {
+    width: 18px!important;
+    height: 20px!important;
+    background: #fff;
+	position: absolute;
+	transform: rotate(45deg);
+	margin-left:30px!important;
+	top: -10px;
+	border: none!important;
+	border-top: 1px solid #ccc!important;
+	border-left: 1px solid #ccc!important;
+	padding: 0!important;
+}
+
+img[alt=imagen_menu]{
+	height: 20px;
+}
+
+#menu-bottom-mov{
+	margin-top:initial;
+}
+
+.menu_gris
+{
+	background: #F3F3F3;
+}
+
+.footer{
+	position: fixed;
+}
+
+/*    *******************************************************************************************+    */
+/*    *******************************************************************************************+    */
+/*    *******************************************************************************************+    */
+/*    *******************************************************************************************+    */
+/*    *******************************************************************************************+    */
+/*    *******************************************************************************************+    */
+/*    *******************************************************************************************+    */
+/*    *******************************************************************************************+    */
+
+@media (max-width: 1200px) {
+	#menu_principal div li{
+		list-style: none;
+		display: inline-block; 
+		padding : 10px 5px;
+	}
+}
+
+
+
+@media (max-width: 1000px) {
+	#menu_principal div li{
+		list-style: none;
+		display: inline-block; 
+		padding : 10px 8px;
+	}
+
+	.footer{
+		position: fixed;
+	}
+
+	.img_menu {
+		height: 50px;
+		width: auto;
+		margin-bottom: 5px;
+	}
+
+	#menu-bottom-mov{
+		margin-top: 15px;
+		margin-bottom: 10px;
+	}
+
+	.wrap{
+		padding-top: 50px;
+	}
+}
+
+@media (max-width: 1000px) {
+	#menu_principal div li{
+		list-style: none;
+		display: inline-block; 
+		padding : 10px 5px;
+	}
+
+	#top_menu_principal{
+		display: none;
+	}
+
+    #menu_principal{
+        display: none;
+    }
+	#top_menu_principal_2{
+        display: block;
+        padding: 10px 10px;
+	}
+
+	.img_menu {
+		height: 50px;
+		width: auto;
+	}
+
+	#p_footer{
+		text-align: left;
+		width: 100%;
+	}
+}

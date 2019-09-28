@@ -8,7 +8,7 @@
 </head>
 <body>
     <script>
-        location.href = "./App/";
+        location.href = "./view/";
     </script>
 </body>
 </html>
