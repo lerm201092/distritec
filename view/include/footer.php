@@ -1,6 +1,6 @@
 <div class="footer" style="bottom:0; width: 100%;">
 	<div class="copy row">
-		<div class="row" style="padding:25px 8px 25px;">
+		<div class="row" style="padding:10px 8px 10px;">
 			<div class="col-md-3 col-sm-12">
 				<p class="text-center color_f"> &copy; 2019 Distritec. All Rights Reserved.</p>
 			</div>
