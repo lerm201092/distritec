@@ -99,7 +99,7 @@
 		</li>
 		<li>
 			<a href="./productos.php?tipo=desechables&linea=0" class="a_menu">
-				<p><img src="../../distritec_img/img_app/menu/dd.png" class="img_menu_movil">Desechables</p>	
+				<p><img src="../../distritec_img/img_app/menu/d.png" class="img_menu_movil">Desechables</p>	
 			</a>
 		</li>
 		<li>
@@ -151,7 +151,7 @@
 		</li>
 		<li class="item_menu" id="li_desechables" style="width:16%">
 			<a href="./productos.php?tipo=desechables&linea=0" class="a_menu">
-				<p><img src="../../distritec_img/img_app/menu/dd.png" class="img_menu"></p>		
+				<p><img src="../../distritec_img/img_app/menu/d.png" class="img_menu"></p>		
 				<p class="">Desechables</p>
 			</a>
 
