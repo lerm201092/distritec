@@ -111,7 +111,7 @@ function Crear_Caja(x, filtro_capacidad, filtro_forma, Obj, tabla){
                     <div class="cajaElemento"  class='col-md-12'>		
                         <a href='./single.php?ref=`+Obj[0]+`&tipo=`+tipo_producto_inicial+`'>
                             <div class='grid_img'>
-                                        <div class='css3'><img src='../../../distritec_img/img_productos/`+Obj[0]+`.png' alt='' style='max-width: 100%; max-height: 200px;' /></div>
+                                        <div class='css3'><img src='../../distritec_img/img_productos/`+Obj[0]+`.png' alt='' style='max-width: 100%; max-height: 200px;' /></div>
                                     </div>
                             <div class='view1 view-fifth1 detalleProducto'>
                                 <div class='top_box'>                                    

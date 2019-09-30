@@ -52,9 +52,9 @@
                                 <label for="pwd" style="font-size: 14px; font-weight: 600">Contraseña:</label>
                                 <input type="password" class="form-control" id="txt_pass">
                             </div>
-                            <div class="form-group form-check text-right">
+                            <!-- <div class="form-group form-check text-right">
                                 <a href="#" style="font-size: 13px; font-weight: 600">He olvidado mi contraseña.</a>
-                            </div>
+                            </div> -->
                             <div class="form-group form-check text-center">
                                 <a type="button" href="#" onclick="login()" class="btn btn-primary col-md-12">Iniciar Sesión</a>
                                 <br><br>

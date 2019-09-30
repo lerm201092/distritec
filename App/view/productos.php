@@ -140,14 +140,14 @@
 
                 <div id="cajaEspera">
                     <div style="width: 100%; text-align: center; padding-top: 20px;margin-bottom: 50px;">
-                        <img id="imagenPrincipal" src="../../../distritec_img/img_app/cargando.gif">
+                        <img id="imagenPrincipal" src="../../distritec_img/img_app/cargando.gif">
                     </div>                
                 </div>
 
                 <div id="cajaNohay" class="hide">
                     <center>
                     <div style="width: 100%; text-align: center; padding-top: 20px;margin-bottom: 50px;">
-                        <img src="../../../distritec_img/img_app/opps.png" alt="" style="width:150px;height:auto">                    
+                        <img src="../../distritec_img/img_app/opps.png" alt="" style="width:150px;height:auto">                    
                         <h3 style="font-size:20px; color: #002183; font-weight:bold; margin-top: 20px;">PRODUCTOS NO DISPONIBLES</h3>
                         <p style="font-weight:bold;margin-top:15px" id="pronohay">Te invitamos a seguir navegando en el sitio, hay una gran variedad de productos para vos!</p>
                     </div>  
@@ -164,9 +164,14 @@
         var linea_producto = "<?php $x=$_GET["linea"]; echo $x; ?>"; 
 
         if(tipo_producto_inicial.toUpperCase() == "ENVASES" || tipo_producto_inicial.toUpperCase()  == "DESECHABLES"){
-            $("#div_filtros").removeClass("hide");
-            $("#cont_filtro_capacidad").removeClass("hide");
-            $("#cont_filtro_forma").removeClass("hide");
+            if(linea_producto.toUpperCase() == "T"){
+                $("div[id=div_info]").removeClass("col-md-9").addClass("col-md-12");
+                $("div[tipo=cajaElemento]").removeClass("col-md-4").addClass("col-md-3");
+            }else{
+                $("#div_filtros").removeClass("hide");
+                $("#cont_filtro_capacidad").removeClass("hide");
+                $("#cont_filtro_forma").removeClass("hide");
+            }
         }else{
             $("div[id=div_info]").removeClass("col-md-9").addClass("col-md-12");
             $("div[tipo=cajaElemento]").removeClass("col-md-4").addClass("col-md-3");

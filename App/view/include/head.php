@@ -1,13 +1,13 @@
 <meta   name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta   http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link   rel="icon" type="image/png" href="../../../distritec_img/img_app/favicon.png">
-<link   href="../../../distritec_vendor/page/src/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link   href="../../../distritec_vendor/page/src/css/style.css" rel="stylesheet" type="text/css" media="all" />
-<link   href="../../../distritec_vendor/page/src/css/style2.css" rel="stylesheet" type="text/css" media="all" /> 
+<link   rel="icon" type="image/png" href="../../distritec_img/img_app/favicon.png">
+<link   href="../../distritec_vendor/page/src/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link   href="../../distritec_vendor/page/src/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link   href="../../distritec_vendor/page/src/css/style2.css" rel="stylesheet" type="text/css" media="all" /> 
 <link   href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-<link   href="../../../distritec_vendor/page/src/css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
-<link   href="../../../distritec_vendor/page/src/css/my_css/contactenos.css" rel="stylesheet" type="text/css" media="all" />
-<script src="../../../distritec_vendor/page/src/js/jquery.min.js" type="text/javascript"></script>
+<link   href="../../distritec_vendor/page/src/css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
+<link   href="../../distritec_vendor/page/src/css/my_css/contactenos.css" rel="stylesheet" type="text/css" media="all" />
+<script src="../../distritec_vendor/page/src/js/jquery.min.js" type="text/javascript"></script>
 <script type="text/javascript">
         $(document).ready(function() {
 
@@ -48,7 +48,7 @@
             });
         });
      </script>
-<script  src="../../../distritec_vendor/page/js/megamenu.js" type="text/javascript"></script>
+<script  src="../../distritec_vendor/page/js/megamenu.js" type="text/javascript"></script>
 <script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
 <script type="text/javascript">
 		jQuery(document).ready(function($) {

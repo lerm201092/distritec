@@ -15,7 +15,7 @@
 
 
 
-    <div class="row" style="padding-bottom: 80px;">
+    <div class="row" style="padding-top: 20px; padding-bottom: 80px;">
         <div class="col-md-10 col-md-offset-1">
             <div class="row">
                 <div class="col-md-5" style="line-height: 400px; text-align:center">
@@ -38,6 +38,10 @@
                         <tr>
                             <td>Usos</td>
                             <td id="td_usos" style="font-weight:600"></td>
+                        </tr>
+                        <tr>
+                            <td>Beneficios</td>
+                            <td id="td_beneficios" style="font-weight:600"></td>
                         </tr>
                         <tr>
                             <td>Accesorios</td>
