@@ -149,7 +149,7 @@
                     <div style="width: 100%; text-align: center; padding-top: 20px;margin-bottom: 50px;">
                         <img src="../../distritec_img/img_app/opps.png" alt="" style="width:150px;height:auto">                    
                         <h3 style="font-size:20px; color: #002183; font-weight:bold; margin-top: 20px;">PRODUCTOS NO DISPONIBLES</h3>
-                        <p style="font-weight:bold;margin-top:15px" id="pronohay">Te invitamos a seguir navegando en el sitio, hay una gran variedad de productos para vos!</p>
+                        <p style="font-weight:bold;margin-top:15px" id="pronohay">Te invitamos a seguir navegando en el sitio, hay una gran variedad de productos para usted!</p>
                     </div>  
                     </center>              
                 </div>
