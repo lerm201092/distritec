@@ -92,7 +92,7 @@ function Json_Vacio (){
     setTimeout(() => { 
         $("#cajaPrincipal").addClass("hide");   
         $("#cajaEspera").addClass("hide");    
-        $("#pronohay").text("Te invitamos a seguir navegando en el sitio, hay una gran variedad de productos para vos!") ;             
+        $("#pronohay").text("Te invitamos a seguir navegando en el sitio, hay una gran variedad de productos para usted!") ;             
         $("#cajaNohay").removeClass("hide");
     }, 400);
 }
