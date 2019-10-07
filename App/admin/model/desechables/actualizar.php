@@ -61,6 +61,8 @@
                                      $altura_mm.
                                      $where;
 
+                                     $consulta = str_ireplace("''", "NULL", $consulta);
+
 
     if ($conexion->query($consulta) === TRUE) {
         $datos["OK"] = "OK";

@@ -46,6 +46,8 @@ if($cantRegistros > 0){
                                                 .$array["cod_linea"]."'"
                                                 .")";
 
+                                                $consulta = str_ireplace("''", "NULL", $consulta);
+
     if ($conexion->query($consulta) === TRUE) {
         $datos["OK"] = "OK";
         if($ruta_provisional != null){

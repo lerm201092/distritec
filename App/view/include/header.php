@@ -97,11 +97,34 @@
 				<p><img src="../../distritec_img/img_app/menu/a.png" class="img_menu_movil">Atomizadores</p>
 			</a>
 		</li>
+
 		<li>
+<<<<<<< HEAD
+			<a href="#" class="a_menu">
+				<p><img src="../../distritec_img/img_app/menu/dd.png" class="img_menu_movil">Desechables<span onclick="$('#ul_sub_menu_des').slideToggle()" class="pull-right" style="border:2px solid #ccc; margin-right:10px; padding: 0px 5px; font-weight:bold;float: right;">+</span></p>	
+=======
 			<a href="./productos.php?tipo=desechables&linea=0" class="a_menu">
 				<p><img src="../../distritec_img/img_app/menu/d.png" class="img_menu_movil">Desechables</p>	
+>>>>>>> 41bc84179775a17bef3a12f66f7e27f3612c32a8
 			</a>
 		</li>
+		<ul id="ul_sub_menu_des" style="display:none;">
+			<li style="border-left: 5px solid #001285; padding-left: 25px; background: #eaeaea;">
+				<a href="./productos.php?tipo=desechables&linea=B" class="a_menu">
+					<p>Biodegradables</p>	
+				</a>
+			</li>
+			<li style="border-left: 5px solid #001285; padding-left: 25px; background: #eaeaea;">
+				<a href="./productos.php?tipo=desechables&linea=C" class="a_menu">
+					<p>Convencionales</p>	
+				</a>
+			</li>
+			<li style="border-left: 5px solid #001285; padding-left: 25px; background: #eaeaea;">
+				<a href="./productos.php?tipo=desechables&linea=0" class="a_menu">
+					<p>Todos</p>	
+				</a>
+			</li>
+		</ul>
 		<li>
 			<a href="./productos.php?tipo=estibas&linea=0" class="a_menu">
 				<p><img src="../../distritec_img/img_app/menu/p.png" class="img_menu_movil">Estibas y Pisos</p>		

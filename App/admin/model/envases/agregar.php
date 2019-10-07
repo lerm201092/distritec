@@ -28,7 +28,6 @@ if($cantRegistros > 0){
     $file = $_FILES["file"];
     if(  $file["name"] != "" && $file["name"]!=null){ $ruta_provisional = $file["tmp_name"]; }
 
-
     $consulta = "INSERT INTO ".$tabla." VALUES ('"
                                                 .$array["referencia"]."','"
                                                 .$array["descripcion"]."','"
@@ -51,6 +50,8 @@ if($cantRegistros > 0){
                                                 .$array["cod_linea"]."','"
                                                 .$array["altura_mm"]."'"
                                                 .")";
+
+    $consulta = str_ireplace("''", "NULL", $consulta);
 
     if ($conexion->query($consulta) === TRUE) {
         $datos["OK"] = "OK";

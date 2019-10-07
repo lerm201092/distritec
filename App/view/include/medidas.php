@@ -2,7 +2,7 @@
 function medida($tabla){
     $tabla = strtoupper($tabla);
     $aux = "";
-    if($tabla == "ENVASES"){
+    if($tabla == "ENVASES" || $tabla == "ATOMIZADORES"){
        $aux =  "(mm)";
     }elseif($tabla == "DESECHABLES"){
         $aux =  "(cm)";

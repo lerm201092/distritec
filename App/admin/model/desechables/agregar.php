@@ -51,7 +51,7 @@ if($cantRegistros > 0){
                                                 .")";
 
 
-                        
+                                                $consulta = str_ireplace("''", "NULL", $consulta);         
 
     if ($conexion->query($consulta) === TRUE) {
         $datos["OK"] = "OK";
