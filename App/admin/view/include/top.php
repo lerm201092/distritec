@@ -87,8 +87,14 @@
                 </li>
                 <li class="nav-header">OPCIONES</li>
                     <li class="nav-item">
+                        <a href="../opciones/contrasena.php" class="nav-link">
+                            <i class="nav-icon fa fa-power-off"></i>
+                            <p>Cambiar Contraseña</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
                         <a href="../../../modelo/sesion/logout.php" class="nav-link">
-                            <i class="nav-icon 	fa fa-power-off"></i>
+                            <i class="nav-icon fa fa-power-off"></i>
                             <p>Cerrar Sesión</p>
                         </a>
                     </li>

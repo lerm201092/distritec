@@ -7,7 +7,7 @@
             position: relative;
         }
 
-        @media (max-width: 1000px) {
+        @media (max-width: 500px) {
             .footer{
                 position: fixed;
             }
@@ -18,6 +18,8 @@
 
     <?php include "./include/header.php"; ?>
     <?php include "./include/slider.php"; ?>  
+    <?php //include "./include/slider-mov.php"; ?>  
+
 
     <div class="footer" style="bottom:0; width: 100%;">
 	<div class="copy row">
@@ -41,17 +43,51 @@
 
 
 <script>
+
+	$(document).ready(function(){
+		var cont = 1;
+		var ancho = $(this).width();
+		if(ancho >= 1000){
+			$("img[tipo=img-slider]").each(function(){
+				$(this).attr("src", "../../distritec_img/img_app/banner/"+cont+".jpg")
+				cont++;
+			});
+		}else{
+			$("img[tipo=img-slider]").each(function(){
+				$(this).attr("src", "../../distritec_img/img_app/banner-mov/"+cont+".jpg")
+				cont++;
+			});
+		}
+	});
+
 	$(window).resize(function(){
+		var cont = 1;
 		var ancho = $(this).width();
 		if(ancho >= 1000){
 			$("#menu_movil").hide();
 			$("#menu_movil").css({"left" : "-100%", "transition" : "0.1s"});
+			$("img[tipo=img-slider]").each(function(){
+				$(this).attr("src", "../../distritec_img/img_app/banner/"+cont+".jpg")
+				cont++;
+			});
+		}else{
+			$("img[tipo=img-slider]").each(function(){
+				$(this).attr("src", "../../distritec_img/img_app/banner-mov/"+cont+".jpg")
+				cont++;
+			});
 		}
 	});
+
 	$("#li_envases").hover(function(){
 		$("#submenu_envases").show();
 		}, function(){
 			$("#submenu_envases").hide();
+		});
+
+		$("#li_desechables").hover(function(){
+		$("#submenu_desechables").show();
+		}, function(){
+			$("#submenu_desechables").hide();
 		});
 
 	function menu(){

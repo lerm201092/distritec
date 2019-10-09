@@ -180,6 +180,5 @@
     <script src="../controller/producto/obtenerProducto.js"></script>
     <script src="../controller/producto/filtro.js"></script>
 
-
 </body>
 </html>

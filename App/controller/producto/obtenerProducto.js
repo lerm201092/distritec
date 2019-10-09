@@ -103,8 +103,14 @@ function Crear_Caja(x, filtro_capacidad, filtro_forma, Obj, tabla){
     var columnas = "3";
 
     if(tabla.toUpperCase() == "ENVASES" || tabla.toUpperCase() == "DESECHABLES"){
-        columnas = "4";
+        if(tabla.toUpperCase() == "ENVASES" || linea_producto.toUpperCase() == "T"){
+            columnas = "3";
+        }else{
+            columnas = "4";
+        }        
     }
+
+    
 
     var html = `<!-- inicio de fila  `+x+` -->
                 <div tipo='cajaElemento' id='caja`+x+`' class='col-xs-12 col-sm-6 col-md-`+columnas+` contenedorCaja' filtro_capacidad='`+filtro_capacidad+`'  filtro_forma='`+filtro_forma+`'>	

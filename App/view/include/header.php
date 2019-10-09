@@ -25,7 +25,7 @@
 	</div>
 </div>   
 
-<div class="row"  id="top_menu_principal_2" >
+<div class="row"  id="top_menu_principal_2"  >
 	<div class="col-xs-12">
 		<p style="padding: 0px 20px; text-align:center">
 			<img id="img_menu_movil" onclick="menu();" src="../../distritec_img/img_app/menu/menu.png" style="float:left; height:30px; margin-top: 5px; cursor:pointer;" />
@@ -97,15 +97,9 @@
 				<p><img src="../../distritec_img/img_app/menu/a.png" class="img_menu_movil">Atomizadores</p>
 			</a>
 		</li>
-
 		<li>
-<<<<<<< HEAD
 			<a href="#" class="a_menu">
 				<p><img src="../../distritec_img/img_app/menu/dd.png" class="img_menu_movil">Desechables<span onclick="$('#ul_sub_menu_des').slideToggle()" class="pull-right" style="border:2px solid #ccc; margin-right:10px; padding: 0px 5px; font-weight:bold;float: right;">+</span></p>	
-=======
-			<a href="./productos.php?tipo=desechables&linea=0" class="a_menu">
-				<p><img src="../../distritec_img/img_app/menu/d.png" class="img_menu_movil">Desechables</p>	
->>>>>>> 41bc84179775a17bef3a12f66f7e27f3612c32a8
 			</a>
 		</li>
 		<ul id="ul_sub_menu_des" style="display:none;">
