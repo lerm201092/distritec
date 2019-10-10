@@ -1,0 +1,35 @@
+<?php
+
+    session_start();
+    $datos = array();
+    $datos = null;
+    $tabla = "USUARIOS";
+    $pass = $_POST["pass"];
+
+    $referencia = $_SESSION["id_distritec"];
+
+    $cantRegistros = 0;
+
+    require "../../../modelo/sesion/conexion.php";
+    $conexion = conexion(); 
+
+    $descripcion = "pass = '". $pass."'";
+    $where = " WHERE nick = '".$referencia."'";
+
+    $consulta = "UPDATE ".$tabla." SET ".$descripcion. 
+                                     $where;
+
+                                     $consulta = str_ireplace("''", "NULL", $consulta);
+
+
+    if ($conexion->query($consulta) === TRUE) {
+        $datos["OK"] = "OK"; 
+    } else {
+        $datos["ERROR"] ="Error: ".$conexion->error;
+    }           
+
+
+    $json = json_encode( $datos, JSON_UNESCAPED_UNICODE); // GENERA EL JSON CON LOS DATOS OBTENIDOS  
+    echo  $json; 
+
+?>

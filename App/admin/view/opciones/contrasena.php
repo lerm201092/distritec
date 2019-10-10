@@ -21,7 +21,7 @@
 		<script src="../../../../distritec_vendor/crud/datatable/datatables.js"></script>
 
 		<link rel="stylesheet" href="./css/index.css">
-		<script src="../../controller/embalajes/index.js"></script>
+		<script src="../../controller/opciones/contrasena.js"></script>
 	</head>
 <body class="hold-transition sidebar-mini layout-fixed">
 
@@ -57,14 +57,14 @@
         <div class="card" style="max-width:450px">
             <div class="card-body">
                 <div class="form-group">
-                    <label for="txt_new" style="float:left">Nueva Contraseña:</label>
+                    <label for="txt_pass" style="float:left">Nueva Contraseña:</label>
                     <input type="password" id="txt_pass" class="form-control"/>
                 </div>
                 <div class="form-group">
                     <label for="txt_confirm" style="float:left">Confirmar Contraseña:</label>
                     <input type="password" id="txt_confirm" class="form-control"/>
                 </div>
-                <a href="#" class="btn btn-primary col-12">Cambiar Contraseña</a>
+                <a href="#" class="btn btn-primary col-12" onclick="Cambiar();">Cambiar Contraseña</a>
             </div>
         </div>
         </center>

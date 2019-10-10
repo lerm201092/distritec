@@ -15,6 +15,7 @@
   while ($resultado = mysqli_fetch_array($registros)) {
     $datos[] = $resultado;
     session_start();
+    $_SESSION["id_distritec"] = $resultado["nick"];
     $_SESSION["name_distritec"] = $resultado["name"];
   }
 
