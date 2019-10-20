@@ -11,12 +11,15 @@
   $datos = null;
 
   // REALIZA LA QUERY A LA DB
-  $registros = mysqli_query($conexion, "SELECT * FROM USUARIOS WHERE nick = '$user' AND pass = '$pass'");
+  $registros = mysqli_query($conexion, "SELECT * FROM USUARIOS WHERE nick = '$user'");
   while ($resultado = mysqli_fetch_array($registros)) {
-    $datos[] = $resultado;
-    session_start();
-    $_SESSION["id_distritec"] = $resultado["nick"];
-    $_SESSION["name_distritec"] = $resultado["name"];
+    $contrasena = $resultado["pass"]; 
+    if(password_verify( $pass , $contrasena)){
+      $datos[] = $resultado;
+      session_start();
+      $_SESSION["id_distritec"] = $resultado["nick"];
+      $_SESSION["name_distritec"] = $resultado["name"];
+    }
   }
 
   $json = json_encode( $datos, JSON_UNESCAPED_UNICODE ); // GENERA EL JSON CON LOS DATOS OBTENIDOS

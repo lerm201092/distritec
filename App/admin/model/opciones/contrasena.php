@@ -5,6 +5,7 @@
     $datos = null;
     $tabla = "USUARIOS";
     $pass = $_POST["pass"];
+    $pass = password_hash($pass, PASSWORD_DEFAULT, ['cost' => 10]);
 
     $referencia = $_SESSION["id_distritec"];
 
