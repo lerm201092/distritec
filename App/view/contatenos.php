@@ -20,7 +20,7 @@
             <div class="panel-title"><i class="fa fa-star"></i> <strong>Contacto</strong></div>
           </div>
           <div class="panel-body">
-            <p><b>Barranquilla - Colombia - Suramérica</b></p>
+            <p><b>Barranquilla - Colombia</b></p>
 
             <abbr title="Direccion">Dirección:</abbr> Carrera 70 No. 76 - 102<br/>
             <abbr title="Phone">Teléfono:</abbr> (5) 368 6247 - 353 0689<br/>
