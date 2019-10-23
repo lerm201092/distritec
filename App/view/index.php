@@ -112,6 +112,12 @@
 			$("#submenu_atomizadores").hide();
 		});
 
+		$("#li_estibas").hover(function(){
+		$("#submenu_estibas").show();
+		}, function(){
+			$("#submenu_estibas").hide();
+		});
+
 	function menu(){
 		$("#menu_movil").show();
 		var left = $("#menu_movil").css("left");

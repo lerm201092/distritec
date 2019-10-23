@@ -137,10 +137,27 @@
 			</li>
 		</ul>
 		<li>
-			<a href="./productos.php?tipo=estibas&linea=0" class="a_menu">
-				<p><img src="../../distritec_img/img_app/menu/p.png" class="img_menu_movil">Estibas y Pisos</p>		
+			<a href="#" class="a_menu">
+				<p><img src="../../distritec_img/img_app/menu/p.png" class="img_menu_movil">Estibas y Pisos<span onclick="$('#ul_sub_menu_est').slideToggle()" class="pull-right" style="border:2px solid #ccc; margin-right:10px; padding: 0px 5px; font-weight:bold;float: right;">+</span></p>		
 			</a>
 		</li>
+		<ul id="ul_sub_menu_est" style="display:none;">
+			<li style="border-left: 5px solid #001285; padding-left: 25px; background: #eaeaea;">
+				<a href="./productos.php?tipo=estibas&linea=E" class="a_menu">
+					<p>Estibas</p>	
+				</a>
+			</li>
+			<li style="border-left: 5px solid #001285; padding-left: 25px; background: #eaeaea;">
+				<a href="./productos.php?tipo=estibas&linea=P" class="a_menu">
+					<p>Pisos</p>	
+				</a>
+			</li>
+			<li style="border-left: 5px solid #001285; padding-left: 25px; background: #eaeaea;">
+				<a href="./productos.php?tipo=estibas&linea=0" class="a_menu">
+					<p>Todos</p>	
+				</a>
+			</li>
+		</ul>
 		<li>
 			<a  href="./productos.php?tipo=zootecnia&linea=0" class="a_menu">
 				<p><img src="../../distritec_img/img_app/menu/c.png" class="img_menu_movil">Zootecnia</p>
@@ -208,11 +225,20 @@
 			</div>
 
 		</li>
-		<li class="item_menu"  style="width:16%">
+		<li class="item_menu"  id="li_estibas"  style="width:16%">
 			<a href="./productos.php?tipo=estibas&linea=0" class="a_menu">
 				<p><img src="../../distritec_img/img_app/menu/p.png" class="img_menu"></p>		
 				<p class="">Estibas y Pisos</p>
 			</a>
+
+			<div style="padding-top: 20px;">
+			<!-- <ul  id="submenu_envases"> -->
+				<ul  id="submenu_estibas"  style="display:none">
+					<li id="top_li"></li>
+					<li><a href="./productos.php?tipo=estibas&linea=E">Estibas</a></li>
+					<li><a href="./productos.php?tipo=estibas&linea=P">Pisos</a></li>	
+				</ul>			
+			</div>
 		</li>
 		<li class="item_menu"  style="width:16%">
 			<a  href="./productos.php?tipo=zootecnia&linea=0" class="a_menu">
