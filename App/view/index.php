@@ -28,13 +28,14 @@
 <body>
 
     <?php include "./include/header.php"; ?>
-    <?php include "./include/slider.php"; ?>  
-
 	<div class="container" style="margin:0;padding:0;">
 		<div id="divImage2" style="width:100%;">
 			<img src="../../distritec_img/img_app/post-banner.png" id="imgPB" onclick="location.href='./contatenos.php'">
 		</div>
 	</div>
+    <?php include "./include/slider.php"; ?>  
+
+
 
 
     <div class="footer" style="bottom:0; width: 100%;">
