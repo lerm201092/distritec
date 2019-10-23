@@ -39,11 +39,11 @@
 				<div class="container-fluid">
 					<div class="row mb-2">
 						<div class="col-sm-6">
-							<h1 class="m-0 text-dark">Atomizadores</h1>
+							<h1 class="m-0 text-dark">Bombas</h1>
 						</div>
 						<div class="col-sm-6">
 							<ol class="breadcrumb float-sm-right">
-								<li class="breadcrumb-item">Atomizadores</li>
+								<li class="breadcrumb-item">Bombas</li>
 								<li class="breadcrumb-item">Actualizar</li>						
 							</ol>
 						</div>						
@@ -156,7 +156,8 @@
 											<label for="">Linea de producto</label>
 											<select class="form-control form-control-sm" name='cod_linea'>
 												<option value="">Esconja una opcion</option>
-												<option value="A">Atomizador</option>
+												<option value="A">Atomizadores</option>
+												<option value="D">Dispensadores</option>
 											</select>
 										</div>
 

@@ -133,7 +133,7 @@ li#li_envases ul li:last-child{
 	padding-bottom:15px;
 }
 
-/* ***********************+ */
+/* INICIO - MENU DESECHABLES  */
 li#li_desechables ul {
     position: absolute;
     z-index: 1000;
@@ -161,14 +161,52 @@ li#li_desechables ul li:last-child{
 	padding-bottom:15px;
 }
 
+/* FIN - MENU DESECHABLES  */
+
+
+
+/* INICIO - MENU ATOMIZADORES  */
+
+li#li_atomizadores ul {
+    position: absolute;
+    z-index: 1000;
+    border: 1px solid #001285;
+    width: 300px;
+	background: white;
+	border: 1px solid #cccccc;
+	border-radius : 6px;	
+	padding: 0px;
+}
+
+li#li_atomizadores ul li{
+	border-bottom : 1px solid #cccccc;
+	width: 85%;
+	margin: 0 auto;
+	display: table;
+	font-size: 14px;
+	padding: 7px 10px;
+}
+
+li#li_atomizadores ul li:last-child{
+	border-bottom : none;
+	padding-bottom:15px;
+}
+/* FIN - MENU ATOMIZADORES  */
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*  +++++++++++++++++++++++ */
-
-
-
-
-
 #top_li {
     width: 18px!important;
     height: 20px!important;

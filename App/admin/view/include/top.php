@@ -48,7 +48,7 @@
                         <a href="../atomizadores/" class="nav-link">
                         <i class="nav-icon fa fa-gear"></i>
                         <p>
-                            Atomizadores
+                        Bombas
                         </p>
                         </a>
                     </li>

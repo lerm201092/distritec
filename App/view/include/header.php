@@ -93,10 +93,27 @@
 			</li>
 		</ul>
 		<li>
-			<a href="./productos.php?tipo=atomizadores&linea=0" class="a_menu">
-				<p><img src="../../distritec_img/img_app/menu/a.png" class="img_menu_movil">Atomizadores</p>
+			<a href="#" class="a_menu">
+				<p><img src="../../distritec_img/img_app/menu/a.png" class="img_menu_movil">Bombas<span onclick="$('#ul_sub_menu_ato').slideToggle()" class="pull-right" style="border:2px solid #ccc; margin-right:10px; padding: 0px 5px; font-weight:bold;float: right;">+</span></p>
 			</a>
 		</li>
+		<ul id="ul_sub_menu_ato" style="display:none;">
+			<li style="border-left: 5px solid #001285; padding-left: 25px; background: #eaeaea;">
+				<a href="./productos.php?tipo=atomizadores&linea=A" class="a_menu">
+					<p>Atomizadores</p>	
+				</a>
+			</li>
+			<li style="border-left: 5px solid #001285; padding-left: 25px; background: #eaeaea;">
+				<a href="./productos.php?tipo=atomizadores&linea=D" class="a_menu">
+					<p>Dispensadores</p>	
+				</a>
+			</li>
+			<li style="border-left: 5px solid #001285; padding-left: 25px; background: #eaeaea;">
+				<a href="./productos.php?tipo=atomizadores&linea=0" class="a_menu">
+					<p>Todos</p>	
+				</a>
+			</li>
+		</ul>
 		<li>
 			<a href="#" class="a_menu">
 				<p><img src="../../distritec_img/img_app/menu/dd.png" class="img_menu_movil">Desechables<span onclick="$('#ul_sub_menu_des').slideToggle()" class="pull-right" style="border:2px solid #ccc; margin-right:10px; padding: 0px 5px; font-weight:bold;float: right;">+</span></p>	
@@ -160,11 +177,20 @@
 			</div>
 
 		</li>
-		<li class="item_menu"  style="width:16%">
+		<li class="item_menu"  id="li_atomizadores" style="width:16%">
 			<a href="./productos.php?tipo=atomizadores&linea=0" class="a_menu">
 				<p><img src="../../distritec_img/img_app/menu/a.png" class="img_menu"></p>		
-				<p class="">Atomizadores</p>
+				<p class="">Bombas</p>
 			</a>
+
+			<div style="padding-top: 20px;">
+			<!-- <ul  id="submenu_envases"> -->
+				<ul  id="submenu_atomizadores"  style="display:none">
+					<li id="top_li"></li>
+					<li><a href="./productos.php?tipo=atomizadores&linea=A">Atomizadores</a></li>
+					<li><a href="./productos.php?tipo=atomizadores&linea=D">Dispensadores</a></li>	
+				</ul>			
+			</div>
 		</li>
 		<li class="item_menu" id="li_desechables" style="width:16%">
 			<a href="./productos.php?tipo=desechables&linea=0" class="a_menu">

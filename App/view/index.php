@@ -106,6 +106,12 @@
 			$("#submenu_desechables").hide();
 		});
 
+		$("#li_atomizadores").hover(function(){
+		$("#submenu_atomizadores").show();
+		}, function(){
+			$("#submenu_atomizadores").hide();
+		});
+
 	function menu(){
 		$("#menu_movil").show();
 		var left = $("#menu_movil").css("left");
