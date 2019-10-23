@@ -161,7 +161,7 @@
 												<input type="text" class="form-control form-control-sm" name='altura_r'  />
 											</div>
 											<div class="col-md-4 form-group">
-												<label for="">Forma:</label>
+												<label for="">Geometria:</label>
 												<select class="form-control form-control-sm" name='cod_forma' requerido="SI">
 													<option value="">Esconja una opcion</option>
 													<option value="R">Rectangular</option>
@@ -176,7 +176,7 @@
 													<option value="A">Alimentos</option>
 													<option value="C">Cosmeticos</option>
 													<option value="Q">Quimicos</option>
-													<option value="V">Variedades</option>
+													<!-- <option value="V">Variedades</option> -->
 													<option value="T">Tapas y Tapones</option>
 												</select>
 											</div>

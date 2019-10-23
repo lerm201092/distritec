@@ -76,11 +76,11 @@
 					<p>Químicos</p>	
 				</a>
 			</li>
-			<li style="border-left: 5px solid #001285; padding-left: 25px; background: #eaeaea;">
+			<!-- <li style="border-left: 5px solid #001285; padding-left: 25px; background: #eaeaea;">
 				<a href="./productos.php?tipo=envases&linea=V" class="a_menu">
 					<p>Variedades</p>	
 				</a>
-			</li>
+			</li> -->
 			<li style="border-left: 5px solid #001285; padding-left: 25px; background: #eaeaea;">
 				<a href="./productos.php?tipo=envases&linea=T" class="a_menu">
 					<p>Tapas y Tapones</p>	
@@ -154,7 +154,7 @@
 					<li><a href="./productos.php?tipo=envases&linea=A">Alimentos</a></li>
 					<li><a href="./productos.php?tipo=envases&linea=C">Cosméticos</a></li>		
 					<li><a href="./productos.php?tipo=envases&linea=Q">Químicos</a></li>
-					<li><a href="./productos.php?tipo=envases&linea=V">Variedades</a></li>	
+					<!-- <li><a href="./productos.php?tipo=envases&linea=V">Variedades</a></li>	 -->
 					<li><a href="./productos.php?tipo=envases&linea=T">Tapas y Tapones</a></li>		
 				</ul>			
 			</div>

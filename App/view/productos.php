@@ -113,7 +113,7 @@
                     
                         <div id="cont_filtro_forma">
                             <!-- Filtro Forma -->
-                            <h4  tipo="filtro_forma">Forma</h4>
+                            <h4  tipo="filtro_forma">Geometria</h4>
                             <div id="FILTRO_FOR"  tipo="filtro_forma" class="row scroll-pane">
                             <div class="col col-12">
                                 <label class="checkbox">

@@ -4,7 +4,7 @@
 	<?php include "./include/head2.php"; ?>
     <style>
         .footer{
-            position: relative;
+            position: fixed;
         }
 
 		#imgPB{

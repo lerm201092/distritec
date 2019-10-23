@@ -153,7 +153,7 @@
 												<input type="text" class="form-control form-control-sm" name='ancho_mm' />
 											</div>
 											<div class="col-md-4 form-group">
-												<label for="">Forma:</label>
+												<label for="">Geometria:</label>
 												<select class="form-control form-control-sm" name='cod_forma' >
 													<option value="">Esconja una opcion</option>
 													<option value="R">Rectangular</option>
