@@ -15,6 +15,7 @@
   while ($resultado = mysqli_fetch_array($registros)) {
     $contrasena = $resultado["pass"]; 
     if(password_verify( $pass , $contrasena)){
+    // if( $pass == $contrasena){
       $datos[] = $resultado;
       session_start();
       $_SESSION["id_distritec"] = $resultado["nick"];

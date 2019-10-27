@@ -57,7 +57,7 @@
 
 
   function tabla_capacidad($tabla){
-    $array = array("ENVASES");
+    $array = array("ENVASES", "DESECHABLES");
     $longitud = count($array);
  
     //Recorro todos los elementos
@@ -71,7 +71,7 @@
   }
 
   function tabla_forma($tabla){
-    $array = array("ENVASES");
+    $array = array("ENVASES", "DESECHABLES");
     $longitud = count($array);
  
     //Recorro todos los elementos

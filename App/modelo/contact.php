@@ -40,20 +40,31 @@
         $email_content = "Has sido contactado por $name acerda de $msgsubject \n\n".
                          $comments."\n\n"."Puede contactar a $name via email, $email";
 
-        $host     = "ssl://smtp.gmail.com";
-        $username = "";  //Colocar Correo de GMAIL
-        $password = "";  // Contraseña de correo 
+        $host     = "ssl://mail.distritec.com.co";
+        $username = "dcomercial@distritec.com.co";  //Colocar Correo de GMAIL
+        $password = "x^f{&Bi{&P#]";  // Contraseña de correo 
         $port     = "465";
 
-        $to            = ""; // Email de quien recibe 
-        $email_from    = $email;
+        $to            = "<dcomercial@distritec.com.co>"; // Email de quien recibe 
+        $email_from    = "<".$email.">";
         $email_subject = "Has sido contactado por ".$name;
         $email_body    =  $email_content;
 
-        $headers = array ('From' => $email_from, 'To' => $to, 'Subject' => $email_subject);
-        $smtp = Mail::factory('smtp', array ('host' => $host, 'port' => $port, 'auth' => true, 'username' => $username, 'password' => $password));
-        $mail = $smtp->send($to, $headers, $email_body);
+        $headers = array(
+            'From' => $email_from,
+            'To' => $to,
+            'Subject' => $email_subject
+        );
 
+        $smtp = Mail::factory('smtp', array(
+            'host' => 'ssl://mail.distritec.com.co',
+            'port' => '465',
+            'auth' => true,
+            'username' => 'dcomercial@distritec.com.co',
+            'password' => 'x^f{&Bi{&P#]'
+        ));
+    
+    $mail = $smtp->send($to, $headers, $email_body);
 
         if (PEAR::isError($mail)) {
             echo("<p>" . $mail->getMessage() . "</p>");

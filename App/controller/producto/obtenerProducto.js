@@ -31,6 +31,8 @@ function obtenerProductos() {
                         $("label[tipo=lbl_capacidad]").each(function () {
                             if(cont == 5){
                                 $(this).append("<span>"+divisor*4+"&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;Superior</span> ")
+                            }else if( cont == 1 ){
+                                $(this).append("<span>1&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;"+((divisor*cont)-1)+"</span> ")
                             }else{
                                 $(this).append("<span>"+(divisor*(cont-1))+"&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;"+((divisor*cont)-1)+"</span> ")
                             }
