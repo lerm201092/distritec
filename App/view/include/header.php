@@ -176,7 +176,7 @@
 <div class="row menu_gris" id="menu_principal">
 	<div class="container" id="menu_principal_cont" style="padding:0">
 		<li  class="item_menu" id="li_envases" style="width:16%">
-			<a href="./productos.php?tipo=envases&linea=0" class="a_menu" target="_blank">
+			<a href="./productos.php?tipo=envases&linea=0" class="a_menu">
 				<p><img src="../../distritec_img/img_app/menu/l.png" class="img_menu"></p>		
 				<p class="">Envases y Tapas</p>
 			</a>
