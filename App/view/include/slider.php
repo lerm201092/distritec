@@ -11,6 +11,7 @@
                   <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
                   <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
                   <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
                 </ol>
 
 
@@ -55,7 +56,13 @@
                     <div class="carousel-caption d-none d-md-block">
                     </div>
                   </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="../../distritec_img/img_app/banner/9.jpg" alt="Third slide" tipo="img-slider"/>
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                  </div>
                 </div>
+              
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="sr-only">Previous</span>

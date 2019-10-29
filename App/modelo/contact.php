@@ -80,3 +80,7 @@
         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>¡Atención! Hubo un problema con su envío, por favor intente nuevamente.</div>';
     }
 ?>
+
+<script>
+        location.href = "./App/view/contatenos.php";
+</script>
