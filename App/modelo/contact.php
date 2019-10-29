@@ -70,8 +70,8 @@
             echo("<p>" . $mail->getMessage() . "</p>");
         } else {
             echo "<h1>¡Correo electrónico enviado con éxito!</h1>";
-            echo '<div class="alert alert-success alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>';
-            echo "<p>Thanks <strong>$name</strong>, tu mensaje ha sido enviado a nosotros.</p>";
+            echo '<div class="alert alert-success alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button> <br/>';
+            echo '<img src="../../distritec_img/img_app/exito.jpg" />';
             echo '</div>';
         }
 
