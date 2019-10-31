@@ -10,7 +10,7 @@
     $campo = "pass";
 
     if($tipo == "mail"){
-        $campo = "pass_mail";
+        $campo = "test";
     }else{
         $pass = password_hash($pass, PASSWORD_DEFAULT, ['cost' => 10]);
     }

@@ -6,7 +6,7 @@
     $conexion = conexion();
  
     $pass_mail = "";
-    $registros = mysqli_query($conexion, "SELECT pass_mail FROM USUARIOS WHERE nick = 'lucia'");
+    $registros = mysqli_query($conexion, "SELECT test FROM USUARIOS WHERE nick = 'lucia'");
     while ($resultado = mysqli_fetch_array($registros)) {
         $pass_mail = $resultado["pass_mail"]; 
     }
@@ -79,14 +79,64 @@
         if (PEAR::isError($mail)) {
             echo("<p>" . $mail->getMessage() . "</p>");
         } else {
-            echo "<h1>¡Correo electrónico enviado con éxito!</h1>";
-            echo '<div class="alert alert-success alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button> <br/>';
-            echo '<img src="../../distritec_img/img_app/exito.jpg" />';
-            echo '</div>';
+            echo "<!DOCTYPE html>
+            <html lang='en'>
+            <head>
+                <meta charset='UTF-8'>
+                <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+                <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+                <title>Document</title>
+            </head>
+            <body style='background:#424242'>
+                <center>
+                    <div style='width:80%; max-width: 500px; background: white; margin-top:50px; padding: 20px;  border-radius: 5px;'>
+                       <img src='../../distritec_img/img_app/logo.jpg' alt='' /> 
+                       <p>¡Correo enviado satisfactoriamente, nos estaremos contactando con usted para brindarle mayor información!</p>
+                    <br> 
+                       <p>Redireccionando a la pagina principal. <span id='sp_seg'>7</span> Segundos</p>
+                    </div>
+                </center>
+                <script>        
+                        setInterval(function(){ 
+                            var seg = parseInt(document.getElementById('sp_seg').outerText);
+                            document.getElementById('sp_seg').innerText = seg-1;     
+                            if(seg == 1){
+                                location.href ='../view/contatenos.php';
+                            }            
+                         }, 1000);
+                </script>
+            </body>
+            </html>";
         }
 
     }else{
-        echo '<div class="alert alert-danger alert-dismissable">
-        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>¡Atención! Hubo un problema con su envío, por favor intente nuevamente.</div>';
+        echo "<!DOCTYPE html>
+        <html lang='en'>
+        <head>
+            <meta charset='UTF-8'>
+            <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+            <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+            <title>Document</title>
+        </head>
+        <body style='background:#424242'>
+            <center>
+                <div style='width:80%; max-width: 500px; background: white; margin-top:50px; padding: 20px;  border-radius: 5px;'>
+                   <img src='../../distritec_img/img_app/logo.jpg' alt='' /> 
+                   <p>¡Ah ocurrido un problema al enviar su correo por intente nuevamente!</p>
+                <br> 
+                   <p>Redireccionando a la pagina principal. <span id='sp_seg'>7</span> Segundos</p>
+                </div>
+            </center>
+            <script>        
+                    setInterval(function(){ 
+                        var seg = parseInt(document.getElementById('sp_seg').outerText);
+                        document.getElementById('sp_seg').innerText = seg-1;     
+                        if(seg == 1){
+                            location.href ='../view/contatenos.php';
+                        }            
+                     }, 1000);
+            </script>
+        </body>
+        </html>";
     }
 ?>

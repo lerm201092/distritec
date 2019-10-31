@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body style="background:#424242">
+    <center>
+        <div style="width:80%; max-width: 500px; background: white; margin-top:50px; padding: 20px;  border-radius: 5px;">
+           <img src="../distritec_img/img_app/logo.jpg" alt="" /> 
+           <p>¡Correo enviado satisfactoriamente, nos estaremos contactando con usted para brindarle mayor información!</p>
+        <br> 
+           <p>Redireccionando a la pagina principal. <span id="sp_seg">15</span> Segundos</p>
+        </div>
+    </center>
+    <script>        
+            setInterval(function(){ 
+                var seg = parseInt(document.getElementById("sp_seg").outerText);
+                document.getElementById("sp_seg").innerText = seg-1;     
+                if(seg == 1){
+                    location.href ="./view/contatenos.php";
+                }            
+             }, 1000);
+    </script>
+</body>
+</html>
