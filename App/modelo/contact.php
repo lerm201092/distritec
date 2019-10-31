@@ -71,7 +71,7 @@
             'port' => '465',
             'auth' => true,
             'username' => 'dcomercial@distritec.com.co',
-            'password' => 'x^f{&Bi{&P#]'
+            'password' => $pass_mail
         ));
     
     $mail = $smtp->send($to, $headers, $email_body);
