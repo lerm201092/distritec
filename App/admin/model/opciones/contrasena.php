@@ -11,9 +11,11 @@
 
     if($tipo == "mail"){
         $campo = "pass_mail";
+    }else{
+        $pass = password_hash($pass, PASSWORD_DEFAULT, ['cost' => 10]);
     }
 
-    $pass = password_hash($pass, PASSWORD_DEFAULT, ['cost' => 10]);
+
 
     $referencia = $_SESSION["id_distritec"];
 
