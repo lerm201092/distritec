@@ -1,6 +1,16 @@
 <?php
 
+    require_once "./sesion/conexion.php";
     require_once "./Mail/Mail.php";
+
+    $conexion = conexion();
+ 
+    $pass_mail = "";
+    $registros = mysqli_query($conexion, "SELECT pass_mail FROM USUARIOS WHERE nick = 'lucia'");
+    while ($resultado = mysqli_fetch_array($registros)) {
+        $pass_mail = $resultado["pass_mail"]; 
+    }
+
 
     if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
@@ -42,7 +52,7 @@
 
         $host     = "ssl://mail.distritec.com.co";
         $username = "dcomercial@distritec.com.co";  //Colocar Correo de GMAIL
-        $password = "x^f{&Bi{&P#]";  // Contraseña de correo 
+        $password = $pass_mail;  // Contraseña de correo 
         $port     = "465";
 
         $to            = "<dcomercial@distritec.com.co>"; // Email de quien recibe 
@@ -80,7 +90,3 @@
         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>¡Atención! Hubo un problema con su envío, por favor intente nuevamente.</div>';
     }
 ?>
-
-<script>
-        location.href = "./App/view/contatenos.php";
-</script>

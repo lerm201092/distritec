@@ -5,6 +5,14 @@
     $datos = null;
     $tabla = "USUARIOS";
     $pass = $_POST["pass"];
+    $tipo = $_POST["tipo"];
+
+    $campo = "pass";
+
+    if($tipo == "mail"){
+        $campo = "pass_mail";
+    }
+
     $pass = password_hash($pass, PASSWORD_DEFAULT, ['cost' => 10]);
 
     $referencia = $_SESSION["id_distritec"];
@@ -14,7 +22,7 @@
     require "../../../modelo/sesion/conexion.php";
     $conexion = conexion(); 
 
-    $descripcion = "pass = '". $pass."'";
+    $descripcion = $campo." = '". $pass."'";
     $where = " WHERE nick = '".$referencia."'";
 
     $consulta = "UPDATE ".$tabla." SET ".$descripcion. 

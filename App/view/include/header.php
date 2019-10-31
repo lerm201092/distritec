@@ -11,7 +11,7 @@
 					<ul>
 						<li><a href="./somos.php" class="menu_l"><b>Nuestra Empresa</b></a></li> 
 						<li><a href="./contatenos.php" class="menu_l"><b>Contáctenos</b></a></li> 
-						<li><a href="https://web.whatsapp.com/" target="_blank"><img src="../../distritec_img/img_app/social/what.png" alt="" class="social_t"></a></li> 
+						<li><a href="https://api.whatsapp.com/send?phone=573156688080&text=Hola!%20estoy%20interesado%20en%20sus%20productos!" target="_blank"><img src="../../distritec_img/img_app/social/what.png" alt="" class="social_t"></a></li> 
 						<li><a href="https://www.facebook.com/Distritec-Colombia-101730204507604/?modal=admin_todo_tour" target="_blank"><img class="social_t" src="../../distritec_img/img_app/social/face.png" alt="Facebook"></a></li> 
 						<li><a href="https://www.instagram.com/distritec_col/" target="_blank"><img class="social_t" src="../../distritec_img/img_app/social/inst.png" alt="instagram"></a></li> 
 					</ul>
@@ -38,7 +38,7 @@
 				<ul>
 					<li><a href="./somos.php" class="menu_l"><b>Nuestra Empresa</b></a></li> 
 					<li><a href="./contatenos.php" class="menu_l"><b>Contáctenos</b></a></li> 
-					<li><a href="https://web.whatsapp.com/" target="_blank"><img src="../../distritec_img/img_app/social/what.png" alt="" class="social_t"></a></li> 
+					<li><a href="https://api.whatsapp.com/send?phone=573156688080&text=Hola!%20estoy%20interesado%20en%20sus%20productos!" target="_blank"><img src="../../distritec_img/img_app/social/what.png" alt="" class="social_t"></a></li> 
 					<li><a href="https://www.facebook.com/Distritec-Colombia-101730204507604/?modal=admin_todo_tour" target="_blank"><img class="social_t" src="../../distritec_img/img_app/social/face.png" alt="Facebook"></a></li> 
 					<li><a href="https://www.instagram.com/distritec_col/" target="_blank"><img class="social_t" src="../../distritec_img/img_app/social/inst.png" alt="instagram"></a></li> 
 				</ul>
