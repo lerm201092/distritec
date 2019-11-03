@@ -69,10 +69,10 @@ function obtenerProductos() {
 function Filtro_Capacidad(array, divisor){
     var divisor = parseInt(divisor);
     var capacidad = array[2];
-    var filtro_capacidad = 1;
+    var filtro_capacidad = 0;
     if(capacidad>0){
         var capacidad = array[2];
-        if(capacidad <= divisor ){ filtro_capacidad = 1; }
+        if(capacidad <= divisor ){ filtro_capacidad = 0; }
         if(capacidad > divisor && capacidad <= (divisor*2) ){  filtro_capacidad = 1;  }    
         if(capacidad > (divisor*2) && capacidad <= (divisor*3) ){ filtro_capacidad = 2;   }    
         if(capacidad > (divisor*3) && capacidad <= (divisor*4) ){ filtro_capacidad = 3;   }   
