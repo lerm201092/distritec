@@ -6,7 +6,7 @@
     $conexion = conexion();
  
     $pass_mail = "";
-    $registros = mysqli_query($conexion, "SELECT test FROM USUARIOS WHERE nick = 'lucia'");
+    $registros = mysqli_query($conexion, "SELECT test FROM USUARIOS WHERE nick = 'Lucia'");
     while ($resultado = mysqli_fetch_array($registros)) {
         $pass_mail = $resultado["pass_mail"]; 
     }

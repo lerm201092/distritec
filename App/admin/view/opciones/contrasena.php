@@ -55,10 +55,10 @@
 	<section class="content">
         <center>
 		<div class="row m-0 p-2">
-			<div class="card <?php if($_SESSION['id_distritec'] === 'lucia'){ echo 'col-md-12'; }else{ echo 'col-md-8 offset-md-2'; } ?>">
+			<div class="card <?php if($_SESSION['id_distritec'] === 'Lucia'){ echo 'col-md-12'; }else{ echo 'col-md-8 offset-md-2'; } ?>">
 				<div class="card-body">
 					<div class="row">
-						<div class="<?php if($_SESSION['id_distritec'] === 'lucia'){ echo 'col-md-6'; }else{ echo 'col-12'; } ?> mt-4 mb-4">	
+						<div class="<?php if($_SESSION['id_distritec'] === 'Lucia'){ echo 'col-md-6'; }else{ echo 'col-12'; } ?> mt-4 mb-4">	
 							<div class="form-group">
 								<label for="txt_pass" style="float:left">Nueva Contraseña:</label>
 								<input type="password" id="txt_pass" class="form-control"/>
@@ -69,7 +69,7 @@
 							</div>
 							<a href="#" class="btn btn-primary col-12" onclick="Cambiar();">Cambiar Contraseña</a>							
 						</div>
-						<div class="<?php if($_SESSION['id_distritec'] == 'lucia'){ echo 'col-md-6'; }else{ echo 'col-12 d-none'; } ?> mt-4 mb-4">
+						<div class="<?php if($_SESSION['id_distritec'] == 'Lucia'){ echo 'col-md-6'; }else{ echo 'col-12 d-none'; } ?> mt-4 mb-4">
 							<div class="form-group">
 								<label for="txt_pass_mail" style="float:left">Contraseña email Contactenos:</label>
 								<input type="password" id="txt_pass_email" class="form-control"/>
